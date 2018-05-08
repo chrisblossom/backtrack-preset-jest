@@ -1,0 +1,17 @@
+.cache
+.idea
+.vscode
+node_modules
+flow-typed
+flow
+coverage
+build
+dist
+static
+package.json
+package-lock.json
+.eslintrc.js
+.prettierrc.js
+__sandbox__
+.backtrack-stats.json
+wallaby.config.js
