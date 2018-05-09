@@ -1,0 +1,46 @@
+{
+  "name": "@backtrack/preset-jest",
+  "version": "0.1.0",
+  "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
+  "engines": {
+    "node": ">=6.9.0",
+    "npm": ">=3.10.10",
+    "yarn": ">=1.6.0"
+  },
+  "files": [
+    "lib/"
+  ],
+  "main": "lib/preset-jest.js",
+  "scripts": {
+    "format": "backtrack format",
+    "lint": "backtrack lint",
+    "lint.fix": "backtrack lint.fix",
+    "precommit": "lint-staged",
+    "prepublishOnly": "npm run lint",
+    "prepush": "npm run lint"
+  },
+  "lint-staged": {
+    "*.{js,md,json}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "backtrack": {
+    "presets": [
+      "@backtrack/preset"
+    ]
+  },
+  "devDependencies": {
+    "@backtrack/core": "^0.1.1",
+    "@backtrack/preset-preset": "^0.1.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "jest": "^22.4.3",
+    "jest-serializer-path": "^0.1.15",
+    "jest-snapshot-serializer-function-name": "^1.1.0"
+  }
+}
