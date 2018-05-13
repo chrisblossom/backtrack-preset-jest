@@ -9,9 +9,11 @@
 ## Features
 
 *   Configure [Jest](https://facebook.github.io/jest/)
-*   Add [jest-serializer-path](https://github.com/tribou/jest-serializer-path/)
-*   Add [jest-snapshot-serializer-function-name](https://github.com/suchipi/jest-snapshot-serializer-function-name)
-*   Add [Wallaby.js](https://wallabyjs.com/) config
+*   [jest-serializer-path](https://github.com/tribou/jest-serializer-path/) to normalize paths inside snapshots
+*   [jest-snapshot-serializer-function-name](https://github.com/suchipi/jest-snapshot-serializer-function-name) to add function names inside snapshots
+*   [CircleCI](https://circleci.com/) Linux CI
+*   [AppVeyor](https://www.appveyor.com/) Windows CI
+*   [Wallaby.js](https://wallabyjs.com/) config
 
 ## Installation
 
