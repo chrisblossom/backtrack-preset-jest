@@ -47,6 +47,7 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
+    "coveralls": "^3.0.1",
     "jest": "^22.4.3",
     "jest-serializer-path": "^0.1.15",
     "jest-snapshot-serializer-function-name": "^1.1.0"
