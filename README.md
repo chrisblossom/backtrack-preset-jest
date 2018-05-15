@@ -14,6 +14,7 @@
 *   [CircleCI](https://circleci.com/) Linux CI
 *   [AppVeyor](https://www.appveyor.com/) Windows CI
 *   [Wallaby.js](https://wallabyjs.com/) config
+*   Add `prepush` and `prepublishOnly` testing git hooks
 
 ## Installation
 
