@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`preset returns expected config 1`] = `
+Object {
+  "files": Object {
+    "dest": Object {
+      "absolute": Object {
+        ".circleci/config.yml": "<PROJECT_ROOT>/.circleci/config.yml",
+        "appveyor.yml": "<PROJECT_ROOT>/appveyor.yml",
+        "jest.config.js": "<PROJECT_ROOT>/jest.config.js",
+        "wallaby.config.js": "<PROJECT_ROOT>/wallaby.config.js",
+      },
+      "allowChanges": Object {
+        ".circleci/config.yml": false,
+        "appveyor.yml": false,
+        "jest.config.js": false,
+        "wallaby.config.js": false,
+      },
+      "files": Array [
+        "jest.config.js",
+        "wallaby.config.js",
+        ".circleci/config.yml",
+        "appveyor.yml",
+      ],
+      "hash": Object {
+        ".circleci/config.yml": "2bfa496bc22656ba584622896cbcc2fa55fc64737cf31d23606038d64f156b7b",
+        "appveyor.yml": "f6fc53987d51355dcbb95ea36a3da2db56666cf2a4433bb515a01cc1c1aebf8c",
+        "jest.config.js": "2dfc22f99102a3d4d2335ad31b24e0902a3b81348aa74acf270d9c88ed0a2bf3",
+        "wallaby.config.js": "8f32230dd610bb00d4e67a530e55b6c3271dfd2e4143fc32b066fc97bc88a5fc",
+      },
+      "ignoreUpdates": Object {
+        ".circleci/config.yml": false,
+        "appveyor.yml": false,
+        "jest.config.js": false,
+        "wallaby.config.js": false,
+      },
+    },
+    "makeDirs": Array [
+      ".circleci",
+      "dist",
+      "src",
+    ],
+    "src": Object {
+      "absolute": Object {
+        "lib/files/appveyor.yml": "<PROJECT_ROOT>/lib/files/appveyor.yml",
+        "lib/files/circleci-v2.yml": "<PROJECT_ROOT>/lib/files/circleci-v2.yml",
+        "lib/files/jest.js": "<PROJECT_ROOT>/lib/files/jest.js",
+        "lib/files/wallaby.js": "<PROJECT_ROOT>/lib/files/wallaby.js",
+      },
+      "files": Array [
+        "lib/files/jest.js",
+        "lib/files/wallaby.js",
+        "lib/files/circleci-v2.yml",
+        "lib/files/appveyor.yml",
+      ],
+      "hash": Object {
+        "lib/files/appveyor.yml": "f6fc53987d51355dcbb95ea36a3da2db56666cf2a4433bb515a01cc1c1aebf8c",
+        "lib/files/circleci-v2.yml": "2bfa496bc22656ba584622896cbcc2fa55fc64737cf31d23606038d64f156b7b",
+        "lib/files/jest.js": "2dfc22f99102a3d4d2335ad31b24e0902a3b81348aa74acf270d9c88ed0a2bf3",
+        "lib/files/wallaby.js": "d37d10441a299a78a0b6b608fd44add196354f55a6eee2e9854cfef49baa033f",
+      },
+    },
+  },
+  "prepublishOnly": Array [
+    "backtrack test",
+  ],
+  "prepush": Array [
+    "backtrack test",
+  ],
+  "resolve": Object {
+    "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
+  },
+  "test": Array [
+    "jest --passWithNoTests",
+  ],
+  "test.ci": Array [
+    "jest --passWithNoTests --coverage",
+    "cat ./coverage/lcov.info | coveralls",
+  ],
+  "test.update": Array [
+    "jest --updateSnapshot",
+  ],
+  "test.watch": Array [
+    "jest --watch",
+  ],
+}
+`;
