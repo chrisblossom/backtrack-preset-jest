@@ -26,7 +26,7 @@ Object {
         ".circleci/config.yml": "2bfa496bc22656ba584622896cbcc2fa55fc64737cf31d23606038d64f156b7b",
         "appveyor.yml": "f6fc53987d51355dcbb95ea36a3da2db56666cf2a4433bb515a01cc1c1aebf8c",
         "jest.config.js": "2dfc22f99102a3d4d2335ad31b24e0902a3b81348aa74acf270d9c88ed0a2bf3",
-        "wallaby.config.js": "8f32230dd610bb00d4e67a530e55b6c3271dfd2e4143fc32b066fc97bc88a5fc",
+        "wallaby.config.js": "b79a89efd0484c2aba8477197056e4ae331dc6a0d533e050edd99d89630cb78f",
       },
       "ignoreUpdates": Object {
         ".circleci/config.yml": false,
