@@ -49,7 +49,7 @@
             "test": "backtrack test",
             "test.ci": "backtrack test.ci",
             "test.update": "backtrack test.update",
-            "test.watch": "backtrack test.watch"
+            "test.watch": "jest --watch"
         }
     }
 }
