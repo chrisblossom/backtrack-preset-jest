@@ -61,6 +61,13 @@ Object {
       },
     },
   },
+  "packageJson": Array [
+    Object {
+      "scripts": Object {
+        "test.watch": "jest --watch",
+      },
+    },
+  ],
   "prepublishOnly": Array [
     "backtrack test",
   ],
@@ -79,9 +86,6 @@ Object {
   ],
   "test.update": Array [
     "jest --updateSnapshot",
-  ],
-  "test.watch": Array [
-    "jest --watch",
   ],
 }
 `;
