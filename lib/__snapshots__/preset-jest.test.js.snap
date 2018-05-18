@@ -54,8 +54,8 @@ Object {
         "lib/files/appveyor.yml",
       ],
       "hash": Object {
-        "lib/files/appveyor.yml": "f6fc53987d51355dcbb95ea36a3da2db56666cf2a4433bb515a01cc1c1aebf8c",
-        "lib/files/circleci-v2.yml": "2bfa496bc22656ba584622896cbcc2fa55fc64737cf31d23606038d64f156b7b",
+        "lib/files/appveyor.yml": "9d33ff9a3d71fe4027204552cb66e29277062e5fd12d2e9f334cc07d8f8fd30a",
+        "lib/files/circleci-v2.yml": "d261dece9929b1d97fe158048a0858d8fdfaf53303c81fb784fd617d82acaf4f",
         "lib/files/jest.js": "2dfc22f99102a3d4d2335ad31b24e0902a3b81348aa74acf270d9c88ed0a2bf3",
         "lib/files/wallaby.js": "d37d10441a299a78a0b6b608fd44add196354f55a6eee2e9854cfef49baa033f",
       },
@@ -64,6 +64,7 @@ Object {
   "packageJson": Array [
     Object {
       "scripts": Object {
+        "test.update": "jest --updateSnapshot",
         "test.watch": "jest --watch",
       },
     },
@@ -82,10 +83,7 @@ Object {
   ],
   "test.ci": Array [
     "jest --passWithNoTests --coverage",
-    "cat ./coverage/lcov.info | coveralls",
-  ],
-  "test.update": Array [
-    "jest --updateSnapshot",
+    "<PROJECT_ROOT>/lib/send-coverage.js",
   ],
 }
 `;

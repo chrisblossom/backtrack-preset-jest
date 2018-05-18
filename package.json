@@ -55,6 +55,7 @@
     "husky": "^0.14.3",
     "jest": "^22.4.3",
     "jest-serializer-path": "^0.1.15",
-    "jest-snapshot-serializer-function-name": "^1.1.0"
+    "jest-snapshot-serializer-function-name": "^1.1.0",
+    "semver": "^5.5.0"
   }
 }
