@@ -23,7 +23,7 @@ Object {
         "appveyor.yml",
       ],
       "hash": Object {
-        ".circleci/config.yml": "d261dece9929b1d97fe158048a0858d8fdfaf53303c81fb784fd617d82acaf4f",
+        ".circleci/config.yml": "3b7696d7b955ebd4ac0f5eeacfff227acea15301b6e450b111677d32411b2a8b",
         "appveyor.yml": "9d33ff9a3d71fe4027204552cb66e29277062e5fd12d2e9f334cc07d8f8fd30a",
         "jest.config.js": "2dfc22f99102a3d4d2335ad31b24e0902a3b81348aa74acf270d9c88ed0a2bf3",
         "wallaby.config.js": "b79a89efd0484c2aba8477197056e4ae331dc6a0d533e050edd99d89630cb78f",
