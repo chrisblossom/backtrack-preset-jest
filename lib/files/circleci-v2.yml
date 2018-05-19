@@ -29,6 +29,7 @@ jobs:
           paths:
             - ~/.npm
           key: v1-dependencies-{{ checksum "_node_version" }}-{{ checksum "_npm_version" }}
+      - run: npm run test.ci-pretest
       - run: npm run test.ci
   test-node8:
     docker:
@@ -45,6 +46,7 @@ jobs:
           paths:
             - ~/.npm
           key: v1-dependencies-{{ checksum "_node_version" }}-{{ checksum "_npm_version" }}
+      - run: npm run test.ci-pretest
       - run: npm run test.ci
   test-node10:
     docker:
@@ -61,6 +63,7 @@ jobs:
           paths:
             - ~/.npm
           key: v1-dependencies-{{ checksum "_node_version" }}-{{ checksum "_npm_version" }}
+      - run: npm run test.ci-pretest
       - run: npm run test.ci
 
 workflows:
