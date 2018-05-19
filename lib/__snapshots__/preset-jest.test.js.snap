@@ -83,7 +83,10 @@ Object {
   ],
   "test.ci": Array [
     "jest --passWithNoTests --coverage",
-    "<PROJECT_ROOT>/lib/send-coverage.js",
+    Object {
+      "name": "coveralls",
+      "task": "<PROJECT_ROOT>/lib/send-coverage.js",
+    },
   ],
   "test.ci-pretest": Array [
     [Function noop],
