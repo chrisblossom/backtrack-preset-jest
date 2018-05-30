@@ -11,13 +11,13 @@
 
 ## Features
 
-*   Configure [Jest](https://facebook.github.io/jest/)
-*   [jest-serializer-path](https://github.com/tribou/jest-serializer-path/) to normalize paths inside snapshots
-*   [jest-snapshot-serializer-function-name](https://github.com/suchipi/jest-snapshot-serializer-function-name) to add function names inside snapshots
-*   [CircleCI](https://circleci.com/) Linux CI
-*   [AppVeyor](https://www.appveyor.com/) Windows CI
-*   [Wallaby.js](https://wallabyjs.com/) config
-*   Add `prepush` and `prepublishOnly` testing git hooks
+-   Configure [Jest](https://facebook.github.io/jest/)
+-   [jest-serializer-path](https://github.com/tribou/jest-serializer-path/) to normalize paths inside snapshots
+-   [jest-snapshot-serializer-function-name](https://github.com/suchipi/jest-snapshot-serializer-function-name) to add function names inside snapshots
+-   [CircleCI](https://circleci.com/) Linux CI
+-   [AppVeyor](https://www.appveyor.com/) Windows CI
+-   [Wallaby.js](https://wallabyjs.com/) config
+-   Add `prepush` and `prepublishOnly` testing git hooks
 
 ## Installation
 
