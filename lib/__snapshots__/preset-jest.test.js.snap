@@ -76,7 +76,7 @@ Object {
     "jest --passWithNoTests",
   ],
   "test.ci": Array [
-    "jest --passWithNoTests --coverage",
+    "jest --passWithNoTests --coverage --maxWorkers 2",
     Object {
       "name": "codecov",
       "task": "codecov",
