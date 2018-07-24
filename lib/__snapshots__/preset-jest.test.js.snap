@@ -78,8 +78,8 @@ Object {
   "test.ci": Array [
     "jest --passWithNoTests --coverage",
     Object {
-      "name": "coveralls",
-      "task": "<PROJECT_ROOT>/lib/send-coverage.js",
+      "name": "codecov",
+      "task": "codecov",
     },
   ],
   "test.ci-pretest": Array [
