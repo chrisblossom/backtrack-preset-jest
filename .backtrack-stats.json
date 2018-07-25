@@ -31,6 +31,7 @@
         "files": [
             "lib/"
         ],
+        "license": "MIT",
         "lint-staged": {
             "*.{js,md,json}": [
                 "prettier --write",

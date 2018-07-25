@@ -9,7 +9,7 @@
     "jest",
     "wallaby"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "repository": "chrisblossom/backtrack-preset-jest",
   "homepage": "https://github.com/chrisblossom/backtrack-preset-jest",
   "author": "Chris Blossom",
@@ -47,7 +47,7 @@
   },
   "devDependencies": {
     "@backtrack/core": "^0.1.20",
-    "@backtrack/preset-preset": "^0.3.1"
+    "@backtrack/preset-preset": "^0.3.2"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
