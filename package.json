@@ -15,8 +15,7 @@
   "author": "Chris Blossom",
   "engines": {
     "node": ">=6.9.0",
-    "npm": ">=3.10.10",
-    "yarn": ">=1.6.0"
+    "npm": ">=3.10.10"
   },
   "files": [
     "lib/"
@@ -47,8 +46,8 @@
     ]
   },
   "devDependencies": {
-    "@backtrack/core": "^0.1.18",
-    "@backtrack/preset-preset": "^0.3.0"
+    "@backtrack/core": "^0.1.20",
+    "@backtrack/preset-preset": "^0.3.1"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
