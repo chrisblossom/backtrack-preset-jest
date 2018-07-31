@@ -34,3 +34,34 @@ module.exports = {
     presets: ['@backtrack/jest'],
 };
 ```
+
+## Options
+
+```js
+// backtrack.config.js
+
+'use strict';
+
+module.exports = {
+    presets: [
+        [
+            '@backtrack/jest',
+            {
+                /**
+                 * Disable testing on Windows
+                 *
+                 * default: true
+                 */
+                windows: false,
+
+                /**
+                 * Disable settings unneccessary in applications
+                 *
+                 * default: false
+                 */
+                isApp: true,
+            },
+        ],
+    ],
+};
+```
