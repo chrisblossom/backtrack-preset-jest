@@ -50,8 +50,8 @@ Object {
       "hash": Object {
         "lib/files/appveyor.yml": "e26fc69a9c740e6fe6267ea2da435aa54c83a110eface66642470dc2e8336713",
         "lib/files/circleci-v2.yml": "3b7696d7b955ebd4ac0f5eeacfff227acea15301b6e450b111677d32411b2a8b",
-        "lib/files/jest.js": "2dfc22f99102a3d4d2335ad31b24e0902a3b81348aa74acf270d9c88ed0a2bf3",
-        "lib/files/wallaby.js": "d37d10441a299a78a0b6b608fd44add196354f55a6eee2e9854cfef49baa033f",
+        "lib/files/jest.js": "322dd136d43514064c38fdf8cd999d6511d83af8efbb35d8d355a3f35937c6c4",
+        "lib/files/wallaby.js": "bfd3a73af1c8ecd93d812d70e4e599406f14eda36920955df69a4109a3a2ed2e",
       },
     },
   },
