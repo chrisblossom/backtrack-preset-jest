@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`preset returns expected config - defaults 1`] = `
+exports[`preset returns expected config - defaults node 6 1`] = `
 Object {
   "files": Object {
     "dest": Object {
@@ -36,20 +36,20 @@ Object {
     ],
     "src": Object {
       "absolute": Object {
-        "lib/files/appveyor.yml": "<PROJECT_ROOT>/lib/files/appveyor.yml",
-        "lib/files/circleci-v2.yml": "<PROJECT_ROOT>/lib/files/circleci-v2.yml",
+        "lib/files/appveyor-6.yml": "<PROJECT_ROOT>/lib/files/appveyor-6.yml",
+        "lib/files/circleci-6.yml": "<PROJECT_ROOT>/lib/files/circleci-6.yml",
         "lib/files/jest-library.js": "<PROJECT_ROOT>/lib/files/jest-library.js",
         "lib/files/wallaby.js": "<PROJECT_ROOT>/lib/files/wallaby.js",
       },
       "files": Array [
         "lib/files/wallaby.js",
-        "lib/files/circleci-v2.yml",
+        "lib/files/circleci-6.yml",
         "lib/files/jest-library.js",
-        "lib/files/appveyor.yml",
+        "lib/files/appveyor-6.yml",
       ],
       "hash": Object {
-        "lib/files/appveyor.yml": "e26fc69a9c740e6fe6267ea2da435aa54c83a110eface66642470dc2e8336713",
-        "lib/files/circleci-v2.yml": "3b7696d7b955ebd4ac0f5eeacfff227acea15301b6e450b111677d32411b2a8b",
+        "lib/files/appveyor-6.yml": "2227673b5204c2e8408239d0b272c19de4a829042dc9ffbfe329fe3e0d05e755",
+        "lib/files/circleci-6.yml": "014c5610168b6d0bcc1240d0bf16e52076c9683eec44b9627d46caf50e677b09",
         "lib/files/jest-library.js": "322dd136d43514064c38fdf8cd999d6511d83af8efbb35d8d355a3f35937c6c4",
         "lib/files/wallaby.js": "bfd3a73af1c8ecd93d812d70e4e599406f14eda36920955df69a4109a3a2ed2e",
       },
@@ -88,7 +88,7 @@ Object {
 }
 `;
 
-exports[`preset returns expected config - isApp = true 1`] = `
+exports[`preset returns expected config - defaults node 6+ 1`] = `
 Object {
   "files": Object {
     "dest": Object {
@@ -124,20 +124,372 @@ Object {
     ],
     "src": Object {
       "absolute": Object {
-        "lib/files/appveyor.yml": "<PROJECT_ROOT>/lib/files/appveyor.yml",
-        "lib/files/circleci-v2.yml": "<PROJECT_ROOT>/lib/files/circleci-v2.yml",
+        "lib/files/appveyor-6+.yml": "<PROJECT_ROOT>/lib/files/appveyor-6+.yml",
+        "lib/files/circleci-6+.yml": "<PROJECT_ROOT>/lib/files/circleci-6+.yml",
         "lib/files/jest-library.js": "<PROJECT_ROOT>/lib/files/jest-library.js",
         "lib/files/wallaby.js": "<PROJECT_ROOT>/lib/files/wallaby.js",
       },
       "files": Array [
         "lib/files/wallaby.js",
-        "lib/files/circleci-v2.yml",
+        "lib/files/circleci-6+.yml",
         "lib/files/jest-library.js",
-        "lib/files/appveyor.yml",
+        "lib/files/appveyor-6+.yml",
       ],
       "hash": Object {
-        "lib/files/appveyor.yml": "e26fc69a9c740e6fe6267ea2da435aa54c83a110eface66642470dc2e8336713",
-        "lib/files/circleci-v2.yml": "3b7696d7b955ebd4ac0f5eeacfff227acea15301b6e450b111677d32411b2a8b",
+        "lib/files/appveyor-6+.yml": "e26fc69a9c740e6fe6267ea2da435aa54c83a110eface66642470dc2e8336713",
+        "lib/files/circleci-6+.yml": "3b7696d7b955ebd4ac0f5eeacfff227acea15301b6e450b111677d32411b2a8b",
+        "lib/files/jest-library.js": "322dd136d43514064c38fdf8cd999d6511d83af8efbb35d8d355a3f35937c6c4",
+        "lib/files/wallaby.js": "bfd3a73af1c8ecd93d812d70e4e599406f14eda36920955df69a4109a3a2ed2e",
+      },
+    },
+  },
+  "packageJson": Array [
+    Object {
+      "scripts": Object {
+        "test.update": "jest --updateSnapshot",
+        "test.watch": "jest --watch",
+      },
+    },
+  ],
+  "prepublishOnly": Array [
+    "backtrack test",
+  ],
+  "prepush": Array [
+    "backtrack test",
+  ],
+  "resolve": Object {
+    "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
+  },
+  "test": Array [
+    "jest --passWithNoTests",
+  ],
+  "test.ci": Array [
+    "jest --passWithNoTests --coverage --maxWorkers 2",
+    Object {
+      "name": "codecov",
+      "task": "codecov",
+    },
+  ],
+  "test.ci-pretest": Array [
+    [Function noop],
+  ],
+}
+`;
+
+exports[`preset returns expected config - defaults node 8 1`] = `
+Object {
+  "files": Object {
+    "dest": Object {
+      "absolute": Object {
+        ".circleci/config.yml": "<PROJECT_ROOT>/.circleci/config.yml",
+        "appveyor.yml": "<PROJECT_ROOT>/appveyor.yml",
+        "jest.config.js": "<PROJECT_ROOT>/jest.config.js",
+        "wallaby.config.js": "<PROJECT_ROOT>/wallaby.config.js",
+      },
+      "allowChanges": Object {
+        ".circleci/config.yml": false,
+        "appveyor.yml": false,
+        "jest.config.js": false,
+        "wallaby.config.js": false,
+      },
+      "files": Array [
+        "wallaby.config.js",
+        ".circleci/config.yml",
+        "jest.config.js",
+        "appveyor.yml",
+      ],
+      "ignoreUpdates": Object {
+        ".circleci/config.yml": false,
+        "appveyor.yml": false,
+        "jest.config.js": false,
+        "wallaby.config.js": false,
+      },
+    },
+    "makeDirs": Array [
+      ".circleci",
+      "dist",
+      "src",
+    ],
+    "src": Object {
+      "absolute": Object {
+        "lib/files/appveyor-8.yml": "<PROJECT_ROOT>/lib/files/appveyor-8.yml",
+        "lib/files/circleci-8.yml": "<PROJECT_ROOT>/lib/files/circleci-8.yml",
+        "lib/files/jest-library.js": "<PROJECT_ROOT>/lib/files/jest-library.js",
+        "lib/files/wallaby.js": "<PROJECT_ROOT>/lib/files/wallaby.js",
+      },
+      "files": Array [
+        "lib/files/wallaby.js",
+        "lib/files/circleci-8.yml",
+        "lib/files/jest-library.js",
+        "lib/files/appveyor-8.yml",
+      ],
+      "hash": Object {
+        "lib/files/appveyor-8.yml": "298f29de0e3595a14ca200f44791fb786accf00d5aec6a0273e9a4096202aff0",
+        "lib/files/circleci-8.yml": "8af3a1984f2263980e82a49dbf17d2074360881ea51bfea07527275b563d930e",
+        "lib/files/jest-library.js": "322dd136d43514064c38fdf8cd999d6511d83af8efbb35d8d355a3f35937c6c4",
+        "lib/files/wallaby.js": "bfd3a73af1c8ecd93d812d70e4e599406f14eda36920955df69a4109a3a2ed2e",
+      },
+    },
+  },
+  "packageJson": Array [
+    Object {
+      "scripts": Object {
+        "test.update": "jest --updateSnapshot",
+        "test.watch": "jest --watch",
+      },
+    },
+  ],
+  "prepublishOnly": Array [
+    "backtrack test",
+  ],
+  "prepush": Array [
+    "backtrack test",
+  ],
+  "resolve": Object {
+    "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
+  },
+  "test": Array [
+    "jest --passWithNoTests",
+  ],
+  "test.ci": Array [
+    "jest --passWithNoTests --coverage --maxWorkers 2",
+    Object {
+      "name": "codecov",
+      "task": "codecov",
+    },
+  ],
+  "test.ci-pretest": Array [
+    [Function noop],
+  ],
+}
+`;
+
+exports[`preset returns expected config - defaults node 8+ 1`] = `
+Object {
+  "files": Object {
+    "dest": Object {
+      "absolute": Object {
+        ".circleci/config.yml": "<PROJECT_ROOT>/.circleci/config.yml",
+        "appveyor.yml": "<PROJECT_ROOT>/appveyor.yml",
+        "jest.config.js": "<PROJECT_ROOT>/jest.config.js",
+        "wallaby.config.js": "<PROJECT_ROOT>/wallaby.config.js",
+      },
+      "allowChanges": Object {
+        ".circleci/config.yml": false,
+        "appveyor.yml": false,
+        "jest.config.js": false,
+        "wallaby.config.js": false,
+      },
+      "files": Array [
+        "wallaby.config.js",
+        ".circleci/config.yml",
+        "jest.config.js",
+        "appveyor.yml",
+      ],
+      "ignoreUpdates": Object {
+        ".circleci/config.yml": false,
+        "appveyor.yml": false,
+        "jest.config.js": false,
+        "wallaby.config.js": false,
+      },
+    },
+    "makeDirs": Array [
+      ".circleci",
+      "dist",
+      "src",
+    ],
+    "src": Object {
+      "absolute": Object {
+        "lib/files/appveyor-8+.yml": "<PROJECT_ROOT>/lib/files/appveyor-8+.yml",
+        "lib/files/circleci-8+.yml": "<PROJECT_ROOT>/lib/files/circleci-8+.yml",
+        "lib/files/jest-library.js": "<PROJECT_ROOT>/lib/files/jest-library.js",
+        "lib/files/wallaby.js": "<PROJECT_ROOT>/lib/files/wallaby.js",
+      },
+      "files": Array [
+        "lib/files/wallaby.js",
+        "lib/files/circleci-8+.yml",
+        "lib/files/jest-library.js",
+        "lib/files/appveyor-8+.yml",
+      ],
+      "hash": Object {
+        "lib/files/appveyor-8+.yml": "e2eb9ad724cbda608d8be82a4672e900b83da59d6844e7e0007a2f77ccc35798",
+        "lib/files/circleci-8+.yml": "199b2205337a4a46758949ae6c6a4bd6f8bbf2d19cc760b311f514adc886658a",
+        "lib/files/jest-library.js": "322dd136d43514064c38fdf8cd999d6511d83af8efbb35d8d355a3f35937c6c4",
+        "lib/files/wallaby.js": "bfd3a73af1c8ecd93d812d70e4e599406f14eda36920955df69a4109a3a2ed2e",
+      },
+    },
+  },
+  "packageJson": Array [
+    Object {
+      "scripts": Object {
+        "test.update": "jest --updateSnapshot",
+        "test.watch": "jest --watch",
+      },
+    },
+  ],
+  "prepublishOnly": Array [
+    "backtrack test",
+  ],
+  "prepush": Array [
+    "backtrack test",
+  ],
+  "resolve": Object {
+    "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
+  },
+  "test": Array [
+    "jest --passWithNoTests",
+  ],
+  "test.ci": Array [
+    "jest --passWithNoTests --coverage --maxWorkers 2",
+    Object {
+      "name": "codecov",
+      "task": "codecov",
+    },
+  ],
+  "test.ci-pretest": Array [
+    [Function noop],
+  ],
+}
+`;
+
+exports[`preset returns expected config - defaults node 10 1`] = `
+Object {
+  "files": Object {
+    "dest": Object {
+      "absolute": Object {
+        ".circleci/config.yml": "<PROJECT_ROOT>/.circleci/config.yml",
+        "appveyor.yml": "<PROJECT_ROOT>/appveyor.yml",
+        "jest.config.js": "<PROJECT_ROOT>/jest.config.js",
+        "wallaby.config.js": "<PROJECT_ROOT>/wallaby.config.js",
+      },
+      "allowChanges": Object {
+        ".circleci/config.yml": false,
+        "appveyor.yml": false,
+        "jest.config.js": false,
+        "wallaby.config.js": false,
+      },
+      "files": Array [
+        "wallaby.config.js",
+        ".circleci/config.yml",
+        "jest.config.js",
+        "appveyor.yml",
+      ],
+      "ignoreUpdates": Object {
+        ".circleci/config.yml": false,
+        "appveyor.yml": false,
+        "jest.config.js": false,
+        "wallaby.config.js": false,
+      },
+    },
+    "makeDirs": Array [
+      ".circleci",
+      "dist",
+      "src",
+    ],
+    "src": Object {
+      "absolute": Object {
+        "lib/files/appveyor-10.yml": "<PROJECT_ROOT>/lib/files/appveyor-10.yml",
+        "lib/files/circleci-10.yml": "<PROJECT_ROOT>/lib/files/circleci-10.yml",
+        "lib/files/jest-library.js": "<PROJECT_ROOT>/lib/files/jest-library.js",
+        "lib/files/wallaby.js": "<PROJECT_ROOT>/lib/files/wallaby.js",
+      },
+      "files": Array [
+        "lib/files/wallaby.js",
+        "lib/files/circleci-10.yml",
+        "lib/files/jest-library.js",
+        "lib/files/appveyor-10.yml",
+      ],
+      "hash": Object {
+        "lib/files/appveyor-10.yml": "bd98ee2bb8f6c30a0a887ab0ad561d98e346dc2f4c19f8d38b4f15a7b5a1adda",
+        "lib/files/circleci-10.yml": "6b093152a59058aa4d8e33882dd200762259e98611e2c1adde6689bb933a47bb",
+        "lib/files/jest-library.js": "322dd136d43514064c38fdf8cd999d6511d83af8efbb35d8d355a3f35937c6c4",
+        "lib/files/wallaby.js": "bfd3a73af1c8ecd93d812d70e4e599406f14eda36920955df69a4109a3a2ed2e",
+      },
+    },
+  },
+  "packageJson": Array [
+    Object {
+      "scripts": Object {
+        "test.update": "jest --updateSnapshot",
+        "test.watch": "jest --watch",
+      },
+    },
+  ],
+  "prepublishOnly": Array [
+    "backtrack test",
+  ],
+  "prepush": Array [
+    "backtrack test",
+  ],
+  "resolve": Object {
+    "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
+  },
+  "test": Array [
+    "jest --passWithNoTests",
+  ],
+  "test.ci": Array [
+    "jest --passWithNoTests --coverage --maxWorkers 2",
+    Object {
+      "name": "codecov",
+      "task": "codecov",
+    },
+  ],
+  "test.ci-pretest": Array [
+    [Function noop],
+  ],
+}
+`;
+
+exports[`preset returns expected config - isApp = true node 6 1`] = `
+Object {
+  "files": Object {
+    "dest": Object {
+      "absolute": Object {
+        ".circleci/config.yml": "<PROJECT_ROOT>/.circleci/config.yml",
+        "appveyor.yml": "<PROJECT_ROOT>/appveyor.yml",
+        "jest.config.js": "<PROJECT_ROOT>/jest.config.js",
+        "wallaby.config.js": "<PROJECT_ROOT>/wallaby.config.js",
+      },
+      "allowChanges": Object {
+        ".circleci/config.yml": false,
+        "appveyor.yml": false,
+        "jest.config.js": false,
+        "wallaby.config.js": false,
+      },
+      "files": Array [
+        "wallaby.config.js",
+        ".circleci/config.yml",
+        "jest.config.js",
+        "appveyor.yml",
+      ],
+      "ignoreUpdates": Object {
+        ".circleci/config.yml": false,
+        "appveyor.yml": false,
+        "jest.config.js": false,
+        "wallaby.config.js": false,
+      },
+    },
+    "makeDirs": Array [
+      ".circleci",
+      "dist",
+      "src",
+    ],
+    "src": Object {
+      "absolute": Object {
+        "lib/files/appveyor-6.yml": "<PROJECT_ROOT>/lib/files/appveyor-6.yml",
+        "lib/files/circleci-6.yml": "<PROJECT_ROOT>/lib/files/circleci-6.yml",
+        "lib/files/jest-library.js": "<PROJECT_ROOT>/lib/files/jest-library.js",
+        "lib/files/wallaby.js": "<PROJECT_ROOT>/lib/files/wallaby.js",
+      },
+      "files": Array [
+        "lib/files/wallaby.js",
+        "lib/files/circleci-6.yml",
+        "lib/files/jest-library.js",
+        "lib/files/appveyor-6.yml",
+      ],
+      "hash": Object {
+        "lib/files/appveyor-6.yml": "2227673b5204c2e8408239d0b272c19de4a829042dc9ffbfe329fe3e0d05e755",
+        "lib/files/circleci-6.yml": "014c5610168b6d0bcc1240d0bf16e52076c9683eec44b9627d46caf50e677b09",
         "lib/files/jest-library.js": "322dd136d43514064c38fdf8cd999d6511d83af8efbb35d8d355a3f35937c6c4",
         "lib/files/wallaby.js": "bfd3a73af1c8ecd93d812d70e4e599406f14eda36920955df69a4109a3a2ed2e",
       },
@@ -173,7 +525,347 @@ Object {
 }
 `;
 
-exports[`preset returns expected config - isApp = true, windows false 1`] = `
+exports[`preset returns expected config - isApp = true node 6+ 1`] = `
+Object {
+  "files": Object {
+    "dest": Object {
+      "absolute": Object {
+        ".circleci/config.yml": "<PROJECT_ROOT>/.circleci/config.yml",
+        "appveyor.yml": "<PROJECT_ROOT>/appveyor.yml",
+        "jest.config.js": "<PROJECT_ROOT>/jest.config.js",
+        "wallaby.config.js": "<PROJECT_ROOT>/wallaby.config.js",
+      },
+      "allowChanges": Object {
+        ".circleci/config.yml": false,
+        "appveyor.yml": false,
+        "jest.config.js": false,
+        "wallaby.config.js": false,
+      },
+      "files": Array [
+        "wallaby.config.js",
+        ".circleci/config.yml",
+        "jest.config.js",
+        "appveyor.yml",
+      ],
+      "ignoreUpdates": Object {
+        ".circleci/config.yml": false,
+        "appveyor.yml": false,
+        "jest.config.js": false,
+        "wallaby.config.js": false,
+      },
+    },
+    "makeDirs": Array [
+      ".circleci",
+      "dist",
+      "src",
+    ],
+    "src": Object {
+      "absolute": Object {
+        "lib/files/appveyor-6+.yml": "<PROJECT_ROOT>/lib/files/appveyor-6+.yml",
+        "lib/files/circleci-6+.yml": "<PROJECT_ROOT>/lib/files/circleci-6+.yml",
+        "lib/files/jest-library.js": "<PROJECT_ROOT>/lib/files/jest-library.js",
+        "lib/files/wallaby.js": "<PROJECT_ROOT>/lib/files/wallaby.js",
+      },
+      "files": Array [
+        "lib/files/wallaby.js",
+        "lib/files/circleci-6+.yml",
+        "lib/files/jest-library.js",
+        "lib/files/appveyor-6+.yml",
+      ],
+      "hash": Object {
+        "lib/files/appveyor-6+.yml": "e26fc69a9c740e6fe6267ea2da435aa54c83a110eface66642470dc2e8336713",
+        "lib/files/circleci-6+.yml": "3b7696d7b955ebd4ac0f5eeacfff227acea15301b6e450b111677d32411b2a8b",
+        "lib/files/jest-library.js": "322dd136d43514064c38fdf8cd999d6511d83af8efbb35d8d355a3f35937c6c4",
+        "lib/files/wallaby.js": "bfd3a73af1c8ecd93d812d70e4e599406f14eda36920955df69a4109a3a2ed2e",
+      },
+    },
+  },
+  "packageJson": Array [
+    Object {
+      "scripts": Object {
+        "test.update": "jest --updateSnapshot",
+        "test.watch": "jest --watch",
+      },
+    },
+  ],
+  "prepush": Array [
+    "backtrack test",
+  ],
+  "resolve": Object {
+    "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
+  },
+  "test": Array [
+    "jest --passWithNoTests",
+  ],
+  "test.ci": Array [
+    "jest --passWithNoTests --coverage --maxWorkers 2",
+    Object {
+      "name": "codecov",
+      "task": "codecov",
+    },
+  ],
+  "test.ci-pretest": Array [
+    [Function noop],
+  ],
+}
+`;
+
+exports[`preset returns expected config - isApp = true node 8 1`] = `
+Object {
+  "files": Object {
+    "dest": Object {
+      "absolute": Object {
+        ".circleci/config.yml": "<PROJECT_ROOT>/.circleci/config.yml",
+        "appveyor.yml": "<PROJECT_ROOT>/appveyor.yml",
+        "jest.config.js": "<PROJECT_ROOT>/jest.config.js",
+        "wallaby.config.js": "<PROJECT_ROOT>/wallaby.config.js",
+      },
+      "allowChanges": Object {
+        ".circleci/config.yml": false,
+        "appveyor.yml": false,
+        "jest.config.js": false,
+        "wallaby.config.js": false,
+      },
+      "files": Array [
+        "wallaby.config.js",
+        ".circleci/config.yml",
+        "jest.config.js",
+        "appveyor.yml",
+      ],
+      "ignoreUpdates": Object {
+        ".circleci/config.yml": false,
+        "appveyor.yml": false,
+        "jest.config.js": false,
+        "wallaby.config.js": false,
+      },
+    },
+    "makeDirs": Array [
+      ".circleci",
+      "dist",
+      "src",
+    ],
+    "src": Object {
+      "absolute": Object {
+        "lib/files/appveyor-8.yml": "<PROJECT_ROOT>/lib/files/appveyor-8.yml",
+        "lib/files/circleci-8.yml": "<PROJECT_ROOT>/lib/files/circleci-8.yml",
+        "lib/files/jest-library.js": "<PROJECT_ROOT>/lib/files/jest-library.js",
+        "lib/files/wallaby.js": "<PROJECT_ROOT>/lib/files/wallaby.js",
+      },
+      "files": Array [
+        "lib/files/wallaby.js",
+        "lib/files/circleci-8.yml",
+        "lib/files/jest-library.js",
+        "lib/files/appveyor-8.yml",
+      ],
+      "hash": Object {
+        "lib/files/appveyor-8.yml": "298f29de0e3595a14ca200f44791fb786accf00d5aec6a0273e9a4096202aff0",
+        "lib/files/circleci-8.yml": "8af3a1984f2263980e82a49dbf17d2074360881ea51bfea07527275b563d930e",
+        "lib/files/jest-library.js": "322dd136d43514064c38fdf8cd999d6511d83af8efbb35d8d355a3f35937c6c4",
+        "lib/files/wallaby.js": "bfd3a73af1c8ecd93d812d70e4e599406f14eda36920955df69a4109a3a2ed2e",
+      },
+    },
+  },
+  "packageJson": Array [
+    Object {
+      "scripts": Object {
+        "test.update": "jest --updateSnapshot",
+        "test.watch": "jest --watch",
+      },
+    },
+  ],
+  "prepush": Array [
+    "backtrack test",
+  ],
+  "resolve": Object {
+    "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
+  },
+  "test": Array [
+    "jest --passWithNoTests",
+  ],
+  "test.ci": Array [
+    "jest --passWithNoTests --coverage --maxWorkers 2",
+    Object {
+      "name": "codecov",
+      "task": "codecov",
+    },
+  ],
+  "test.ci-pretest": Array [
+    [Function noop],
+  ],
+}
+`;
+
+exports[`preset returns expected config - isApp = true node 8+ 1`] = `
+Object {
+  "files": Object {
+    "dest": Object {
+      "absolute": Object {
+        ".circleci/config.yml": "<PROJECT_ROOT>/.circleci/config.yml",
+        "appveyor.yml": "<PROJECT_ROOT>/appveyor.yml",
+        "jest.config.js": "<PROJECT_ROOT>/jest.config.js",
+        "wallaby.config.js": "<PROJECT_ROOT>/wallaby.config.js",
+      },
+      "allowChanges": Object {
+        ".circleci/config.yml": false,
+        "appveyor.yml": false,
+        "jest.config.js": false,
+        "wallaby.config.js": false,
+      },
+      "files": Array [
+        "wallaby.config.js",
+        ".circleci/config.yml",
+        "jest.config.js",
+        "appveyor.yml",
+      ],
+      "ignoreUpdates": Object {
+        ".circleci/config.yml": false,
+        "appveyor.yml": false,
+        "jest.config.js": false,
+        "wallaby.config.js": false,
+      },
+    },
+    "makeDirs": Array [
+      ".circleci",
+      "dist",
+      "src",
+    ],
+    "src": Object {
+      "absolute": Object {
+        "lib/files/appveyor-8+.yml": "<PROJECT_ROOT>/lib/files/appveyor-8+.yml",
+        "lib/files/circleci-8+.yml": "<PROJECT_ROOT>/lib/files/circleci-8+.yml",
+        "lib/files/jest-library.js": "<PROJECT_ROOT>/lib/files/jest-library.js",
+        "lib/files/wallaby.js": "<PROJECT_ROOT>/lib/files/wallaby.js",
+      },
+      "files": Array [
+        "lib/files/wallaby.js",
+        "lib/files/circleci-8+.yml",
+        "lib/files/jest-library.js",
+        "lib/files/appveyor-8+.yml",
+      ],
+      "hash": Object {
+        "lib/files/appveyor-8+.yml": "e2eb9ad724cbda608d8be82a4672e900b83da59d6844e7e0007a2f77ccc35798",
+        "lib/files/circleci-8+.yml": "199b2205337a4a46758949ae6c6a4bd6f8bbf2d19cc760b311f514adc886658a",
+        "lib/files/jest-library.js": "322dd136d43514064c38fdf8cd999d6511d83af8efbb35d8d355a3f35937c6c4",
+        "lib/files/wallaby.js": "bfd3a73af1c8ecd93d812d70e4e599406f14eda36920955df69a4109a3a2ed2e",
+      },
+    },
+  },
+  "packageJson": Array [
+    Object {
+      "scripts": Object {
+        "test.update": "jest --updateSnapshot",
+        "test.watch": "jest --watch",
+      },
+    },
+  ],
+  "prepush": Array [
+    "backtrack test",
+  ],
+  "resolve": Object {
+    "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
+  },
+  "test": Array [
+    "jest --passWithNoTests",
+  ],
+  "test.ci": Array [
+    "jest --passWithNoTests --coverage --maxWorkers 2",
+    Object {
+      "name": "codecov",
+      "task": "codecov",
+    },
+  ],
+  "test.ci-pretest": Array [
+    [Function noop],
+  ],
+}
+`;
+
+exports[`preset returns expected config - isApp = true node 10 1`] = `
+Object {
+  "files": Object {
+    "dest": Object {
+      "absolute": Object {
+        ".circleci/config.yml": "<PROJECT_ROOT>/.circleci/config.yml",
+        "appveyor.yml": "<PROJECT_ROOT>/appveyor.yml",
+        "jest.config.js": "<PROJECT_ROOT>/jest.config.js",
+        "wallaby.config.js": "<PROJECT_ROOT>/wallaby.config.js",
+      },
+      "allowChanges": Object {
+        ".circleci/config.yml": false,
+        "appveyor.yml": false,
+        "jest.config.js": false,
+        "wallaby.config.js": false,
+      },
+      "files": Array [
+        "wallaby.config.js",
+        ".circleci/config.yml",
+        "jest.config.js",
+        "appveyor.yml",
+      ],
+      "ignoreUpdates": Object {
+        ".circleci/config.yml": false,
+        "appveyor.yml": false,
+        "jest.config.js": false,
+        "wallaby.config.js": false,
+      },
+    },
+    "makeDirs": Array [
+      ".circleci",
+      "dist",
+      "src",
+    ],
+    "src": Object {
+      "absolute": Object {
+        "lib/files/appveyor-10.yml": "<PROJECT_ROOT>/lib/files/appveyor-10.yml",
+        "lib/files/circleci-10.yml": "<PROJECT_ROOT>/lib/files/circleci-10.yml",
+        "lib/files/jest-library.js": "<PROJECT_ROOT>/lib/files/jest-library.js",
+        "lib/files/wallaby.js": "<PROJECT_ROOT>/lib/files/wallaby.js",
+      },
+      "files": Array [
+        "lib/files/wallaby.js",
+        "lib/files/circleci-10.yml",
+        "lib/files/jest-library.js",
+        "lib/files/appveyor-10.yml",
+      ],
+      "hash": Object {
+        "lib/files/appveyor-10.yml": "bd98ee2bb8f6c30a0a887ab0ad561d98e346dc2f4c19f8d38b4f15a7b5a1adda",
+        "lib/files/circleci-10.yml": "6b093152a59058aa4d8e33882dd200762259e98611e2c1adde6689bb933a47bb",
+        "lib/files/jest-library.js": "322dd136d43514064c38fdf8cd999d6511d83af8efbb35d8d355a3f35937c6c4",
+        "lib/files/wallaby.js": "bfd3a73af1c8ecd93d812d70e4e599406f14eda36920955df69a4109a3a2ed2e",
+      },
+    },
+  },
+  "packageJson": Array [
+    Object {
+      "scripts": Object {
+        "test.update": "jest --updateSnapshot",
+        "test.watch": "jest --watch",
+      },
+    },
+  ],
+  "prepush": Array [
+    "backtrack test",
+  ],
+  "resolve": Object {
+    "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
+  },
+  "test": Array [
+    "jest --passWithNoTests",
+  ],
+  "test.ci": Array [
+    "jest --passWithNoTests --coverage --maxWorkers 2",
+    Object {
+      "name": "codecov",
+      "task": "codecov",
+    },
+  ],
+  "test.ci-pretest": Array [
+    [Function noop],
+  ],
+}
+`;
+
+exports[`preset returns expected config - isApp = true, windows false node 6 1`] = `
 Object {
   "files": Object {
     "dest": Object {
@@ -205,17 +897,17 @@ Object {
     ],
     "src": Object {
       "absolute": Object {
-        "lib/files/circleci-v2.yml": "<PROJECT_ROOT>/lib/files/circleci-v2.yml",
+        "lib/files/circleci-6.yml": "<PROJECT_ROOT>/lib/files/circleci-6.yml",
         "lib/files/jest-app.js": "<PROJECT_ROOT>/lib/files/jest-app.js",
         "lib/files/wallaby.js": "<PROJECT_ROOT>/lib/files/wallaby.js",
       },
       "files": Array [
         "lib/files/wallaby.js",
-        "lib/files/circleci-v2.yml",
+        "lib/files/circleci-6.yml",
         "lib/files/jest-app.js",
       ],
       "hash": Object {
-        "lib/files/circleci-v2.yml": "3b7696d7b955ebd4ac0f5eeacfff227acea15301b6e450b111677d32411b2a8b",
+        "lib/files/circleci-6.yml": "014c5610168b6d0bcc1240d0bf16e52076c9683eec44b9627d46caf50e677b09",
         "lib/files/jest-app.js": "4a1c02ec2ad2ed327246fea56e516a92bd7b57fedaba14da38faaa117410670d",
         "lib/files/wallaby.js": "bfd3a73af1c8ecd93d812d70e4e599406f14eda36920955df69a4109a3a2ed2e",
       },
@@ -251,7 +943,7 @@ Object {
 }
 `;
 
-exports[`preset returns expected config - windows = false 1`] = `
+exports[`preset returns expected config - isApp = true, windows false node 6+ 1`] = `
 Object {
   "files": Object {
     "dest": Object {
@@ -283,17 +975,653 @@ Object {
     ],
     "src": Object {
       "absolute": Object {
-        "lib/files/circleci-v2.yml": "<PROJECT_ROOT>/lib/files/circleci-v2.yml",
+        "lib/files/circleci-6+.yml": "<PROJECT_ROOT>/lib/files/circleci-6+.yml",
         "lib/files/jest-app.js": "<PROJECT_ROOT>/lib/files/jest-app.js",
         "lib/files/wallaby.js": "<PROJECT_ROOT>/lib/files/wallaby.js",
       },
       "files": Array [
         "lib/files/wallaby.js",
-        "lib/files/circleci-v2.yml",
+        "lib/files/circleci-6+.yml",
         "lib/files/jest-app.js",
       ],
       "hash": Object {
-        "lib/files/circleci-v2.yml": "3b7696d7b955ebd4ac0f5eeacfff227acea15301b6e450b111677d32411b2a8b",
+        "lib/files/circleci-6+.yml": "3b7696d7b955ebd4ac0f5eeacfff227acea15301b6e450b111677d32411b2a8b",
+        "lib/files/jest-app.js": "4a1c02ec2ad2ed327246fea56e516a92bd7b57fedaba14da38faaa117410670d",
+        "lib/files/wallaby.js": "bfd3a73af1c8ecd93d812d70e4e599406f14eda36920955df69a4109a3a2ed2e",
+      },
+    },
+  },
+  "packageJson": Array [
+    Object {
+      "scripts": Object {
+        "test.update": "jest --updateSnapshot",
+        "test.watch": "jest --watch",
+      },
+    },
+  ],
+  "prepush": Array [
+    "backtrack test",
+  ],
+  "resolve": Object {
+    "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
+  },
+  "test": Array [
+    "jest --passWithNoTests",
+  ],
+  "test.ci": Array [
+    "jest --passWithNoTests --coverage --maxWorkers 2",
+    Object {
+      "name": "codecov",
+      "task": "codecov",
+    },
+  ],
+  "test.ci-pretest": Array [
+    [Function noop],
+  ],
+}
+`;
+
+exports[`preset returns expected config - isApp = true, windows false node 8 1`] = `
+Object {
+  "files": Object {
+    "dest": Object {
+      "absolute": Object {
+        ".circleci/config.yml": "<PROJECT_ROOT>/.circleci/config.yml",
+        "jest.config.js": "<PROJECT_ROOT>/jest.config.js",
+        "wallaby.config.js": "<PROJECT_ROOT>/wallaby.config.js",
+      },
+      "allowChanges": Object {
+        ".circleci/config.yml": false,
+        "jest.config.js": false,
+        "wallaby.config.js": false,
+      },
+      "files": Array [
+        "wallaby.config.js",
+        ".circleci/config.yml",
+        "jest.config.js",
+      ],
+      "ignoreUpdates": Object {
+        ".circleci/config.yml": false,
+        "jest.config.js": false,
+        "wallaby.config.js": false,
+      },
+    },
+    "makeDirs": Array [
+      ".circleci",
+      "dist",
+      "src",
+    ],
+    "src": Object {
+      "absolute": Object {
+        "lib/files/circleci-8.yml": "<PROJECT_ROOT>/lib/files/circleci-8.yml",
+        "lib/files/jest-app.js": "<PROJECT_ROOT>/lib/files/jest-app.js",
+        "lib/files/wallaby.js": "<PROJECT_ROOT>/lib/files/wallaby.js",
+      },
+      "files": Array [
+        "lib/files/wallaby.js",
+        "lib/files/circleci-8.yml",
+        "lib/files/jest-app.js",
+      ],
+      "hash": Object {
+        "lib/files/circleci-8.yml": "8af3a1984f2263980e82a49dbf17d2074360881ea51bfea07527275b563d930e",
+        "lib/files/jest-app.js": "4a1c02ec2ad2ed327246fea56e516a92bd7b57fedaba14da38faaa117410670d",
+        "lib/files/wallaby.js": "bfd3a73af1c8ecd93d812d70e4e599406f14eda36920955df69a4109a3a2ed2e",
+      },
+    },
+  },
+  "packageJson": Array [
+    Object {
+      "scripts": Object {
+        "test.update": "jest --updateSnapshot",
+        "test.watch": "jest --watch",
+      },
+    },
+  ],
+  "prepush": Array [
+    "backtrack test",
+  ],
+  "resolve": Object {
+    "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
+  },
+  "test": Array [
+    "jest --passWithNoTests",
+  ],
+  "test.ci": Array [
+    "jest --passWithNoTests --coverage --maxWorkers 2",
+    Object {
+      "name": "codecov",
+      "task": "codecov",
+    },
+  ],
+  "test.ci-pretest": Array [
+    [Function noop],
+  ],
+}
+`;
+
+exports[`preset returns expected config - isApp = true, windows false node 8+ 1`] = `
+Object {
+  "files": Object {
+    "dest": Object {
+      "absolute": Object {
+        ".circleci/config.yml": "<PROJECT_ROOT>/.circleci/config.yml",
+        "jest.config.js": "<PROJECT_ROOT>/jest.config.js",
+        "wallaby.config.js": "<PROJECT_ROOT>/wallaby.config.js",
+      },
+      "allowChanges": Object {
+        ".circleci/config.yml": false,
+        "jest.config.js": false,
+        "wallaby.config.js": false,
+      },
+      "files": Array [
+        "wallaby.config.js",
+        ".circleci/config.yml",
+        "jest.config.js",
+      ],
+      "ignoreUpdates": Object {
+        ".circleci/config.yml": false,
+        "jest.config.js": false,
+        "wallaby.config.js": false,
+      },
+    },
+    "makeDirs": Array [
+      ".circleci",
+      "dist",
+      "src",
+    ],
+    "src": Object {
+      "absolute": Object {
+        "lib/files/circleci-8+.yml": "<PROJECT_ROOT>/lib/files/circleci-8+.yml",
+        "lib/files/jest-app.js": "<PROJECT_ROOT>/lib/files/jest-app.js",
+        "lib/files/wallaby.js": "<PROJECT_ROOT>/lib/files/wallaby.js",
+      },
+      "files": Array [
+        "lib/files/wallaby.js",
+        "lib/files/circleci-8+.yml",
+        "lib/files/jest-app.js",
+      ],
+      "hash": Object {
+        "lib/files/circleci-8+.yml": "199b2205337a4a46758949ae6c6a4bd6f8bbf2d19cc760b311f514adc886658a",
+        "lib/files/jest-app.js": "4a1c02ec2ad2ed327246fea56e516a92bd7b57fedaba14da38faaa117410670d",
+        "lib/files/wallaby.js": "bfd3a73af1c8ecd93d812d70e4e599406f14eda36920955df69a4109a3a2ed2e",
+      },
+    },
+  },
+  "packageJson": Array [
+    Object {
+      "scripts": Object {
+        "test.update": "jest --updateSnapshot",
+        "test.watch": "jest --watch",
+      },
+    },
+  ],
+  "prepush": Array [
+    "backtrack test",
+  ],
+  "resolve": Object {
+    "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
+  },
+  "test": Array [
+    "jest --passWithNoTests",
+  ],
+  "test.ci": Array [
+    "jest --passWithNoTests --coverage --maxWorkers 2",
+    Object {
+      "name": "codecov",
+      "task": "codecov",
+    },
+  ],
+  "test.ci-pretest": Array [
+    [Function noop],
+  ],
+}
+`;
+
+exports[`preset returns expected config - isApp = true, windows false node 10 1`] = `
+Object {
+  "files": Object {
+    "dest": Object {
+      "absolute": Object {
+        ".circleci/config.yml": "<PROJECT_ROOT>/.circleci/config.yml",
+        "jest.config.js": "<PROJECT_ROOT>/jest.config.js",
+        "wallaby.config.js": "<PROJECT_ROOT>/wallaby.config.js",
+      },
+      "allowChanges": Object {
+        ".circleci/config.yml": false,
+        "jest.config.js": false,
+        "wallaby.config.js": false,
+      },
+      "files": Array [
+        "wallaby.config.js",
+        ".circleci/config.yml",
+        "jest.config.js",
+      ],
+      "ignoreUpdates": Object {
+        ".circleci/config.yml": false,
+        "jest.config.js": false,
+        "wallaby.config.js": false,
+      },
+    },
+    "makeDirs": Array [
+      ".circleci",
+      "dist",
+      "src",
+    ],
+    "src": Object {
+      "absolute": Object {
+        "lib/files/circleci-10.yml": "<PROJECT_ROOT>/lib/files/circleci-10.yml",
+        "lib/files/jest-app.js": "<PROJECT_ROOT>/lib/files/jest-app.js",
+        "lib/files/wallaby.js": "<PROJECT_ROOT>/lib/files/wallaby.js",
+      },
+      "files": Array [
+        "lib/files/wallaby.js",
+        "lib/files/circleci-10.yml",
+        "lib/files/jest-app.js",
+      ],
+      "hash": Object {
+        "lib/files/circleci-10.yml": "6b093152a59058aa4d8e33882dd200762259e98611e2c1adde6689bb933a47bb",
+        "lib/files/jest-app.js": "4a1c02ec2ad2ed327246fea56e516a92bd7b57fedaba14da38faaa117410670d",
+        "lib/files/wallaby.js": "bfd3a73af1c8ecd93d812d70e4e599406f14eda36920955df69a4109a3a2ed2e",
+      },
+    },
+  },
+  "packageJson": Array [
+    Object {
+      "scripts": Object {
+        "test.update": "jest --updateSnapshot",
+        "test.watch": "jest --watch",
+      },
+    },
+  ],
+  "prepush": Array [
+    "backtrack test",
+  ],
+  "resolve": Object {
+    "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
+  },
+  "test": Array [
+    "jest --passWithNoTests",
+  ],
+  "test.ci": Array [
+    "jest --passWithNoTests --coverage --maxWorkers 2",
+    Object {
+      "name": "codecov",
+      "task": "codecov",
+    },
+  ],
+  "test.ci-pretest": Array [
+    [Function noop],
+  ],
+}
+`;
+
+exports[`preset returns expected config - windows = false node 6 1`] = `
+Object {
+  "files": Object {
+    "dest": Object {
+      "absolute": Object {
+        ".circleci/config.yml": "<PROJECT_ROOT>/.circleci/config.yml",
+        "jest.config.js": "<PROJECT_ROOT>/jest.config.js",
+        "wallaby.config.js": "<PROJECT_ROOT>/wallaby.config.js",
+      },
+      "allowChanges": Object {
+        ".circleci/config.yml": false,
+        "jest.config.js": false,
+        "wallaby.config.js": false,
+      },
+      "files": Array [
+        "wallaby.config.js",
+        ".circleci/config.yml",
+        "jest.config.js",
+      ],
+      "ignoreUpdates": Object {
+        ".circleci/config.yml": false,
+        "jest.config.js": false,
+        "wallaby.config.js": false,
+      },
+    },
+    "makeDirs": Array [
+      ".circleci",
+      "dist",
+      "src",
+    ],
+    "src": Object {
+      "absolute": Object {
+        "lib/files/circleci-6.yml": "<PROJECT_ROOT>/lib/files/circleci-6.yml",
+        "lib/files/jest-app.js": "<PROJECT_ROOT>/lib/files/jest-app.js",
+        "lib/files/wallaby.js": "<PROJECT_ROOT>/lib/files/wallaby.js",
+      },
+      "files": Array [
+        "lib/files/wallaby.js",
+        "lib/files/circleci-6.yml",
+        "lib/files/jest-app.js",
+      ],
+      "hash": Object {
+        "lib/files/circleci-6.yml": "014c5610168b6d0bcc1240d0bf16e52076c9683eec44b9627d46caf50e677b09",
+        "lib/files/jest-app.js": "4a1c02ec2ad2ed327246fea56e516a92bd7b57fedaba14da38faaa117410670d",
+        "lib/files/wallaby.js": "bfd3a73af1c8ecd93d812d70e4e599406f14eda36920955df69a4109a3a2ed2e",
+      },
+    },
+  },
+  "packageJson": Array [
+    Object {
+      "scripts": Object {
+        "test.update": "jest --updateSnapshot",
+        "test.watch": "jest --watch",
+      },
+    },
+  ],
+  "prepublishOnly": Array [
+    "backtrack test",
+  ],
+  "prepush": Array [
+    "backtrack test",
+  ],
+  "resolve": Object {
+    "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
+  },
+  "test": Array [
+    "jest --passWithNoTests",
+  ],
+  "test.ci": Array [
+    "jest --passWithNoTests --coverage --maxWorkers 2",
+    Object {
+      "name": "codecov",
+      "task": "codecov",
+    },
+  ],
+  "test.ci-pretest": Array [
+    [Function noop],
+  ],
+}
+`;
+
+exports[`preset returns expected config - windows = false node 6+ 1`] = `
+Object {
+  "files": Object {
+    "dest": Object {
+      "absolute": Object {
+        ".circleci/config.yml": "<PROJECT_ROOT>/.circleci/config.yml",
+        "jest.config.js": "<PROJECT_ROOT>/jest.config.js",
+        "wallaby.config.js": "<PROJECT_ROOT>/wallaby.config.js",
+      },
+      "allowChanges": Object {
+        ".circleci/config.yml": false,
+        "jest.config.js": false,
+        "wallaby.config.js": false,
+      },
+      "files": Array [
+        "wallaby.config.js",
+        ".circleci/config.yml",
+        "jest.config.js",
+      ],
+      "ignoreUpdates": Object {
+        ".circleci/config.yml": false,
+        "jest.config.js": false,
+        "wallaby.config.js": false,
+      },
+    },
+    "makeDirs": Array [
+      ".circleci",
+      "dist",
+      "src",
+    ],
+    "src": Object {
+      "absolute": Object {
+        "lib/files/circleci-6+.yml": "<PROJECT_ROOT>/lib/files/circleci-6+.yml",
+        "lib/files/jest-app.js": "<PROJECT_ROOT>/lib/files/jest-app.js",
+        "lib/files/wallaby.js": "<PROJECT_ROOT>/lib/files/wallaby.js",
+      },
+      "files": Array [
+        "lib/files/wallaby.js",
+        "lib/files/circleci-6+.yml",
+        "lib/files/jest-app.js",
+      ],
+      "hash": Object {
+        "lib/files/circleci-6+.yml": "3b7696d7b955ebd4ac0f5eeacfff227acea15301b6e450b111677d32411b2a8b",
+        "lib/files/jest-app.js": "4a1c02ec2ad2ed327246fea56e516a92bd7b57fedaba14da38faaa117410670d",
+        "lib/files/wallaby.js": "bfd3a73af1c8ecd93d812d70e4e599406f14eda36920955df69a4109a3a2ed2e",
+      },
+    },
+  },
+  "packageJson": Array [
+    Object {
+      "scripts": Object {
+        "test.update": "jest --updateSnapshot",
+        "test.watch": "jest --watch",
+      },
+    },
+  ],
+  "prepublishOnly": Array [
+    "backtrack test",
+  ],
+  "prepush": Array [
+    "backtrack test",
+  ],
+  "resolve": Object {
+    "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
+  },
+  "test": Array [
+    "jest --passWithNoTests",
+  ],
+  "test.ci": Array [
+    "jest --passWithNoTests --coverage --maxWorkers 2",
+    Object {
+      "name": "codecov",
+      "task": "codecov",
+    },
+  ],
+  "test.ci-pretest": Array [
+    [Function noop],
+  ],
+}
+`;
+
+exports[`preset returns expected config - windows = false node 8 1`] = `
+Object {
+  "files": Object {
+    "dest": Object {
+      "absolute": Object {
+        ".circleci/config.yml": "<PROJECT_ROOT>/.circleci/config.yml",
+        "jest.config.js": "<PROJECT_ROOT>/jest.config.js",
+        "wallaby.config.js": "<PROJECT_ROOT>/wallaby.config.js",
+      },
+      "allowChanges": Object {
+        ".circleci/config.yml": false,
+        "jest.config.js": false,
+        "wallaby.config.js": false,
+      },
+      "files": Array [
+        "wallaby.config.js",
+        ".circleci/config.yml",
+        "jest.config.js",
+      ],
+      "ignoreUpdates": Object {
+        ".circleci/config.yml": false,
+        "jest.config.js": false,
+        "wallaby.config.js": false,
+      },
+    },
+    "makeDirs": Array [
+      ".circleci",
+      "dist",
+      "src",
+    ],
+    "src": Object {
+      "absolute": Object {
+        "lib/files/circleci-8.yml": "<PROJECT_ROOT>/lib/files/circleci-8.yml",
+        "lib/files/jest-app.js": "<PROJECT_ROOT>/lib/files/jest-app.js",
+        "lib/files/wallaby.js": "<PROJECT_ROOT>/lib/files/wallaby.js",
+      },
+      "files": Array [
+        "lib/files/wallaby.js",
+        "lib/files/circleci-8.yml",
+        "lib/files/jest-app.js",
+      ],
+      "hash": Object {
+        "lib/files/circleci-8.yml": "8af3a1984f2263980e82a49dbf17d2074360881ea51bfea07527275b563d930e",
+        "lib/files/jest-app.js": "4a1c02ec2ad2ed327246fea56e516a92bd7b57fedaba14da38faaa117410670d",
+        "lib/files/wallaby.js": "bfd3a73af1c8ecd93d812d70e4e599406f14eda36920955df69a4109a3a2ed2e",
+      },
+    },
+  },
+  "packageJson": Array [
+    Object {
+      "scripts": Object {
+        "test.update": "jest --updateSnapshot",
+        "test.watch": "jest --watch",
+      },
+    },
+  ],
+  "prepublishOnly": Array [
+    "backtrack test",
+  ],
+  "prepush": Array [
+    "backtrack test",
+  ],
+  "resolve": Object {
+    "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
+  },
+  "test": Array [
+    "jest --passWithNoTests",
+  ],
+  "test.ci": Array [
+    "jest --passWithNoTests --coverage --maxWorkers 2",
+    Object {
+      "name": "codecov",
+      "task": "codecov",
+    },
+  ],
+  "test.ci-pretest": Array [
+    [Function noop],
+  ],
+}
+`;
+
+exports[`preset returns expected config - windows = false node 8+ 1`] = `
+Object {
+  "files": Object {
+    "dest": Object {
+      "absolute": Object {
+        ".circleci/config.yml": "<PROJECT_ROOT>/.circleci/config.yml",
+        "jest.config.js": "<PROJECT_ROOT>/jest.config.js",
+        "wallaby.config.js": "<PROJECT_ROOT>/wallaby.config.js",
+      },
+      "allowChanges": Object {
+        ".circleci/config.yml": false,
+        "jest.config.js": false,
+        "wallaby.config.js": false,
+      },
+      "files": Array [
+        "wallaby.config.js",
+        ".circleci/config.yml",
+        "jest.config.js",
+      ],
+      "ignoreUpdates": Object {
+        ".circleci/config.yml": false,
+        "jest.config.js": false,
+        "wallaby.config.js": false,
+      },
+    },
+    "makeDirs": Array [
+      ".circleci",
+      "dist",
+      "src",
+    ],
+    "src": Object {
+      "absolute": Object {
+        "lib/files/circleci-8+.yml": "<PROJECT_ROOT>/lib/files/circleci-8+.yml",
+        "lib/files/jest-app.js": "<PROJECT_ROOT>/lib/files/jest-app.js",
+        "lib/files/wallaby.js": "<PROJECT_ROOT>/lib/files/wallaby.js",
+      },
+      "files": Array [
+        "lib/files/wallaby.js",
+        "lib/files/circleci-8+.yml",
+        "lib/files/jest-app.js",
+      ],
+      "hash": Object {
+        "lib/files/circleci-8+.yml": "199b2205337a4a46758949ae6c6a4bd6f8bbf2d19cc760b311f514adc886658a",
+        "lib/files/jest-app.js": "4a1c02ec2ad2ed327246fea56e516a92bd7b57fedaba14da38faaa117410670d",
+        "lib/files/wallaby.js": "bfd3a73af1c8ecd93d812d70e4e599406f14eda36920955df69a4109a3a2ed2e",
+      },
+    },
+  },
+  "packageJson": Array [
+    Object {
+      "scripts": Object {
+        "test.update": "jest --updateSnapshot",
+        "test.watch": "jest --watch",
+      },
+    },
+  ],
+  "prepublishOnly": Array [
+    "backtrack test",
+  ],
+  "prepush": Array [
+    "backtrack test",
+  ],
+  "resolve": Object {
+    "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
+  },
+  "test": Array [
+    "jest --passWithNoTests",
+  ],
+  "test.ci": Array [
+    "jest --passWithNoTests --coverage --maxWorkers 2",
+    Object {
+      "name": "codecov",
+      "task": "codecov",
+    },
+  ],
+  "test.ci-pretest": Array [
+    [Function noop],
+  ],
+}
+`;
+
+exports[`preset returns expected config - windows = false node 10 1`] = `
+Object {
+  "files": Object {
+    "dest": Object {
+      "absolute": Object {
+        ".circleci/config.yml": "<PROJECT_ROOT>/.circleci/config.yml",
+        "jest.config.js": "<PROJECT_ROOT>/jest.config.js",
+        "wallaby.config.js": "<PROJECT_ROOT>/wallaby.config.js",
+      },
+      "allowChanges": Object {
+        ".circleci/config.yml": false,
+        "jest.config.js": false,
+        "wallaby.config.js": false,
+      },
+      "files": Array [
+        "wallaby.config.js",
+        ".circleci/config.yml",
+        "jest.config.js",
+      ],
+      "ignoreUpdates": Object {
+        ".circleci/config.yml": false,
+        "jest.config.js": false,
+        "wallaby.config.js": false,
+      },
+    },
+    "makeDirs": Array [
+      ".circleci",
+      "dist",
+      "src",
+    ],
+    "src": Object {
+      "absolute": Object {
+        "lib/files/circleci-10.yml": "<PROJECT_ROOT>/lib/files/circleci-10.yml",
+        "lib/files/jest-app.js": "<PROJECT_ROOT>/lib/files/jest-app.js",
+        "lib/files/wallaby.js": "<PROJECT_ROOT>/lib/files/wallaby.js",
+      },
+      "files": Array [
+        "lib/files/wallaby.js",
+        "lib/files/circleci-10.yml",
+        "lib/files/jest-app.js",
+      ],
+      "hash": Object {
+        "lib/files/circleci-10.yml": "6b093152a59058aa4d8e33882dd200762259e98611e2c1adde6689bb933a47bb",
         "lib/files/jest-app.js": "4a1c02ec2ad2ed327246fea56e516a92bd7b57fedaba14da38faaa117410670d",
         "lib/files/wallaby.js": "bfd3a73af1c8ecd93d812d70e4e599406f14eda36920955df69a4109a3a2ed2e",
       },
