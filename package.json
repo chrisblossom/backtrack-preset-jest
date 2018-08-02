@@ -34,12 +34,6 @@
     "test.update": "jest --updateSnapshot",
     "test.watch": "jest --watch"
   },
-  "lint-staged": {
-    "*.{js,md,json}": [
-      "prettier --write",
-      "git add"
-    ]
-  },
   "backtrack": {
     "presets": [
       "@backtrack/preset"
@@ -47,7 +41,7 @@
   },
   "devDependencies": {
     "@backtrack/core": "^0.1.20",
-    "@backtrack/preset-preset": "^0.3.3"
+    "@backtrack/preset-preset": "^0.3.5"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
