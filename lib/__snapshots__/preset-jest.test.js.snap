@@ -48,7 +48,7 @@ Object {
         "lib/files/appveyor-6.yml",
       ],
       "hash": Object {
-        "lib/files/appveyor-6.yml": "8e10185be6cd9f880b0e93f7698ea51d6aa3dc3331e304cdeac256391bd538d2",
+        "lib/files/appveyor-6.yml": "641986afce697c9e8351d34987fe0657bdec1fae8b9dcf4ef896d358ab8ee089",
         "lib/files/circleci-6.yml": "dcb6ff8ace44b1ce15bbc5bea4baf29592b061090026a31e7824722dba9f1269",
         "lib/files/jest-library.js": "322dd136d43514064c38fdf8cd999d6511d83af8efbb35d8d355a3f35937c6c4",
         "lib/files/wallaby.js": "bfd3a73af1c8ecd93d812d70e4e599406f14eda36920955df69a4109a3a2ed2e",
@@ -136,7 +136,7 @@ Object {
         "lib/files/appveyor-6+.yml",
       ],
       "hash": Object {
-        "lib/files/appveyor-6+.yml": "9e0e50b7491de2116f084544052633d33e12991bed3058a34d52dc60e11c60d0",
+        "lib/files/appveyor-6+.yml": "251406424b8cb49b1a8858ef7eb521ae57856964625daed85b591692e8f98e15",
         "lib/files/circleci-6+.yml": "d7ada4fec94d99d14f1cfc79160392b0c5f0499f9dd9ae49fd2fd5bc0736bb4c",
         "lib/files/jest-library.js": "322dd136d43514064c38fdf8cd999d6511d83af8efbb35d8d355a3f35937c6c4",
         "lib/files/wallaby.js": "bfd3a73af1c8ecd93d812d70e4e599406f14eda36920955df69a4109a3a2ed2e",
@@ -224,7 +224,7 @@ Object {
         "lib/files/appveyor-8.yml",
       ],
       "hash": Object {
-        "lib/files/appveyor-8.yml": "f5f678673bffb6883c53cad1683a2ff34e094d477b0519b7c4c631a2c8faad93",
+        "lib/files/appveyor-8.yml": "70c6174a960e80495eca240ba2516a933ff7f67abc1287de0d1a3068156448dc",
         "lib/files/circleci-8.yml": "309b68fe564cfb23b83269075da74d89597cb0b90978735580c50bdc1e9d6f64",
         "lib/files/jest-library.js": "322dd136d43514064c38fdf8cd999d6511d83af8efbb35d8d355a3f35937c6c4",
         "lib/files/wallaby.js": "bfd3a73af1c8ecd93d812d70e4e599406f14eda36920955df69a4109a3a2ed2e",
@@ -312,7 +312,7 @@ Object {
         "lib/files/appveyor-8+.yml",
       ],
       "hash": Object {
-        "lib/files/appveyor-8+.yml": "8f44996baf5246dfda92b123906e52a05e588dce02898ff41e0e9215ed7c0e8f",
+        "lib/files/appveyor-8+.yml": "9a237c2fcea7a8f3e5e3d89a248a763f6c078803afc547ab18478b2083c82492",
         "lib/files/circleci-8+.yml": "83b84a147f99c8dc58b87303fc83f374b49e53204172e0d4b26a43d9669645f8",
         "lib/files/jest-library.js": "322dd136d43514064c38fdf8cd999d6511d83af8efbb35d8d355a3f35937c6c4",
         "lib/files/wallaby.js": "bfd3a73af1c8ecd93d812d70e4e599406f14eda36920955df69a4109a3a2ed2e",
@@ -400,7 +400,7 @@ Object {
         "lib/files/appveyor-10.yml",
       ],
       "hash": Object {
-        "lib/files/appveyor-10.yml": "43b6ff48c644682cb3df533787c07cd6bcd9ab894124aa56ae098b4d4290da3e",
+        "lib/files/appveyor-10.yml": "f10642c8ced78fa8015fd1b40623e2940a2cc953147d5631ee57ab6144e82cc8",
         "lib/files/circleci-10.yml": "0b3f33221c70ec2ca3d14543833ae73938e1a1dd4bc68ee3c3bab1e27767f187",
         "lib/files/jest-library.js": "322dd136d43514064c38fdf8cd999d6511d83af8efbb35d8d355a3f35937c6c4",
         "lib/files/wallaby.js": "bfd3a73af1c8ecd93d812d70e4e599406f14eda36920955df69a4109a3a2ed2e",
@@ -488,7 +488,7 @@ Object {
         "lib/files/appveyor-6.yml",
       ],
       "hash": Object {
-        "lib/files/appveyor-6.yml": "8e10185be6cd9f880b0e93f7698ea51d6aa3dc3331e304cdeac256391bd538d2",
+        "lib/files/appveyor-6.yml": "641986afce697c9e8351d34987fe0657bdec1fae8b9dcf4ef896d358ab8ee089",
         "lib/files/circleci-6.yml": "dcb6ff8ace44b1ce15bbc5bea4baf29592b061090026a31e7824722dba9f1269",
         "lib/files/jest-library.js": "322dd136d43514064c38fdf8cd999d6511d83af8efbb35d8d355a3f35937c6c4",
         "lib/files/wallaby.js": "bfd3a73af1c8ecd93d812d70e4e599406f14eda36920955df69a4109a3a2ed2e",
@@ -573,7 +573,7 @@ Object {
         "lib/files/appveyor-6+.yml",
       ],
       "hash": Object {
-        "lib/files/appveyor-6+.yml": "9e0e50b7491de2116f084544052633d33e12991bed3058a34d52dc60e11c60d0",
+        "lib/files/appveyor-6+.yml": "251406424b8cb49b1a8858ef7eb521ae57856964625daed85b591692e8f98e15",
         "lib/files/circleci-6+.yml": "d7ada4fec94d99d14f1cfc79160392b0c5f0499f9dd9ae49fd2fd5bc0736bb4c",
         "lib/files/jest-library.js": "322dd136d43514064c38fdf8cd999d6511d83af8efbb35d8d355a3f35937c6c4",
         "lib/files/wallaby.js": "bfd3a73af1c8ecd93d812d70e4e599406f14eda36920955df69a4109a3a2ed2e",
@@ -658,7 +658,7 @@ Object {
         "lib/files/appveyor-8.yml",
       ],
       "hash": Object {
-        "lib/files/appveyor-8.yml": "f5f678673bffb6883c53cad1683a2ff34e094d477b0519b7c4c631a2c8faad93",
+        "lib/files/appveyor-8.yml": "70c6174a960e80495eca240ba2516a933ff7f67abc1287de0d1a3068156448dc",
         "lib/files/circleci-8.yml": "309b68fe564cfb23b83269075da74d89597cb0b90978735580c50bdc1e9d6f64",
         "lib/files/jest-library.js": "322dd136d43514064c38fdf8cd999d6511d83af8efbb35d8d355a3f35937c6c4",
         "lib/files/wallaby.js": "bfd3a73af1c8ecd93d812d70e4e599406f14eda36920955df69a4109a3a2ed2e",
@@ -743,7 +743,7 @@ Object {
         "lib/files/appveyor-8+.yml",
       ],
       "hash": Object {
-        "lib/files/appveyor-8+.yml": "8f44996baf5246dfda92b123906e52a05e588dce02898ff41e0e9215ed7c0e8f",
+        "lib/files/appveyor-8+.yml": "9a237c2fcea7a8f3e5e3d89a248a763f6c078803afc547ab18478b2083c82492",
         "lib/files/circleci-8+.yml": "83b84a147f99c8dc58b87303fc83f374b49e53204172e0d4b26a43d9669645f8",
         "lib/files/jest-library.js": "322dd136d43514064c38fdf8cd999d6511d83af8efbb35d8d355a3f35937c6c4",
         "lib/files/wallaby.js": "bfd3a73af1c8ecd93d812d70e4e599406f14eda36920955df69a4109a3a2ed2e",
@@ -828,7 +828,7 @@ Object {
         "lib/files/appveyor-10.yml",
       ],
       "hash": Object {
-        "lib/files/appveyor-10.yml": "43b6ff48c644682cb3df533787c07cd6bcd9ab894124aa56ae098b4d4290da3e",
+        "lib/files/appveyor-10.yml": "f10642c8ced78fa8015fd1b40623e2940a2cc953147d5631ee57ab6144e82cc8",
         "lib/files/circleci-10.yml": "0b3f33221c70ec2ca3d14543833ae73938e1a1dd4bc68ee3c3bab1e27767f187",
         "lib/files/jest-library.js": "322dd136d43514064c38fdf8cd999d6511d83af8efbb35d8d355a3f35937c6c4",
         "lib/files/wallaby.js": "bfd3a73af1c8ecd93d812d70e4e599406f14eda36920955df69a4109a3a2ed2e",
