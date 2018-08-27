@@ -40,17 +40,17 @@
     ]
   },
   "devDependencies": {
-    "@backtrack/core": "^0.1.20",
+    "@backtrack/core": "^0.1.22",
     "@backtrack/preset-preset": "^0.3.7"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "codecov": "^3.0.4",
     "husky": "^0.14.3",
-    "jest": "^23.4.1",
+    "jest": "^23.5.0",
     "jest-serializer-path": "^0.1.15",
     "jest-snapshot-serializer-function-name": "^1.1.0",
     "read-pkg": "^4.0.1",
-    "semver": "^5.5.0"
+    "semver": "^5.5.1"
   }
 }
