@@ -61,16 +61,23 @@ const wallaby = (wallabyConfig) => {
                  */
                 const fs = require('fs');
                 const path = require('path');
-                const modulesLink = path.join(
+                const realModules = path.join(
+                    wallaby.localProjectDir,
+                    'node_modules'
+                );
+                const linkedModules = path.join(
                     wallaby.projectCacheDir,
                     'node_modules'
                 );
-                if (fs.existsSync(modulesLink) === false)
-                    fs.symlinkSync(
-                        path.join(wallaby.localProjectDir, 'node_modules'),
-                        modulesLink,
-                        'dir'
-                    );
+
+                try {
+                    fs.symlinkSync(realModules, linkedModules, 'dir');
+                } catch (error) {
+                    if (error.code !== 'EEXIST') {
+                        throw error;
+                    }
+                }
+
                 /**
                  * Set to project local path so backtrack can correctly resolve modules
                  * https://github.com/wallabyjs/public/issues/1552#issuecomment-372002860
