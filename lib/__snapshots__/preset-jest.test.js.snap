@@ -2,30 +2,24 @@
 
 exports[`preset returns expected config - defaults node 6 1`] = `
 Object {
-  "config": Array [
-    Object {
-      "husky": Object {
-        "hooks": Object {
-          "pre-push": "npm run git-pre-push",
-        },
-      },
-    },
-  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
         ".circleci/config.yml": "<PROJECT_ROOT>/.circleci/config.yml",
+        ".huskyrc.js": "<PROJECT_ROOT>/.huskyrc.js",
         "appveyor.yml": "<PROJECT_ROOT>/appveyor.yml",
         "jest.config.js": "<PROJECT_ROOT>/jest.config.js",
         "wallaby.config.js": "<PROJECT_ROOT>/wallaby.config.js",
       },
       "allowChanges": Object {
         ".circleci/config.yml": false,
+        ".huskyrc.js": false,
         "appveyor.yml": false,
         "jest.config.js": false,
         "wallaby.config.js": false,
       },
       "files": Array [
+        ".huskyrc.js",
         "wallaby.config.js",
         ".circleci/config.yml",
         "jest.config.js",
@@ -33,6 +27,7 @@ Object {
       ],
       "ignoreUpdates": Object {
         ".circleci/config.yml": false,
+        ".huskyrc.js": false,
         "appveyor.yml": false,
         "jest.config.js": false,
         "wallaby.config.js": false,
@@ -49,8 +44,10 @@ Object {
         "lib/files/circleci-6.yml": "<PROJECT_ROOT>/lib/files/circleci-6.yml",
         "lib/files/jest-library.js": "<PROJECT_ROOT>/lib/files/jest-library.js",
         "lib/files/wallaby.js": "<PROJECT_ROOT>/lib/files/wallaby.js",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
       },
       "files": Array [
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
         "lib/files/wallaby.js",
         "lib/files/circleci-6.yml",
         "lib/files/jest-library.js",
@@ -60,11 +57,16 @@ Object {
         "lib/files/appveyor-6.yml": "641986afce697c9e8351d34987fe0657bdec1fae8b9dcf4ef896d358ab8ee089",
         "lib/files/circleci-6.yml": "4fd9d1887710e02871486fa21d6cc5d35d7dce9e55a0e4ee39bc5145c136d23c",
         "lib/files/jest-library.js": "322dd136d43514064c38fdf8cd999d6511d83af8efbb35d8d355a3f35937c6c4",
-        "lib/files/wallaby.js": "af6bd548d752764b0a87b1624aa47382420dad920452ab2aaeecf6086a902348",
+        "lib/files/wallaby.js": "2b97c1332251db5221dcd348aece8f3fa1b8248a66212d9d9945046ed7d0607b",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
     },
   },
+  "git-pre-commit": Array [
+    [Function noop],
+  ],
   "git-pre-push": Array [
+    [Function noop],
     "backtrack test",
   ],
   "packageJson": Array [
@@ -79,6 +81,7 @@ Object {
     "backtrack test",
   ],
   "resolve": Object {
+    "@backtrack/preset-git-hooks": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib",
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
@@ -99,30 +102,24 @@ Object {
 
 exports[`preset returns expected config - defaults node 6+ 1`] = `
 Object {
-  "config": Array [
-    Object {
-      "husky": Object {
-        "hooks": Object {
-          "pre-push": "npm run git-pre-push",
-        },
-      },
-    },
-  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
         ".circleci/config.yml": "<PROJECT_ROOT>/.circleci/config.yml",
+        ".huskyrc.js": "<PROJECT_ROOT>/.huskyrc.js",
         "appveyor.yml": "<PROJECT_ROOT>/appveyor.yml",
         "jest.config.js": "<PROJECT_ROOT>/jest.config.js",
         "wallaby.config.js": "<PROJECT_ROOT>/wallaby.config.js",
       },
       "allowChanges": Object {
         ".circleci/config.yml": false,
+        ".huskyrc.js": false,
         "appveyor.yml": false,
         "jest.config.js": false,
         "wallaby.config.js": false,
       },
       "files": Array [
+        ".huskyrc.js",
         "wallaby.config.js",
         ".circleci/config.yml",
         "jest.config.js",
@@ -130,6 +127,7 @@ Object {
       ],
       "ignoreUpdates": Object {
         ".circleci/config.yml": false,
+        ".huskyrc.js": false,
         "appveyor.yml": false,
         "jest.config.js": false,
         "wallaby.config.js": false,
@@ -146,8 +144,10 @@ Object {
         "lib/files/circleci-6+.yml": "<PROJECT_ROOT>/lib/files/circleci-6+.yml",
         "lib/files/jest-library.js": "<PROJECT_ROOT>/lib/files/jest-library.js",
         "lib/files/wallaby.js": "<PROJECT_ROOT>/lib/files/wallaby.js",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
       },
       "files": Array [
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
         "lib/files/wallaby.js",
         "lib/files/circleci-6+.yml",
         "lib/files/jest-library.js",
@@ -157,11 +157,16 @@ Object {
         "lib/files/appveyor-6+.yml": "251406424b8cb49b1a8858ef7eb521ae57856964625daed85b591692e8f98e15",
         "lib/files/circleci-6+.yml": "f8afa0de22d1ce5ee659b86993cf898e85b383599dab0f06ef052d1f4510ef37",
         "lib/files/jest-library.js": "322dd136d43514064c38fdf8cd999d6511d83af8efbb35d8d355a3f35937c6c4",
-        "lib/files/wallaby.js": "af6bd548d752764b0a87b1624aa47382420dad920452ab2aaeecf6086a902348",
+        "lib/files/wallaby.js": "2b97c1332251db5221dcd348aece8f3fa1b8248a66212d9d9945046ed7d0607b",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
     },
   },
+  "git-pre-commit": Array [
+    [Function noop],
+  ],
   "git-pre-push": Array [
+    [Function noop],
     "backtrack test",
   ],
   "packageJson": Array [
@@ -176,6 +181,7 @@ Object {
     "backtrack test",
   ],
   "resolve": Object {
+    "@backtrack/preset-git-hooks": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib",
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
@@ -196,30 +202,24 @@ Object {
 
 exports[`preset returns expected config - defaults node 8 1`] = `
 Object {
-  "config": Array [
-    Object {
-      "husky": Object {
-        "hooks": Object {
-          "pre-push": "npm run git-pre-push",
-        },
-      },
-    },
-  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
         ".circleci/config.yml": "<PROJECT_ROOT>/.circleci/config.yml",
+        ".huskyrc.js": "<PROJECT_ROOT>/.huskyrc.js",
         "appveyor.yml": "<PROJECT_ROOT>/appveyor.yml",
         "jest.config.js": "<PROJECT_ROOT>/jest.config.js",
         "wallaby.config.js": "<PROJECT_ROOT>/wallaby.config.js",
       },
       "allowChanges": Object {
         ".circleci/config.yml": false,
+        ".huskyrc.js": false,
         "appveyor.yml": false,
         "jest.config.js": false,
         "wallaby.config.js": false,
       },
       "files": Array [
+        ".huskyrc.js",
         "wallaby.config.js",
         ".circleci/config.yml",
         "jest.config.js",
@@ -227,6 +227,7 @@ Object {
       ],
       "ignoreUpdates": Object {
         ".circleci/config.yml": false,
+        ".huskyrc.js": false,
         "appveyor.yml": false,
         "jest.config.js": false,
         "wallaby.config.js": false,
@@ -243,8 +244,10 @@ Object {
         "lib/files/circleci-8.yml": "<PROJECT_ROOT>/lib/files/circleci-8.yml",
         "lib/files/jest-library.js": "<PROJECT_ROOT>/lib/files/jest-library.js",
         "lib/files/wallaby.js": "<PROJECT_ROOT>/lib/files/wallaby.js",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
       },
       "files": Array [
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
         "lib/files/wallaby.js",
         "lib/files/circleci-8.yml",
         "lib/files/jest-library.js",
@@ -254,11 +257,16 @@ Object {
         "lib/files/appveyor-8.yml": "70c6174a960e80495eca240ba2516a933ff7f67abc1287de0d1a3068156448dc",
         "lib/files/circleci-8.yml": "af4cc99927d13f77b7283335f7671d4943326a1e1e14c5ced4e4c5ab613b21a4",
         "lib/files/jest-library.js": "322dd136d43514064c38fdf8cd999d6511d83af8efbb35d8d355a3f35937c6c4",
-        "lib/files/wallaby.js": "af6bd548d752764b0a87b1624aa47382420dad920452ab2aaeecf6086a902348",
+        "lib/files/wallaby.js": "2b97c1332251db5221dcd348aece8f3fa1b8248a66212d9d9945046ed7d0607b",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
     },
   },
+  "git-pre-commit": Array [
+    [Function noop],
+  ],
   "git-pre-push": Array [
+    [Function noop],
     "backtrack test",
   ],
   "packageJson": Array [
@@ -273,6 +281,7 @@ Object {
     "backtrack test",
   ],
   "resolve": Object {
+    "@backtrack/preset-git-hooks": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib",
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
@@ -293,30 +302,24 @@ Object {
 
 exports[`preset returns expected config - defaults node 8+ 1`] = `
 Object {
-  "config": Array [
-    Object {
-      "husky": Object {
-        "hooks": Object {
-          "pre-push": "npm run git-pre-push",
-        },
-      },
-    },
-  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
         ".circleci/config.yml": "<PROJECT_ROOT>/.circleci/config.yml",
+        ".huskyrc.js": "<PROJECT_ROOT>/.huskyrc.js",
         "appveyor.yml": "<PROJECT_ROOT>/appveyor.yml",
         "jest.config.js": "<PROJECT_ROOT>/jest.config.js",
         "wallaby.config.js": "<PROJECT_ROOT>/wallaby.config.js",
       },
       "allowChanges": Object {
         ".circleci/config.yml": false,
+        ".huskyrc.js": false,
         "appveyor.yml": false,
         "jest.config.js": false,
         "wallaby.config.js": false,
       },
       "files": Array [
+        ".huskyrc.js",
         "wallaby.config.js",
         ".circleci/config.yml",
         "jest.config.js",
@@ -324,6 +327,7 @@ Object {
       ],
       "ignoreUpdates": Object {
         ".circleci/config.yml": false,
+        ".huskyrc.js": false,
         "appveyor.yml": false,
         "jest.config.js": false,
         "wallaby.config.js": false,
@@ -340,8 +344,10 @@ Object {
         "lib/files/circleci-8+.yml": "<PROJECT_ROOT>/lib/files/circleci-8+.yml",
         "lib/files/jest-library.js": "<PROJECT_ROOT>/lib/files/jest-library.js",
         "lib/files/wallaby.js": "<PROJECT_ROOT>/lib/files/wallaby.js",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
       },
       "files": Array [
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
         "lib/files/wallaby.js",
         "lib/files/circleci-8+.yml",
         "lib/files/jest-library.js",
@@ -351,11 +357,16 @@ Object {
         "lib/files/appveyor-8+.yml": "9a237c2fcea7a8f3e5e3d89a248a763f6c078803afc547ab18478b2083c82492",
         "lib/files/circleci-8+.yml": "d7fe10832d27fb9e6d7aeb958ac04d8a99175e5fcc9f0885a44cea634d57142f",
         "lib/files/jest-library.js": "322dd136d43514064c38fdf8cd999d6511d83af8efbb35d8d355a3f35937c6c4",
-        "lib/files/wallaby.js": "af6bd548d752764b0a87b1624aa47382420dad920452ab2aaeecf6086a902348",
+        "lib/files/wallaby.js": "2b97c1332251db5221dcd348aece8f3fa1b8248a66212d9d9945046ed7d0607b",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
     },
   },
+  "git-pre-commit": Array [
+    [Function noop],
+  ],
   "git-pre-push": Array [
+    [Function noop],
     "backtrack test",
   ],
   "packageJson": Array [
@@ -370,6 +381,7 @@ Object {
     "backtrack test",
   ],
   "resolve": Object {
+    "@backtrack/preset-git-hooks": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib",
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
@@ -390,30 +402,24 @@ Object {
 
 exports[`preset returns expected config - defaults node 10 1`] = `
 Object {
-  "config": Array [
-    Object {
-      "husky": Object {
-        "hooks": Object {
-          "pre-push": "npm run git-pre-push",
-        },
-      },
-    },
-  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
         ".circleci/config.yml": "<PROJECT_ROOT>/.circleci/config.yml",
+        ".huskyrc.js": "<PROJECT_ROOT>/.huskyrc.js",
         "appveyor.yml": "<PROJECT_ROOT>/appveyor.yml",
         "jest.config.js": "<PROJECT_ROOT>/jest.config.js",
         "wallaby.config.js": "<PROJECT_ROOT>/wallaby.config.js",
       },
       "allowChanges": Object {
         ".circleci/config.yml": false,
+        ".huskyrc.js": false,
         "appveyor.yml": false,
         "jest.config.js": false,
         "wallaby.config.js": false,
       },
       "files": Array [
+        ".huskyrc.js",
         "wallaby.config.js",
         ".circleci/config.yml",
         "jest.config.js",
@@ -421,6 +427,7 @@ Object {
       ],
       "ignoreUpdates": Object {
         ".circleci/config.yml": false,
+        ".huskyrc.js": false,
         "appveyor.yml": false,
         "jest.config.js": false,
         "wallaby.config.js": false,
@@ -437,8 +444,10 @@ Object {
         "lib/files/circleci-10.yml": "<PROJECT_ROOT>/lib/files/circleci-10.yml",
         "lib/files/jest-library.js": "<PROJECT_ROOT>/lib/files/jest-library.js",
         "lib/files/wallaby.js": "<PROJECT_ROOT>/lib/files/wallaby.js",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
       },
       "files": Array [
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
         "lib/files/wallaby.js",
         "lib/files/circleci-10.yml",
         "lib/files/jest-library.js",
@@ -448,11 +457,16 @@ Object {
         "lib/files/appveyor-10.yml": "f10642c8ced78fa8015fd1b40623e2940a2cc953147d5631ee57ab6144e82cc8",
         "lib/files/circleci-10.yml": "0845f9fe3b3f3b12db57e4dbe68ca66fa0c7464cfe717112682a30a099096285",
         "lib/files/jest-library.js": "322dd136d43514064c38fdf8cd999d6511d83af8efbb35d8d355a3f35937c6c4",
-        "lib/files/wallaby.js": "af6bd548d752764b0a87b1624aa47382420dad920452ab2aaeecf6086a902348",
+        "lib/files/wallaby.js": "2b97c1332251db5221dcd348aece8f3fa1b8248a66212d9d9945046ed7d0607b",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
     },
   },
+  "git-pre-commit": Array [
+    [Function noop],
+  ],
   "git-pre-push": Array [
+    [Function noop],
     "backtrack test",
   ],
   "packageJson": Array [
@@ -467,6 +481,7 @@ Object {
     "backtrack test",
   ],
   "resolve": Object {
+    "@backtrack/preset-git-hooks": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib",
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
@@ -487,30 +502,24 @@ Object {
 
 exports[`preset returns expected config - isApp = true node 6 1`] = `
 Object {
-  "config": Array [
-    Object {
-      "husky": Object {
-        "hooks": Object {
-          "pre-push": "npm run git-pre-push",
-        },
-      },
-    },
-  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
         ".circleci/config.yml": "<PROJECT_ROOT>/.circleci/config.yml",
+        ".huskyrc.js": "<PROJECT_ROOT>/.huskyrc.js",
         "appveyor.yml": "<PROJECT_ROOT>/appveyor.yml",
         "jest.config.js": "<PROJECT_ROOT>/jest.config.js",
         "wallaby.config.js": "<PROJECT_ROOT>/wallaby.config.js",
       },
       "allowChanges": Object {
         ".circleci/config.yml": false,
+        ".huskyrc.js": false,
         "appveyor.yml": false,
         "jest.config.js": false,
         "wallaby.config.js": false,
       },
       "files": Array [
+        ".huskyrc.js",
         "wallaby.config.js",
         ".circleci/config.yml",
         "jest.config.js",
@@ -518,6 +527,7 @@ Object {
       ],
       "ignoreUpdates": Object {
         ".circleci/config.yml": false,
+        ".huskyrc.js": false,
         "appveyor.yml": false,
         "jest.config.js": false,
         "wallaby.config.js": false,
@@ -534,8 +544,10 @@ Object {
         "lib/files/circleci-6.yml": "<PROJECT_ROOT>/lib/files/circleci-6.yml",
         "lib/files/jest-library.js": "<PROJECT_ROOT>/lib/files/jest-library.js",
         "lib/files/wallaby.js": "<PROJECT_ROOT>/lib/files/wallaby.js",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
       },
       "files": Array [
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
         "lib/files/wallaby.js",
         "lib/files/circleci-6.yml",
         "lib/files/jest-library.js",
@@ -545,11 +557,16 @@ Object {
         "lib/files/appveyor-6.yml": "641986afce697c9e8351d34987fe0657bdec1fae8b9dcf4ef896d358ab8ee089",
         "lib/files/circleci-6.yml": "4fd9d1887710e02871486fa21d6cc5d35d7dce9e55a0e4ee39bc5145c136d23c",
         "lib/files/jest-library.js": "322dd136d43514064c38fdf8cd999d6511d83af8efbb35d8d355a3f35937c6c4",
-        "lib/files/wallaby.js": "af6bd548d752764b0a87b1624aa47382420dad920452ab2aaeecf6086a902348",
+        "lib/files/wallaby.js": "2b97c1332251db5221dcd348aece8f3fa1b8248a66212d9d9945046ed7d0607b",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
     },
   },
+  "git-pre-commit": Array [
+    [Function noop],
+  ],
   "git-pre-push": Array [
+    [Function noop],
     "backtrack test",
   ],
   "packageJson": Array [
@@ -561,6 +578,7 @@ Object {
     },
   ],
   "resolve": Object {
+    "@backtrack/preset-git-hooks": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib",
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
@@ -581,30 +599,24 @@ Object {
 
 exports[`preset returns expected config - isApp = true node 6+ 1`] = `
 Object {
-  "config": Array [
-    Object {
-      "husky": Object {
-        "hooks": Object {
-          "pre-push": "npm run git-pre-push",
-        },
-      },
-    },
-  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
         ".circleci/config.yml": "<PROJECT_ROOT>/.circleci/config.yml",
+        ".huskyrc.js": "<PROJECT_ROOT>/.huskyrc.js",
         "appveyor.yml": "<PROJECT_ROOT>/appveyor.yml",
         "jest.config.js": "<PROJECT_ROOT>/jest.config.js",
         "wallaby.config.js": "<PROJECT_ROOT>/wallaby.config.js",
       },
       "allowChanges": Object {
         ".circleci/config.yml": false,
+        ".huskyrc.js": false,
         "appveyor.yml": false,
         "jest.config.js": false,
         "wallaby.config.js": false,
       },
       "files": Array [
+        ".huskyrc.js",
         "wallaby.config.js",
         ".circleci/config.yml",
         "jest.config.js",
@@ -612,6 +624,7 @@ Object {
       ],
       "ignoreUpdates": Object {
         ".circleci/config.yml": false,
+        ".huskyrc.js": false,
         "appveyor.yml": false,
         "jest.config.js": false,
         "wallaby.config.js": false,
@@ -628,8 +641,10 @@ Object {
         "lib/files/circleci-6+.yml": "<PROJECT_ROOT>/lib/files/circleci-6+.yml",
         "lib/files/jest-library.js": "<PROJECT_ROOT>/lib/files/jest-library.js",
         "lib/files/wallaby.js": "<PROJECT_ROOT>/lib/files/wallaby.js",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
       },
       "files": Array [
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
         "lib/files/wallaby.js",
         "lib/files/circleci-6+.yml",
         "lib/files/jest-library.js",
@@ -639,11 +654,16 @@ Object {
         "lib/files/appveyor-6+.yml": "251406424b8cb49b1a8858ef7eb521ae57856964625daed85b591692e8f98e15",
         "lib/files/circleci-6+.yml": "f8afa0de22d1ce5ee659b86993cf898e85b383599dab0f06ef052d1f4510ef37",
         "lib/files/jest-library.js": "322dd136d43514064c38fdf8cd999d6511d83af8efbb35d8d355a3f35937c6c4",
-        "lib/files/wallaby.js": "af6bd548d752764b0a87b1624aa47382420dad920452ab2aaeecf6086a902348",
+        "lib/files/wallaby.js": "2b97c1332251db5221dcd348aece8f3fa1b8248a66212d9d9945046ed7d0607b",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
     },
   },
+  "git-pre-commit": Array [
+    [Function noop],
+  ],
   "git-pre-push": Array [
+    [Function noop],
     "backtrack test",
   ],
   "packageJson": Array [
@@ -655,6 +675,7 @@ Object {
     },
   ],
   "resolve": Object {
+    "@backtrack/preset-git-hooks": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib",
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
@@ -675,30 +696,24 @@ Object {
 
 exports[`preset returns expected config - isApp = true node 8 1`] = `
 Object {
-  "config": Array [
-    Object {
-      "husky": Object {
-        "hooks": Object {
-          "pre-push": "npm run git-pre-push",
-        },
-      },
-    },
-  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
         ".circleci/config.yml": "<PROJECT_ROOT>/.circleci/config.yml",
+        ".huskyrc.js": "<PROJECT_ROOT>/.huskyrc.js",
         "appveyor.yml": "<PROJECT_ROOT>/appveyor.yml",
         "jest.config.js": "<PROJECT_ROOT>/jest.config.js",
         "wallaby.config.js": "<PROJECT_ROOT>/wallaby.config.js",
       },
       "allowChanges": Object {
         ".circleci/config.yml": false,
+        ".huskyrc.js": false,
         "appveyor.yml": false,
         "jest.config.js": false,
         "wallaby.config.js": false,
       },
       "files": Array [
+        ".huskyrc.js",
         "wallaby.config.js",
         ".circleci/config.yml",
         "jest.config.js",
@@ -706,6 +721,7 @@ Object {
       ],
       "ignoreUpdates": Object {
         ".circleci/config.yml": false,
+        ".huskyrc.js": false,
         "appveyor.yml": false,
         "jest.config.js": false,
         "wallaby.config.js": false,
@@ -722,8 +738,10 @@ Object {
         "lib/files/circleci-8.yml": "<PROJECT_ROOT>/lib/files/circleci-8.yml",
         "lib/files/jest-library.js": "<PROJECT_ROOT>/lib/files/jest-library.js",
         "lib/files/wallaby.js": "<PROJECT_ROOT>/lib/files/wallaby.js",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
       },
       "files": Array [
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
         "lib/files/wallaby.js",
         "lib/files/circleci-8.yml",
         "lib/files/jest-library.js",
@@ -733,11 +751,16 @@ Object {
         "lib/files/appveyor-8.yml": "70c6174a960e80495eca240ba2516a933ff7f67abc1287de0d1a3068156448dc",
         "lib/files/circleci-8.yml": "af4cc99927d13f77b7283335f7671d4943326a1e1e14c5ced4e4c5ab613b21a4",
         "lib/files/jest-library.js": "322dd136d43514064c38fdf8cd999d6511d83af8efbb35d8d355a3f35937c6c4",
-        "lib/files/wallaby.js": "af6bd548d752764b0a87b1624aa47382420dad920452ab2aaeecf6086a902348",
+        "lib/files/wallaby.js": "2b97c1332251db5221dcd348aece8f3fa1b8248a66212d9d9945046ed7d0607b",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
     },
   },
+  "git-pre-commit": Array [
+    [Function noop],
+  ],
   "git-pre-push": Array [
+    [Function noop],
     "backtrack test",
   ],
   "packageJson": Array [
@@ -749,6 +772,7 @@ Object {
     },
   ],
   "resolve": Object {
+    "@backtrack/preset-git-hooks": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib",
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
@@ -769,30 +793,24 @@ Object {
 
 exports[`preset returns expected config - isApp = true node 8+ 1`] = `
 Object {
-  "config": Array [
-    Object {
-      "husky": Object {
-        "hooks": Object {
-          "pre-push": "npm run git-pre-push",
-        },
-      },
-    },
-  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
         ".circleci/config.yml": "<PROJECT_ROOT>/.circleci/config.yml",
+        ".huskyrc.js": "<PROJECT_ROOT>/.huskyrc.js",
         "appveyor.yml": "<PROJECT_ROOT>/appveyor.yml",
         "jest.config.js": "<PROJECT_ROOT>/jest.config.js",
         "wallaby.config.js": "<PROJECT_ROOT>/wallaby.config.js",
       },
       "allowChanges": Object {
         ".circleci/config.yml": false,
+        ".huskyrc.js": false,
         "appveyor.yml": false,
         "jest.config.js": false,
         "wallaby.config.js": false,
       },
       "files": Array [
+        ".huskyrc.js",
         "wallaby.config.js",
         ".circleci/config.yml",
         "jest.config.js",
@@ -800,6 +818,7 @@ Object {
       ],
       "ignoreUpdates": Object {
         ".circleci/config.yml": false,
+        ".huskyrc.js": false,
         "appveyor.yml": false,
         "jest.config.js": false,
         "wallaby.config.js": false,
@@ -816,8 +835,10 @@ Object {
         "lib/files/circleci-8+.yml": "<PROJECT_ROOT>/lib/files/circleci-8+.yml",
         "lib/files/jest-library.js": "<PROJECT_ROOT>/lib/files/jest-library.js",
         "lib/files/wallaby.js": "<PROJECT_ROOT>/lib/files/wallaby.js",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
       },
       "files": Array [
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
         "lib/files/wallaby.js",
         "lib/files/circleci-8+.yml",
         "lib/files/jest-library.js",
@@ -827,11 +848,16 @@ Object {
         "lib/files/appveyor-8+.yml": "9a237c2fcea7a8f3e5e3d89a248a763f6c078803afc547ab18478b2083c82492",
         "lib/files/circleci-8+.yml": "d7fe10832d27fb9e6d7aeb958ac04d8a99175e5fcc9f0885a44cea634d57142f",
         "lib/files/jest-library.js": "322dd136d43514064c38fdf8cd999d6511d83af8efbb35d8d355a3f35937c6c4",
-        "lib/files/wallaby.js": "af6bd548d752764b0a87b1624aa47382420dad920452ab2aaeecf6086a902348",
+        "lib/files/wallaby.js": "2b97c1332251db5221dcd348aece8f3fa1b8248a66212d9d9945046ed7d0607b",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
     },
   },
+  "git-pre-commit": Array [
+    [Function noop],
+  ],
   "git-pre-push": Array [
+    [Function noop],
     "backtrack test",
   ],
   "packageJson": Array [
@@ -843,6 +869,7 @@ Object {
     },
   ],
   "resolve": Object {
+    "@backtrack/preset-git-hooks": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib",
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
@@ -863,30 +890,24 @@ Object {
 
 exports[`preset returns expected config - isApp = true node 10 1`] = `
 Object {
-  "config": Array [
-    Object {
-      "husky": Object {
-        "hooks": Object {
-          "pre-push": "npm run git-pre-push",
-        },
-      },
-    },
-  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
         ".circleci/config.yml": "<PROJECT_ROOT>/.circleci/config.yml",
+        ".huskyrc.js": "<PROJECT_ROOT>/.huskyrc.js",
         "appveyor.yml": "<PROJECT_ROOT>/appveyor.yml",
         "jest.config.js": "<PROJECT_ROOT>/jest.config.js",
         "wallaby.config.js": "<PROJECT_ROOT>/wallaby.config.js",
       },
       "allowChanges": Object {
         ".circleci/config.yml": false,
+        ".huskyrc.js": false,
         "appveyor.yml": false,
         "jest.config.js": false,
         "wallaby.config.js": false,
       },
       "files": Array [
+        ".huskyrc.js",
         "wallaby.config.js",
         ".circleci/config.yml",
         "jest.config.js",
@@ -894,6 +915,7 @@ Object {
       ],
       "ignoreUpdates": Object {
         ".circleci/config.yml": false,
+        ".huskyrc.js": false,
         "appveyor.yml": false,
         "jest.config.js": false,
         "wallaby.config.js": false,
@@ -910,8 +932,10 @@ Object {
         "lib/files/circleci-10.yml": "<PROJECT_ROOT>/lib/files/circleci-10.yml",
         "lib/files/jest-library.js": "<PROJECT_ROOT>/lib/files/jest-library.js",
         "lib/files/wallaby.js": "<PROJECT_ROOT>/lib/files/wallaby.js",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
       },
       "files": Array [
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
         "lib/files/wallaby.js",
         "lib/files/circleci-10.yml",
         "lib/files/jest-library.js",
@@ -921,11 +945,16 @@ Object {
         "lib/files/appveyor-10.yml": "f10642c8ced78fa8015fd1b40623e2940a2cc953147d5631ee57ab6144e82cc8",
         "lib/files/circleci-10.yml": "0845f9fe3b3f3b12db57e4dbe68ca66fa0c7464cfe717112682a30a099096285",
         "lib/files/jest-library.js": "322dd136d43514064c38fdf8cd999d6511d83af8efbb35d8d355a3f35937c6c4",
-        "lib/files/wallaby.js": "af6bd548d752764b0a87b1624aa47382420dad920452ab2aaeecf6086a902348",
+        "lib/files/wallaby.js": "2b97c1332251db5221dcd348aece8f3fa1b8248a66212d9d9945046ed7d0607b",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
     },
   },
+  "git-pre-commit": Array [
+    [Function noop],
+  ],
   "git-pre-push": Array [
+    [Function noop],
     "backtrack test",
   ],
   "packageJson": Array [
@@ -937,6 +966,7 @@ Object {
     },
   ],
   "resolve": Object {
+    "@backtrack/preset-git-hooks": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib",
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
@@ -957,34 +987,29 @@ Object {
 
 exports[`preset returns expected config - isApp = true, windows false node 6 1`] = `
 Object {
-  "config": Array [
-    Object {
-      "husky": Object {
-        "hooks": Object {
-          "pre-push": "npm run git-pre-push",
-        },
-      },
-    },
-  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
         ".circleci/config.yml": "<PROJECT_ROOT>/.circleci/config.yml",
+        ".huskyrc.js": "<PROJECT_ROOT>/.huskyrc.js",
         "jest.config.js": "<PROJECT_ROOT>/jest.config.js",
         "wallaby.config.js": "<PROJECT_ROOT>/wallaby.config.js",
       },
       "allowChanges": Object {
         ".circleci/config.yml": false,
+        ".huskyrc.js": false,
         "jest.config.js": false,
         "wallaby.config.js": false,
       },
       "files": Array [
+        ".huskyrc.js",
         "wallaby.config.js",
         ".circleci/config.yml",
         "jest.config.js",
       ],
       "ignoreUpdates": Object {
         ".circleci/config.yml": false,
+        ".huskyrc.js": false,
         "jest.config.js": false,
         "wallaby.config.js": false,
       },
@@ -999,8 +1024,10 @@ Object {
         "lib/files/circleci-6.yml": "<PROJECT_ROOT>/lib/files/circleci-6.yml",
         "lib/files/jest-app.js": "<PROJECT_ROOT>/lib/files/jest-app.js",
         "lib/files/wallaby.js": "<PROJECT_ROOT>/lib/files/wallaby.js",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
       },
       "files": Array [
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
         "lib/files/wallaby.js",
         "lib/files/circleci-6.yml",
         "lib/files/jest-app.js",
@@ -1008,11 +1035,16 @@ Object {
       "hash": Object {
         "lib/files/circleci-6.yml": "4fd9d1887710e02871486fa21d6cc5d35d7dce9e55a0e4ee39bc5145c136d23c",
         "lib/files/jest-app.js": "4a1c02ec2ad2ed327246fea56e516a92bd7b57fedaba14da38faaa117410670d",
-        "lib/files/wallaby.js": "af6bd548d752764b0a87b1624aa47382420dad920452ab2aaeecf6086a902348",
+        "lib/files/wallaby.js": "2b97c1332251db5221dcd348aece8f3fa1b8248a66212d9d9945046ed7d0607b",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
     },
   },
+  "git-pre-commit": Array [
+    [Function noop],
+  ],
   "git-pre-push": Array [
+    [Function noop],
     "backtrack test",
   ],
   "packageJson": Array [
@@ -1024,6 +1056,7 @@ Object {
     },
   ],
   "resolve": Object {
+    "@backtrack/preset-git-hooks": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib",
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
@@ -1044,34 +1077,29 @@ Object {
 
 exports[`preset returns expected config - isApp = true, windows false node 6+ 1`] = `
 Object {
-  "config": Array [
-    Object {
-      "husky": Object {
-        "hooks": Object {
-          "pre-push": "npm run git-pre-push",
-        },
-      },
-    },
-  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
         ".circleci/config.yml": "<PROJECT_ROOT>/.circleci/config.yml",
+        ".huskyrc.js": "<PROJECT_ROOT>/.huskyrc.js",
         "jest.config.js": "<PROJECT_ROOT>/jest.config.js",
         "wallaby.config.js": "<PROJECT_ROOT>/wallaby.config.js",
       },
       "allowChanges": Object {
         ".circleci/config.yml": false,
+        ".huskyrc.js": false,
         "jest.config.js": false,
         "wallaby.config.js": false,
       },
       "files": Array [
+        ".huskyrc.js",
         "wallaby.config.js",
         ".circleci/config.yml",
         "jest.config.js",
       ],
       "ignoreUpdates": Object {
         ".circleci/config.yml": false,
+        ".huskyrc.js": false,
         "jest.config.js": false,
         "wallaby.config.js": false,
       },
@@ -1086,8 +1114,10 @@ Object {
         "lib/files/circleci-6+.yml": "<PROJECT_ROOT>/lib/files/circleci-6+.yml",
         "lib/files/jest-app.js": "<PROJECT_ROOT>/lib/files/jest-app.js",
         "lib/files/wallaby.js": "<PROJECT_ROOT>/lib/files/wallaby.js",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
       },
       "files": Array [
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
         "lib/files/wallaby.js",
         "lib/files/circleci-6+.yml",
         "lib/files/jest-app.js",
@@ -1095,11 +1125,16 @@ Object {
       "hash": Object {
         "lib/files/circleci-6+.yml": "f8afa0de22d1ce5ee659b86993cf898e85b383599dab0f06ef052d1f4510ef37",
         "lib/files/jest-app.js": "4a1c02ec2ad2ed327246fea56e516a92bd7b57fedaba14da38faaa117410670d",
-        "lib/files/wallaby.js": "af6bd548d752764b0a87b1624aa47382420dad920452ab2aaeecf6086a902348",
+        "lib/files/wallaby.js": "2b97c1332251db5221dcd348aece8f3fa1b8248a66212d9d9945046ed7d0607b",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
     },
   },
+  "git-pre-commit": Array [
+    [Function noop],
+  ],
   "git-pre-push": Array [
+    [Function noop],
     "backtrack test",
   ],
   "packageJson": Array [
@@ -1111,6 +1146,7 @@ Object {
     },
   ],
   "resolve": Object {
+    "@backtrack/preset-git-hooks": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib",
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
@@ -1131,34 +1167,29 @@ Object {
 
 exports[`preset returns expected config - isApp = true, windows false node 8 1`] = `
 Object {
-  "config": Array [
-    Object {
-      "husky": Object {
-        "hooks": Object {
-          "pre-push": "npm run git-pre-push",
-        },
-      },
-    },
-  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
         ".circleci/config.yml": "<PROJECT_ROOT>/.circleci/config.yml",
+        ".huskyrc.js": "<PROJECT_ROOT>/.huskyrc.js",
         "jest.config.js": "<PROJECT_ROOT>/jest.config.js",
         "wallaby.config.js": "<PROJECT_ROOT>/wallaby.config.js",
       },
       "allowChanges": Object {
         ".circleci/config.yml": false,
+        ".huskyrc.js": false,
         "jest.config.js": false,
         "wallaby.config.js": false,
       },
       "files": Array [
+        ".huskyrc.js",
         "wallaby.config.js",
         ".circleci/config.yml",
         "jest.config.js",
       ],
       "ignoreUpdates": Object {
         ".circleci/config.yml": false,
+        ".huskyrc.js": false,
         "jest.config.js": false,
         "wallaby.config.js": false,
       },
@@ -1173,8 +1204,10 @@ Object {
         "lib/files/circleci-8.yml": "<PROJECT_ROOT>/lib/files/circleci-8.yml",
         "lib/files/jest-app.js": "<PROJECT_ROOT>/lib/files/jest-app.js",
         "lib/files/wallaby.js": "<PROJECT_ROOT>/lib/files/wallaby.js",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
       },
       "files": Array [
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
         "lib/files/wallaby.js",
         "lib/files/circleci-8.yml",
         "lib/files/jest-app.js",
@@ -1182,11 +1215,16 @@ Object {
       "hash": Object {
         "lib/files/circleci-8.yml": "af4cc99927d13f77b7283335f7671d4943326a1e1e14c5ced4e4c5ab613b21a4",
         "lib/files/jest-app.js": "4a1c02ec2ad2ed327246fea56e516a92bd7b57fedaba14da38faaa117410670d",
-        "lib/files/wallaby.js": "af6bd548d752764b0a87b1624aa47382420dad920452ab2aaeecf6086a902348",
+        "lib/files/wallaby.js": "2b97c1332251db5221dcd348aece8f3fa1b8248a66212d9d9945046ed7d0607b",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
     },
   },
+  "git-pre-commit": Array [
+    [Function noop],
+  ],
   "git-pre-push": Array [
+    [Function noop],
     "backtrack test",
   ],
   "packageJson": Array [
@@ -1198,6 +1236,7 @@ Object {
     },
   ],
   "resolve": Object {
+    "@backtrack/preset-git-hooks": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib",
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
@@ -1218,34 +1257,29 @@ Object {
 
 exports[`preset returns expected config - isApp = true, windows false node 8+ 1`] = `
 Object {
-  "config": Array [
-    Object {
-      "husky": Object {
-        "hooks": Object {
-          "pre-push": "npm run git-pre-push",
-        },
-      },
-    },
-  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
         ".circleci/config.yml": "<PROJECT_ROOT>/.circleci/config.yml",
+        ".huskyrc.js": "<PROJECT_ROOT>/.huskyrc.js",
         "jest.config.js": "<PROJECT_ROOT>/jest.config.js",
         "wallaby.config.js": "<PROJECT_ROOT>/wallaby.config.js",
       },
       "allowChanges": Object {
         ".circleci/config.yml": false,
+        ".huskyrc.js": false,
         "jest.config.js": false,
         "wallaby.config.js": false,
       },
       "files": Array [
+        ".huskyrc.js",
         "wallaby.config.js",
         ".circleci/config.yml",
         "jest.config.js",
       ],
       "ignoreUpdates": Object {
         ".circleci/config.yml": false,
+        ".huskyrc.js": false,
         "jest.config.js": false,
         "wallaby.config.js": false,
       },
@@ -1260,8 +1294,10 @@ Object {
         "lib/files/circleci-8+.yml": "<PROJECT_ROOT>/lib/files/circleci-8+.yml",
         "lib/files/jest-app.js": "<PROJECT_ROOT>/lib/files/jest-app.js",
         "lib/files/wallaby.js": "<PROJECT_ROOT>/lib/files/wallaby.js",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
       },
       "files": Array [
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
         "lib/files/wallaby.js",
         "lib/files/circleci-8+.yml",
         "lib/files/jest-app.js",
@@ -1269,11 +1305,16 @@ Object {
       "hash": Object {
         "lib/files/circleci-8+.yml": "d7fe10832d27fb9e6d7aeb958ac04d8a99175e5fcc9f0885a44cea634d57142f",
         "lib/files/jest-app.js": "4a1c02ec2ad2ed327246fea56e516a92bd7b57fedaba14da38faaa117410670d",
-        "lib/files/wallaby.js": "af6bd548d752764b0a87b1624aa47382420dad920452ab2aaeecf6086a902348",
+        "lib/files/wallaby.js": "2b97c1332251db5221dcd348aece8f3fa1b8248a66212d9d9945046ed7d0607b",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
     },
   },
+  "git-pre-commit": Array [
+    [Function noop],
+  ],
   "git-pre-push": Array [
+    [Function noop],
     "backtrack test",
   ],
   "packageJson": Array [
@@ -1285,6 +1326,7 @@ Object {
     },
   ],
   "resolve": Object {
+    "@backtrack/preset-git-hooks": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib",
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
@@ -1305,34 +1347,29 @@ Object {
 
 exports[`preset returns expected config - isApp = true, windows false node 10 1`] = `
 Object {
-  "config": Array [
-    Object {
-      "husky": Object {
-        "hooks": Object {
-          "pre-push": "npm run git-pre-push",
-        },
-      },
-    },
-  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
         ".circleci/config.yml": "<PROJECT_ROOT>/.circleci/config.yml",
+        ".huskyrc.js": "<PROJECT_ROOT>/.huskyrc.js",
         "jest.config.js": "<PROJECT_ROOT>/jest.config.js",
         "wallaby.config.js": "<PROJECT_ROOT>/wallaby.config.js",
       },
       "allowChanges": Object {
         ".circleci/config.yml": false,
+        ".huskyrc.js": false,
         "jest.config.js": false,
         "wallaby.config.js": false,
       },
       "files": Array [
+        ".huskyrc.js",
         "wallaby.config.js",
         ".circleci/config.yml",
         "jest.config.js",
       ],
       "ignoreUpdates": Object {
         ".circleci/config.yml": false,
+        ".huskyrc.js": false,
         "jest.config.js": false,
         "wallaby.config.js": false,
       },
@@ -1347,8 +1384,10 @@ Object {
         "lib/files/circleci-10.yml": "<PROJECT_ROOT>/lib/files/circleci-10.yml",
         "lib/files/jest-app.js": "<PROJECT_ROOT>/lib/files/jest-app.js",
         "lib/files/wallaby.js": "<PROJECT_ROOT>/lib/files/wallaby.js",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
       },
       "files": Array [
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
         "lib/files/wallaby.js",
         "lib/files/circleci-10.yml",
         "lib/files/jest-app.js",
@@ -1356,11 +1395,16 @@ Object {
       "hash": Object {
         "lib/files/circleci-10.yml": "0845f9fe3b3f3b12db57e4dbe68ca66fa0c7464cfe717112682a30a099096285",
         "lib/files/jest-app.js": "4a1c02ec2ad2ed327246fea56e516a92bd7b57fedaba14da38faaa117410670d",
-        "lib/files/wallaby.js": "af6bd548d752764b0a87b1624aa47382420dad920452ab2aaeecf6086a902348",
+        "lib/files/wallaby.js": "2b97c1332251db5221dcd348aece8f3fa1b8248a66212d9d9945046ed7d0607b",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
     },
   },
+  "git-pre-commit": Array [
+    [Function noop],
+  ],
   "git-pre-push": Array [
+    [Function noop],
     "backtrack test",
   ],
   "packageJson": Array [
@@ -1372,6 +1416,7 @@ Object {
     },
   ],
   "resolve": Object {
+    "@backtrack/preset-git-hooks": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib",
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
@@ -1392,34 +1437,29 @@ Object {
 
 exports[`preset returns expected config - windows = false node 6 1`] = `
 Object {
-  "config": Array [
-    Object {
-      "husky": Object {
-        "hooks": Object {
-          "pre-push": "npm run git-pre-push",
-        },
-      },
-    },
-  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
         ".circleci/config.yml": "<PROJECT_ROOT>/.circleci/config.yml",
+        ".huskyrc.js": "<PROJECT_ROOT>/.huskyrc.js",
         "jest.config.js": "<PROJECT_ROOT>/jest.config.js",
         "wallaby.config.js": "<PROJECT_ROOT>/wallaby.config.js",
       },
       "allowChanges": Object {
         ".circleci/config.yml": false,
+        ".huskyrc.js": false,
         "jest.config.js": false,
         "wallaby.config.js": false,
       },
       "files": Array [
+        ".huskyrc.js",
         "wallaby.config.js",
         ".circleci/config.yml",
         "jest.config.js",
       ],
       "ignoreUpdates": Object {
         ".circleci/config.yml": false,
+        ".huskyrc.js": false,
         "jest.config.js": false,
         "wallaby.config.js": false,
       },
@@ -1434,8 +1474,10 @@ Object {
         "lib/files/circleci-6.yml": "<PROJECT_ROOT>/lib/files/circleci-6.yml",
         "lib/files/jest-app.js": "<PROJECT_ROOT>/lib/files/jest-app.js",
         "lib/files/wallaby.js": "<PROJECT_ROOT>/lib/files/wallaby.js",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
       },
       "files": Array [
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
         "lib/files/wallaby.js",
         "lib/files/circleci-6.yml",
         "lib/files/jest-app.js",
@@ -1443,11 +1485,16 @@ Object {
       "hash": Object {
         "lib/files/circleci-6.yml": "4fd9d1887710e02871486fa21d6cc5d35d7dce9e55a0e4ee39bc5145c136d23c",
         "lib/files/jest-app.js": "4a1c02ec2ad2ed327246fea56e516a92bd7b57fedaba14da38faaa117410670d",
-        "lib/files/wallaby.js": "af6bd548d752764b0a87b1624aa47382420dad920452ab2aaeecf6086a902348",
+        "lib/files/wallaby.js": "2b97c1332251db5221dcd348aece8f3fa1b8248a66212d9d9945046ed7d0607b",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
     },
   },
+  "git-pre-commit": Array [
+    [Function noop],
+  ],
   "git-pre-push": Array [
+    [Function noop],
     "backtrack test",
   ],
   "packageJson": Array [
@@ -1462,6 +1509,7 @@ Object {
     "backtrack test",
   ],
   "resolve": Object {
+    "@backtrack/preset-git-hooks": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib",
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
@@ -1482,34 +1530,29 @@ Object {
 
 exports[`preset returns expected config - windows = false node 6+ 1`] = `
 Object {
-  "config": Array [
-    Object {
-      "husky": Object {
-        "hooks": Object {
-          "pre-push": "npm run git-pre-push",
-        },
-      },
-    },
-  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
         ".circleci/config.yml": "<PROJECT_ROOT>/.circleci/config.yml",
+        ".huskyrc.js": "<PROJECT_ROOT>/.huskyrc.js",
         "jest.config.js": "<PROJECT_ROOT>/jest.config.js",
         "wallaby.config.js": "<PROJECT_ROOT>/wallaby.config.js",
       },
       "allowChanges": Object {
         ".circleci/config.yml": false,
+        ".huskyrc.js": false,
         "jest.config.js": false,
         "wallaby.config.js": false,
       },
       "files": Array [
+        ".huskyrc.js",
         "wallaby.config.js",
         ".circleci/config.yml",
         "jest.config.js",
       ],
       "ignoreUpdates": Object {
         ".circleci/config.yml": false,
+        ".huskyrc.js": false,
         "jest.config.js": false,
         "wallaby.config.js": false,
       },
@@ -1524,8 +1567,10 @@ Object {
         "lib/files/circleci-6+.yml": "<PROJECT_ROOT>/lib/files/circleci-6+.yml",
         "lib/files/jest-app.js": "<PROJECT_ROOT>/lib/files/jest-app.js",
         "lib/files/wallaby.js": "<PROJECT_ROOT>/lib/files/wallaby.js",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
       },
       "files": Array [
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
         "lib/files/wallaby.js",
         "lib/files/circleci-6+.yml",
         "lib/files/jest-app.js",
@@ -1533,11 +1578,16 @@ Object {
       "hash": Object {
         "lib/files/circleci-6+.yml": "f8afa0de22d1ce5ee659b86993cf898e85b383599dab0f06ef052d1f4510ef37",
         "lib/files/jest-app.js": "4a1c02ec2ad2ed327246fea56e516a92bd7b57fedaba14da38faaa117410670d",
-        "lib/files/wallaby.js": "af6bd548d752764b0a87b1624aa47382420dad920452ab2aaeecf6086a902348",
+        "lib/files/wallaby.js": "2b97c1332251db5221dcd348aece8f3fa1b8248a66212d9d9945046ed7d0607b",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
     },
   },
+  "git-pre-commit": Array [
+    [Function noop],
+  ],
   "git-pre-push": Array [
+    [Function noop],
     "backtrack test",
   ],
   "packageJson": Array [
@@ -1552,6 +1602,7 @@ Object {
     "backtrack test",
   ],
   "resolve": Object {
+    "@backtrack/preset-git-hooks": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib",
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
@@ -1572,34 +1623,29 @@ Object {
 
 exports[`preset returns expected config - windows = false node 8 1`] = `
 Object {
-  "config": Array [
-    Object {
-      "husky": Object {
-        "hooks": Object {
-          "pre-push": "npm run git-pre-push",
-        },
-      },
-    },
-  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
         ".circleci/config.yml": "<PROJECT_ROOT>/.circleci/config.yml",
+        ".huskyrc.js": "<PROJECT_ROOT>/.huskyrc.js",
         "jest.config.js": "<PROJECT_ROOT>/jest.config.js",
         "wallaby.config.js": "<PROJECT_ROOT>/wallaby.config.js",
       },
       "allowChanges": Object {
         ".circleci/config.yml": false,
+        ".huskyrc.js": false,
         "jest.config.js": false,
         "wallaby.config.js": false,
       },
       "files": Array [
+        ".huskyrc.js",
         "wallaby.config.js",
         ".circleci/config.yml",
         "jest.config.js",
       ],
       "ignoreUpdates": Object {
         ".circleci/config.yml": false,
+        ".huskyrc.js": false,
         "jest.config.js": false,
         "wallaby.config.js": false,
       },
@@ -1614,8 +1660,10 @@ Object {
         "lib/files/circleci-8.yml": "<PROJECT_ROOT>/lib/files/circleci-8.yml",
         "lib/files/jest-app.js": "<PROJECT_ROOT>/lib/files/jest-app.js",
         "lib/files/wallaby.js": "<PROJECT_ROOT>/lib/files/wallaby.js",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
       },
       "files": Array [
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
         "lib/files/wallaby.js",
         "lib/files/circleci-8.yml",
         "lib/files/jest-app.js",
@@ -1623,11 +1671,16 @@ Object {
       "hash": Object {
         "lib/files/circleci-8.yml": "af4cc99927d13f77b7283335f7671d4943326a1e1e14c5ced4e4c5ab613b21a4",
         "lib/files/jest-app.js": "4a1c02ec2ad2ed327246fea56e516a92bd7b57fedaba14da38faaa117410670d",
-        "lib/files/wallaby.js": "af6bd548d752764b0a87b1624aa47382420dad920452ab2aaeecf6086a902348",
+        "lib/files/wallaby.js": "2b97c1332251db5221dcd348aece8f3fa1b8248a66212d9d9945046ed7d0607b",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
     },
   },
+  "git-pre-commit": Array [
+    [Function noop],
+  ],
   "git-pre-push": Array [
+    [Function noop],
     "backtrack test",
   ],
   "packageJson": Array [
@@ -1642,6 +1695,7 @@ Object {
     "backtrack test",
   ],
   "resolve": Object {
+    "@backtrack/preset-git-hooks": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib",
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
@@ -1662,34 +1716,29 @@ Object {
 
 exports[`preset returns expected config - windows = false node 8+ 1`] = `
 Object {
-  "config": Array [
-    Object {
-      "husky": Object {
-        "hooks": Object {
-          "pre-push": "npm run git-pre-push",
-        },
-      },
-    },
-  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
         ".circleci/config.yml": "<PROJECT_ROOT>/.circleci/config.yml",
+        ".huskyrc.js": "<PROJECT_ROOT>/.huskyrc.js",
         "jest.config.js": "<PROJECT_ROOT>/jest.config.js",
         "wallaby.config.js": "<PROJECT_ROOT>/wallaby.config.js",
       },
       "allowChanges": Object {
         ".circleci/config.yml": false,
+        ".huskyrc.js": false,
         "jest.config.js": false,
         "wallaby.config.js": false,
       },
       "files": Array [
+        ".huskyrc.js",
         "wallaby.config.js",
         ".circleci/config.yml",
         "jest.config.js",
       ],
       "ignoreUpdates": Object {
         ".circleci/config.yml": false,
+        ".huskyrc.js": false,
         "jest.config.js": false,
         "wallaby.config.js": false,
       },
@@ -1704,8 +1753,10 @@ Object {
         "lib/files/circleci-8+.yml": "<PROJECT_ROOT>/lib/files/circleci-8+.yml",
         "lib/files/jest-app.js": "<PROJECT_ROOT>/lib/files/jest-app.js",
         "lib/files/wallaby.js": "<PROJECT_ROOT>/lib/files/wallaby.js",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
       },
       "files": Array [
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
         "lib/files/wallaby.js",
         "lib/files/circleci-8+.yml",
         "lib/files/jest-app.js",
@@ -1713,11 +1764,16 @@ Object {
       "hash": Object {
         "lib/files/circleci-8+.yml": "d7fe10832d27fb9e6d7aeb958ac04d8a99175e5fcc9f0885a44cea634d57142f",
         "lib/files/jest-app.js": "4a1c02ec2ad2ed327246fea56e516a92bd7b57fedaba14da38faaa117410670d",
-        "lib/files/wallaby.js": "af6bd548d752764b0a87b1624aa47382420dad920452ab2aaeecf6086a902348",
+        "lib/files/wallaby.js": "2b97c1332251db5221dcd348aece8f3fa1b8248a66212d9d9945046ed7d0607b",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
     },
   },
+  "git-pre-commit": Array [
+    [Function noop],
+  ],
   "git-pre-push": Array [
+    [Function noop],
     "backtrack test",
   ],
   "packageJson": Array [
@@ -1732,6 +1788,7 @@ Object {
     "backtrack test",
   ],
   "resolve": Object {
+    "@backtrack/preset-git-hooks": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib",
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
@@ -1752,34 +1809,29 @@ Object {
 
 exports[`preset returns expected config - windows = false node 10 1`] = `
 Object {
-  "config": Array [
-    Object {
-      "husky": Object {
-        "hooks": Object {
-          "pre-push": "npm run git-pre-push",
-        },
-      },
-    },
-  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
         ".circleci/config.yml": "<PROJECT_ROOT>/.circleci/config.yml",
+        ".huskyrc.js": "<PROJECT_ROOT>/.huskyrc.js",
         "jest.config.js": "<PROJECT_ROOT>/jest.config.js",
         "wallaby.config.js": "<PROJECT_ROOT>/wallaby.config.js",
       },
       "allowChanges": Object {
         ".circleci/config.yml": false,
+        ".huskyrc.js": false,
         "jest.config.js": false,
         "wallaby.config.js": false,
       },
       "files": Array [
+        ".huskyrc.js",
         "wallaby.config.js",
         ".circleci/config.yml",
         "jest.config.js",
       ],
       "ignoreUpdates": Object {
         ".circleci/config.yml": false,
+        ".huskyrc.js": false,
         "jest.config.js": false,
         "wallaby.config.js": false,
       },
@@ -1794,8 +1846,10 @@ Object {
         "lib/files/circleci-10.yml": "<PROJECT_ROOT>/lib/files/circleci-10.yml",
         "lib/files/jest-app.js": "<PROJECT_ROOT>/lib/files/jest-app.js",
         "lib/files/wallaby.js": "<PROJECT_ROOT>/lib/files/wallaby.js",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
       },
       "files": Array [
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js",
         "lib/files/wallaby.js",
         "lib/files/circleci-10.yml",
         "lib/files/jest-app.js",
@@ -1803,11 +1857,16 @@ Object {
       "hash": Object {
         "lib/files/circleci-10.yml": "0845f9fe3b3f3b12db57e4dbe68ca66fa0c7464cfe717112682a30a099096285",
         "lib/files/jest-app.js": "4a1c02ec2ad2ed327246fea56e516a92bd7b57fedaba14da38faaa117410670d",
-        "lib/files/wallaby.js": "af6bd548d752764b0a87b1624aa47382420dad920452ab2aaeecf6086a902348",
+        "lib/files/wallaby.js": "2b97c1332251db5221dcd348aece8f3fa1b8248a66212d9d9945046ed7d0607b",
+        "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
     },
   },
+  "git-pre-commit": Array [
+    [Function noop],
+  ],
   "git-pre-push": Array [
+    [Function noop],
     "backtrack test",
   ],
   "packageJson": Array [
@@ -1822,6 +1881,7 @@ Object {
     "backtrack test",
   ],
   "resolve": Object {
+    "@backtrack/preset-git-hooks": "<PROJECT_ROOT>/node_modules/@backtrack/preset-git-hooks/lib",
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
