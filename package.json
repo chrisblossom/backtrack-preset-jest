@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@backtrack/core": "^0.1.23",
-    "@backtrack/preset-preset": "^0.3.9"
+    "@backtrack/preset-preset": "^0.3.11"
   },
   "dependencies": {
     "@babel/polyfill": "^7.2.3",
