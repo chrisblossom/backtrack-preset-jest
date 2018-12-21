@@ -1,6 +1,6 @@
 {
   "name": "@backtrack/preset-jest",
-  "version": "0.3.8",
+  "version": "0.3.9",
   "description": "backtrack preset for testing node with Jest",
   "keywords": [
     "backtrack",
