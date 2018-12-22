@@ -17,7 +17,7 @@
 -   [CircleCI](https://circleci.com/) Linux CI
 -   [AppVeyor](https://www.appveyor.com/) Windows CI
 -   [Wallaby.js](https://wallabyjs.com/) config
--   Add `prepush` and `prepublishOnly` testing git hooks
+-   Add `pre-push` and `prepublishOnly` testing git hooks
 
 ## Installation
 
@@ -55,7 +55,7 @@ module.exports = {
                 windows: false,
 
                 /**
-                 * Disable settings unneccessary in applications
+                 * Disable settings unnecessary in applications
                  *
                  * default: false
                  */
