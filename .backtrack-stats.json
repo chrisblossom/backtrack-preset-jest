@@ -19,7 +19,7 @@
             "CHANGELOG.md": "ignoreUpdates",
             "README.md": "ignoreUpdates",
             "appveyor.yml": "251406424b8cb49b1a8858ef7eb521ae57856964625daed85b591692e8f98e15",
-            "jest.config.js": "dffb2f182bad6e28566992e7afdd0428236223223a099f1b2e33f9dfdc7b09f1",
+            "jest.config.js": "89b921f7f379662d979221ac8124f85a5c2443a66f5d6922babf18e67b0f5727",
             "lib/preset-jest.js": "ignoreUpdates",
             "lib/preset-jest.test.js": "ignoreUpdates",
             "wallaby.config.js": "856da559de8a3bbabad242d90633e69852381073cba49fcdc1b8985da41cfd28"
