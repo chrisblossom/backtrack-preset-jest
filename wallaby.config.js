@@ -1,7 +1,7 @@
 /**
  * This file is managed by backtrack
  *
- * source: @backtrack/preset-preset
+ * source: @backtrack/preset-jest
  * namespace: wallaby
  *
  * DO NOT MODIFY
@@ -26,21 +26,22 @@ const wallaby = (wallabyConfig) => {
         namespace: 'wallaby',
         config: {
             files: [
-                { pattern: 'lib/**/__sandbox__/**/*', instrument: false },
-                { pattern: 'lib/**/__sandbox__/**/.*', instrument: false },
-                { pattern: 'lib/files/*', instrument: false },
-                { pattern: 'lib/files/.*', instrument: false },
-                { pattern: '.*', instrument: false },
+                { pattern: './node_modules/**/*', ignore: true },
                 { pattern: '*', instrument: false },
-                { pattern: '.circleci/*', instrument: false },
+                { pattern: '.*', instrument: false },
+                { pattern: '**/__sandbox__/**/*', instrument: false },
+                { pattern: '**/__sandbox__/**/.*', instrument: false },
+                'app/**/*.js',
                 'lib/**/*.js',
-                'jest.config.js',
-                '.env',
-                'lib/**/*.snap',
+                '!app/**/*.test.js',
                 '!lib/**/*.test.js',
+                { pattern: 'app/**/.*', instrument: false },
+                { pattern: 'app/**/*', instrument: false },
+                { pattern: 'lib/**/.*', instrument: false },
+                { pattern: 'lib/**/*', instrument: false },
             ],
 
-            tests: ['lib/**/*.test.js'],
+            tests: ['app/**/*.test.js', 'lib/**/*.test.js'],
 
             hints: {
                 ignoreCoverage: /ignore coverage/,
