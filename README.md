@@ -60,6 +60,19 @@ module.exports = {
                  * default: false
                  */
                 isApp: true,
+
+                /**
+                 * Do not compile files via babel
+                 *
+                 * When isApp: false:
+                 *   Use ./lib as source files
+                 *
+                 * When isApp: true:
+                 *   Use ./app as source
+                 *
+                 * default: false
+                 */
+                node: true,
             },
         ],
     ],
