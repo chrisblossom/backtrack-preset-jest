@@ -23,6 +23,7 @@ const ignore = [
     '!**/.vscode/**',
     '!**/.cache/**',
     '!**/.DS_Store/**',
+    '!**/flow-typed/**',
 ];
 
 module.exports = (wallabyInitial) => {
@@ -43,13 +44,16 @@ module.exports = (wallabyInitial) => {
                 { pattern: '.*', instrument: false },
                 { pattern: '**/__sandbox__/**/*', instrument: false },
                 { pattern: '**/__sandbox__/**/.*', instrument: false },
-                '**/*.+(js|jsx|ts|tsx)',
-                '!**/*.test.+(js|ts)',
+                '**/!(*.test).+(js|jsx|ts|tsx|mjs)',
                 { pattern: '**/.*', instrument: false },
-                { pattern: '**/*', instrument: false },
+                { pattern: '**/!(*.test).*', instrument: false },
             ],
 
-            tests: [...ignore, '!**/__sandbox__/**', '**/*.test.+(js|ts)'],
+            tests: [
+                ...ignore,
+                '!**/__sandbox__/**',
+                '**/*.test.+(js|jsx|ts|tsx|mjs)',
+            ],
 
             compilers: {
                 'src/**/*.+(js|jsx)': wallabyInitial.compilers.babel(),
@@ -93,25 +97,19 @@ module.exports = (wallabyInitial) => {
                 }
 
                 /**
-                 * Set to project local path so backtrack can correctly resolve modules
-                 * https://github.com/wallabyjs/public/issues/1552#issuecomment-372002860
+                 * https://github.com/wallabyjs/public/issues/1268#issuecomment-323237993
+                 *
+                 * reset to expected wallaby process.cwd
                  */
-                process.chdir(wallabySetup.localProjectDir);
+                process.chdir(wallabySetup.projectCacheDir);
 
                 try {
                     require('@babel/polyfill');
                     // eslint-disable-next-line no-empty
                 } catch (error) {}
                 process.env.NODE_ENV = 'test';
-                const jestConfig = require('./jest.config');
+                const jestConfig = require('./jest.config.js');
                 wallabySetup.testFramework.configure(jestConfig);
-
-                /**
-                 * https://github.com/wallabyjs/public/issues/1268#issuecomment-323237993
-                 *
-                 * reset to expected wallaby process.cwd
-                 */
-                process.chdir(wallabySetup.projectCacheDir);
 
                 try {
                     /**
