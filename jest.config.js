@@ -60,7 +60,7 @@ if (jestSetupExists === true) {
 
 const jestSetupTestExists = fs.existsSync('./jest.setup-test.js');
 if (jestSetupTestExists === true) {
-    jest.setupTestFrameworkScriptFile = ['<rootDir>/jest.setup-test.js'];
+    jest.setupTestFrameworkScriptFile = '<rootDir>/jest.setup-test.js';
 }
 
 module.exports = configManager({
