@@ -49,7 +49,7 @@ Object {
       ],
       "hash": Object {
         "lib/files/circleci-6.yml": "4fd9d1887710e02871486fa21d6cc5d35d7dce9e55a0e4ee39bc5145c136d23c",
-        "lib/files/jest.js": "9159ffa899d77032ff0f3137357c814dd63e947207be51e6df57e42e1e44019d",
+        "lib/files/jest.js": "593effcf28fda7ec31763c898d739f665436e659b7976864ce78885282136401",
         "lib/files/wallaby.js": "2656c547b42344e044e4a04d211059882aa4ab616f46051bbf994a018be2b9ec",
         "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
@@ -65,7 +65,7 @@ Object {
   "packageJson": Array [
     Object {
       "scripts": Object {
-        "test.update": "jest --updateSnapshot",
+        "test.update": "jest --update-snapshot",
         "test.watch": "jest --watch",
       },
     },
@@ -75,10 +75,10 @@ Object {
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
-    "jest --passWithNoTests",
+    "jest --pass-with-no-tests",
   ],
   "test.ci": Array [
-    "jest --passWithNoTests --ci --no-cache --coverage --maxWorkers 2",
+    "jest --pass-with-no-tests --ci --no-cache --coverage --max-workers 2",
     Object {
       "name": "codecov",
       "task": "codecov",
@@ -139,7 +139,7 @@ Object {
       ],
       "hash": Object {
         "lib/files/circleci-6+.yml": "f8afa0de22d1ce5ee659b86993cf898e85b383599dab0f06ef052d1f4510ef37",
-        "lib/files/jest.js": "9159ffa899d77032ff0f3137357c814dd63e947207be51e6df57e42e1e44019d",
+        "lib/files/jest.js": "593effcf28fda7ec31763c898d739f665436e659b7976864ce78885282136401",
         "lib/files/wallaby.js": "2656c547b42344e044e4a04d211059882aa4ab616f46051bbf994a018be2b9ec",
         "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
@@ -155,7 +155,7 @@ Object {
   "packageJson": Array [
     Object {
       "scripts": Object {
-        "test.update": "jest --updateSnapshot",
+        "test.update": "jest --update-snapshot",
         "test.watch": "jest --watch",
       },
     },
@@ -165,10 +165,10 @@ Object {
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
-    "jest --passWithNoTests",
+    "jest --pass-with-no-tests",
   ],
   "test.ci": Array [
-    "jest --passWithNoTests --ci --no-cache --coverage --maxWorkers 2",
+    "jest --pass-with-no-tests --ci --no-cache --coverage --max-workers 2",
     Object {
       "name": "codecov",
       "task": "codecov",
@@ -229,7 +229,7 @@ Object {
       ],
       "hash": Object {
         "lib/files/circleci-8.yml": "af4cc99927d13f77b7283335f7671d4943326a1e1e14c5ced4e4c5ab613b21a4",
-        "lib/files/jest.js": "9159ffa899d77032ff0f3137357c814dd63e947207be51e6df57e42e1e44019d",
+        "lib/files/jest.js": "593effcf28fda7ec31763c898d739f665436e659b7976864ce78885282136401",
         "lib/files/wallaby.js": "2656c547b42344e044e4a04d211059882aa4ab616f46051bbf994a018be2b9ec",
         "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
@@ -245,7 +245,7 @@ Object {
   "packageJson": Array [
     Object {
       "scripts": Object {
-        "test.update": "jest --updateSnapshot",
+        "test.update": "jest --update-snapshot",
         "test.watch": "jest --watch",
       },
     },
@@ -255,10 +255,10 @@ Object {
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
-    "jest --passWithNoTests",
+    "jest --pass-with-no-tests",
   ],
   "test.ci": Array [
-    "jest --passWithNoTests --ci --no-cache --coverage --maxWorkers 2",
+    "jest --pass-with-no-tests --ci --no-cache --coverage --max-workers 2",
     Object {
       "name": "codecov",
       "task": "codecov",
@@ -319,7 +319,7 @@ Object {
       ],
       "hash": Object {
         "lib/files/circleci-8+.yml": "d7fe10832d27fb9e6d7aeb958ac04d8a99175e5fcc9f0885a44cea634d57142f",
-        "lib/files/jest.js": "9159ffa899d77032ff0f3137357c814dd63e947207be51e6df57e42e1e44019d",
+        "lib/files/jest.js": "593effcf28fda7ec31763c898d739f665436e659b7976864ce78885282136401",
         "lib/files/wallaby.js": "2656c547b42344e044e4a04d211059882aa4ab616f46051bbf994a018be2b9ec",
         "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
@@ -335,7 +335,7 @@ Object {
   "packageJson": Array [
     Object {
       "scripts": Object {
-        "test.update": "jest --updateSnapshot",
+        "test.update": "jest --update-snapshot",
         "test.watch": "jest --watch",
       },
     },
@@ -345,10 +345,10 @@ Object {
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
-    "jest --passWithNoTests",
+    "jest --pass-with-no-tests",
   ],
   "test.ci": Array [
-    "jest --passWithNoTests --ci --no-cache --coverage --maxWorkers 2",
+    "jest --pass-with-no-tests --ci --no-cache --coverage --max-workers 2",
     Object {
       "name": "codecov",
       "task": "codecov",
@@ -409,7 +409,7 @@ Object {
       ],
       "hash": Object {
         "lib/files/circleci-10.yml": "0845f9fe3b3f3b12db57e4dbe68ca66fa0c7464cfe717112682a30a099096285",
-        "lib/files/jest.js": "9159ffa899d77032ff0f3137357c814dd63e947207be51e6df57e42e1e44019d",
+        "lib/files/jest.js": "593effcf28fda7ec31763c898d739f665436e659b7976864ce78885282136401",
         "lib/files/wallaby.js": "2656c547b42344e044e4a04d211059882aa4ab616f46051bbf994a018be2b9ec",
         "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
@@ -425,7 +425,7 @@ Object {
   "packageJson": Array [
     Object {
       "scripts": Object {
-        "test.update": "jest --updateSnapshot",
+        "test.update": "jest --update-snapshot",
         "test.watch": "jest --watch",
       },
     },
@@ -435,10 +435,10 @@ Object {
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
-    "jest --passWithNoTests",
+    "jest --pass-with-no-tests",
   ],
   "test.ci": Array [
-    "jest --passWithNoTests --ci --no-cache --coverage --maxWorkers 2",
+    "jest --pass-with-no-tests --ci --no-cache --coverage --max-workers 2",
     Object {
       "name": "codecov",
       "task": "codecov",
@@ -506,7 +506,7 @@ Object {
       "hash": Object {
         "lib/files/appveyor-6.yml": "641986afce697c9e8351d34987fe0657bdec1fae8b9dcf4ef896d358ab8ee089",
         "lib/files/circleci-6.yml": "4fd9d1887710e02871486fa21d6cc5d35d7dce9e55a0e4ee39bc5145c136d23c",
-        "lib/files/jest.js": "9159ffa899d77032ff0f3137357c814dd63e947207be51e6df57e42e1e44019d",
+        "lib/files/jest.js": "593effcf28fda7ec31763c898d739f665436e659b7976864ce78885282136401",
         "lib/files/wallaby.js": "2656c547b42344e044e4a04d211059882aa4ab616f46051bbf994a018be2b9ec",
         "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
@@ -522,7 +522,7 @@ Object {
   "packageJson": Array [
     Object {
       "scripts": Object {
-        "test.update": "jest --updateSnapshot",
+        "test.update": "jest --update-snapshot",
         "test.watch": "jest --watch",
       },
     },
@@ -532,10 +532,10 @@ Object {
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
-    "jest --passWithNoTests",
+    "jest --pass-with-no-tests",
   ],
   "test.ci": Array [
-    "jest --passWithNoTests --ci --no-cache --coverage --maxWorkers 2",
+    "jest --pass-with-no-tests --ci --no-cache --coverage --max-workers 2",
     Object {
       "name": "codecov",
       "task": "codecov",
@@ -603,7 +603,7 @@ Object {
       "hash": Object {
         "lib/files/appveyor-6+.yml": "251406424b8cb49b1a8858ef7eb521ae57856964625daed85b591692e8f98e15",
         "lib/files/circleci-6+.yml": "f8afa0de22d1ce5ee659b86993cf898e85b383599dab0f06ef052d1f4510ef37",
-        "lib/files/jest.js": "9159ffa899d77032ff0f3137357c814dd63e947207be51e6df57e42e1e44019d",
+        "lib/files/jest.js": "593effcf28fda7ec31763c898d739f665436e659b7976864ce78885282136401",
         "lib/files/wallaby.js": "2656c547b42344e044e4a04d211059882aa4ab616f46051bbf994a018be2b9ec",
         "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
@@ -619,7 +619,7 @@ Object {
   "packageJson": Array [
     Object {
       "scripts": Object {
-        "test.update": "jest --updateSnapshot",
+        "test.update": "jest --update-snapshot",
         "test.watch": "jest --watch",
       },
     },
@@ -629,10 +629,10 @@ Object {
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
-    "jest --passWithNoTests",
+    "jest --pass-with-no-tests",
   ],
   "test.ci": Array [
-    "jest --passWithNoTests --ci --no-cache --coverage --maxWorkers 2",
+    "jest --pass-with-no-tests --ci --no-cache --coverage --max-workers 2",
     Object {
       "name": "codecov",
       "task": "codecov",
@@ -700,7 +700,7 @@ Object {
       "hash": Object {
         "lib/files/appveyor-8.yml": "70c6174a960e80495eca240ba2516a933ff7f67abc1287de0d1a3068156448dc",
         "lib/files/circleci-8.yml": "af4cc99927d13f77b7283335f7671d4943326a1e1e14c5ced4e4c5ab613b21a4",
-        "lib/files/jest.js": "9159ffa899d77032ff0f3137357c814dd63e947207be51e6df57e42e1e44019d",
+        "lib/files/jest.js": "593effcf28fda7ec31763c898d739f665436e659b7976864ce78885282136401",
         "lib/files/wallaby.js": "2656c547b42344e044e4a04d211059882aa4ab616f46051bbf994a018be2b9ec",
         "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
@@ -716,7 +716,7 @@ Object {
   "packageJson": Array [
     Object {
       "scripts": Object {
-        "test.update": "jest --updateSnapshot",
+        "test.update": "jest --update-snapshot",
         "test.watch": "jest --watch",
       },
     },
@@ -726,10 +726,10 @@ Object {
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
-    "jest --passWithNoTests",
+    "jest --pass-with-no-tests",
   ],
   "test.ci": Array [
-    "jest --passWithNoTests --ci --no-cache --coverage --maxWorkers 2",
+    "jest --pass-with-no-tests --ci --no-cache --coverage --max-workers 2",
     Object {
       "name": "codecov",
       "task": "codecov",
@@ -797,7 +797,7 @@ Object {
       "hash": Object {
         "lib/files/appveyor-8+.yml": "9a237c2fcea7a8f3e5e3d89a248a763f6c078803afc547ab18478b2083c82492",
         "lib/files/circleci-8+.yml": "d7fe10832d27fb9e6d7aeb958ac04d8a99175e5fcc9f0885a44cea634d57142f",
-        "lib/files/jest.js": "9159ffa899d77032ff0f3137357c814dd63e947207be51e6df57e42e1e44019d",
+        "lib/files/jest.js": "593effcf28fda7ec31763c898d739f665436e659b7976864ce78885282136401",
         "lib/files/wallaby.js": "2656c547b42344e044e4a04d211059882aa4ab616f46051bbf994a018be2b9ec",
         "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
@@ -813,7 +813,7 @@ Object {
   "packageJson": Array [
     Object {
       "scripts": Object {
-        "test.update": "jest --updateSnapshot",
+        "test.update": "jest --update-snapshot",
         "test.watch": "jest --watch",
       },
     },
@@ -823,10 +823,10 @@ Object {
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
-    "jest --passWithNoTests",
+    "jest --pass-with-no-tests",
   ],
   "test.ci": Array [
-    "jest --passWithNoTests --ci --no-cache --coverage --maxWorkers 2",
+    "jest --pass-with-no-tests --ci --no-cache --coverage --max-workers 2",
     Object {
       "name": "codecov",
       "task": "codecov",
@@ -894,7 +894,7 @@ Object {
       "hash": Object {
         "lib/files/appveyor-10.yml": "f10642c8ced78fa8015fd1b40623e2940a2cc953147d5631ee57ab6144e82cc8",
         "lib/files/circleci-10.yml": "0845f9fe3b3f3b12db57e4dbe68ca66fa0c7464cfe717112682a30a099096285",
-        "lib/files/jest.js": "9159ffa899d77032ff0f3137357c814dd63e947207be51e6df57e42e1e44019d",
+        "lib/files/jest.js": "593effcf28fda7ec31763c898d739f665436e659b7976864ce78885282136401",
         "lib/files/wallaby.js": "2656c547b42344e044e4a04d211059882aa4ab616f46051bbf994a018be2b9ec",
         "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
@@ -910,7 +910,7 @@ Object {
   "packageJson": Array [
     Object {
       "scripts": Object {
-        "test.update": "jest --updateSnapshot",
+        "test.update": "jest --update-snapshot",
         "test.watch": "jest --watch",
       },
     },
@@ -920,10 +920,10 @@ Object {
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
-    "jest --passWithNoTests",
+    "jest --pass-with-no-tests",
   ],
   "test.ci": Array [
-    "jest --passWithNoTests --ci --no-cache --coverage --maxWorkers 2",
+    "jest --pass-with-no-tests --ci --no-cache --coverage --max-workers 2",
     Object {
       "name": "codecov",
       "task": "codecov",
@@ -991,7 +991,7 @@ Object {
       "hash": Object {
         "lib/files/appveyor-6.yml": "641986afce697c9e8351d34987fe0657bdec1fae8b9dcf4ef896d358ab8ee089",
         "lib/files/circleci-6.yml": "4fd9d1887710e02871486fa21d6cc5d35d7dce9e55a0e4ee39bc5145c136d23c",
-        "lib/files/jest.js": "9159ffa899d77032ff0f3137357c814dd63e947207be51e6df57e42e1e44019d",
+        "lib/files/jest.js": "593effcf28fda7ec31763c898d739f665436e659b7976864ce78885282136401",
         "lib/files/wallaby.js": "2656c547b42344e044e4a04d211059882aa4ab616f46051bbf994a018be2b9ec",
         "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
@@ -1007,7 +1007,7 @@ Object {
   "packageJson": Array [
     Object {
       "scripts": Object {
-        "test.update": "jest --updateSnapshot",
+        "test.update": "jest --update-snapshot",
         "test.watch": "jest --watch",
       },
     },
@@ -1020,10 +1020,10 @@ Object {
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
-    "jest --passWithNoTests",
+    "jest --pass-with-no-tests",
   ],
   "test.ci": Array [
-    "jest --passWithNoTests --ci --no-cache --coverage --maxWorkers 2",
+    "jest --pass-with-no-tests --ci --no-cache --coverage --max-workers 2",
     Object {
       "name": "codecov",
       "task": "codecov",
@@ -1091,7 +1091,7 @@ Object {
       "hash": Object {
         "lib/files/appveyor-6+.yml": "251406424b8cb49b1a8858ef7eb521ae57856964625daed85b591692e8f98e15",
         "lib/files/circleci-6+.yml": "f8afa0de22d1ce5ee659b86993cf898e85b383599dab0f06ef052d1f4510ef37",
-        "lib/files/jest.js": "9159ffa899d77032ff0f3137357c814dd63e947207be51e6df57e42e1e44019d",
+        "lib/files/jest.js": "593effcf28fda7ec31763c898d739f665436e659b7976864ce78885282136401",
         "lib/files/wallaby.js": "2656c547b42344e044e4a04d211059882aa4ab616f46051bbf994a018be2b9ec",
         "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
@@ -1107,7 +1107,7 @@ Object {
   "packageJson": Array [
     Object {
       "scripts": Object {
-        "test.update": "jest --updateSnapshot",
+        "test.update": "jest --update-snapshot",
         "test.watch": "jest --watch",
       },
     },
@@ -1120,10 +1120,10 @@ Object {
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
-    "jest --passWithNoTests",
+    "jest --pass-with-no-tests",
   ],
   "test.ci": Array [
-    "jest --passWithNoTests --ci --no-cache --coverage --maxWorkers 2",
+    "jest --pass-with-no-tests --ci --no-cache --coverage --max-workers 2",
     Object {
       "name": "codecov",
       "task": "codecov",
@@ -1191,7 +1191,7 @@ Object {
       "hash": Object {
         "lib/files/appveyor-8.yml": "70c6174a960e80495eca240ba2516a933ff7f67abc1287de0d1a3068156448dc",
         "lib/files/circleci-8.yml": "af4cc99927d13f77b7283335f7671d4943326a1e1e14c5ced4e4c5ab613b21a4",
-        "lib/files/jest.js": "9159ffa899d77032ff0f3137357c814dd63e947207be51e6df57e42e1e44019d",
+        "lib/files/jest.js": "593effcf28fda7ec31763c898d739f665436e659b7976864ce78885282136401",
         "lib/files/wallaby.js": "2656c547b42344e044e4a04d211059882aa4ab616f46051bbf994a018be2b9ec",
         "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
@@ -1207,7 +1207,7 @@ Object {
   "packageJson": Array [
     Object {
       "scripts": Object {
-        "test.update": "jest --updateSnapshot",
+        "test.update": "jest --update-snapshot",
         "test.watch": "jest --watch",
       },
     },
@@ -1220,10 +1220,10 @@ Object {
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
-    "jest --passWithNoTests",
+    "jest --pass-with-no-tests",
   ],
   "test.ci": Array [
-    "jest --passWithNoTests --ci --no-cache --coverage --maxWorkers 2",
+    "jest --pass-with-no-tests --ci --no-cache --coverage --max-workers 2",
     Object {
       "name": "codecov",
       "task": "codecov",
@@ -1291,7 +1291,7 @@ Object {
       "hash": Object {
         "lib/files/appveyor-8+.yml": "9a237c2fcea7a8f3e5e3d89a248a763f6c078803afc547ab18478b2083c82492",
         "lib/files/circleci-8+.yml": "d7fe10832d27fb9e6d7aeb958ac04d8a99175e5fcc9f0885a44cea634d57142f",
-        "lib/files/jest.js": "9159ffa899d77032ff0f3137357c814dd63e947207be51e6df57e42e1e44019d",
+        "lib/files/jest.js": "593effcf28fda7ec31763c898d739f665436e659b7976864ce78885282136401",
         "lib/files/wallaby.js": "2656c547b42344e044e4a04d211059882aa4ab616f46051bbf994a018be2b9ec",
         "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
@@ -1307,7 +1307,7 @@ Object {
   "packageJson": Array [
     Object {
       "scripts": Object {
-        "test.update": "jest --updateSnapshot",
+        "test.update": "jest --update-snapshot",
         "test.watch": "jest --watch",
       },
     },
@@ -1320,10 +1320,10 @@ Object {
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
-    "jest --passWithNoTests",
+    "jest --pass-with-no-tests",
   ],
   "test.ci": Array [
-    "jest --passWithNoTests --ci --no-cache --coverage --maxWorkers 2",
+    "jest --pass-with-no-tests --ci --no-cache --coverage --max-workers 2",
     Object {
       "name": "codecov",
       "task": "codecov",
@@ -1391,7 +1391,7 @@ Object {
       "hash": Object {
         "lib/files/appveyor-10.yml": "f10642c8ced78fa8015fd1b40623e2940a2cc953147d5631ee57ab6144e82cc8",
         "lib/files/circleci-10.yml": "0845f9fe3b3f3b12db57e4dbe68ca66fa0c7464cfe717112682a30a099096285",
-        "lib/files/jest.js": "9159ffa899d77032ff0f3137357c814dd63e947207be51e6df57e42e1e44019d",
+        "lib/files/jest.js": "593effcf28fda7ec31763c898d739f665436e659b7976864ce78885282136401",
         "lib/files/wallaby.js": "2656c547b42344e044e4a04d211059882aa4ab616f46051bbf994a018be2b9ec",
         "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
@@ -1407,7 +1407,7 @@ Object {
   "packageJson": Array [
     Object {
       "scripts": Object {
-        "test.update": "jest --updateSnapshot",
+        "test.update": "jest --update-snapshot",
         "test.watch": "jest --watch",
       },
     },
@@ -1420,10 +1420,10 @@ Object {
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
-    "jest --passWithNoTests",
+    "jest --pass-with-no-tests",
   ],
   "test.ci": Array [
-    "jest --passWithNoTests --ci --no-cache --coverage --maxWorkers 2",
+    "jest --pass-with-no-tests --ci --no-cache --coverage --max-workers 2",
     Object {
       "name": "codecov",
       "task": "codecov",
@@ -1491,7 +1491,7 @@ Object {
       "hash": Object {
         "lib/files/appveyor-6.yml": "641986afce697c9e8351d34987fe0657bdec1fae8b9dcf4ef896d358ab8ee089",
         "lib/files/circleci-6.yml": "4fd9d1887710e02871486fa21d6cc5d35d7dce9e55a0e4ee39bc5145c136d23c",
-        "lib/files/jest.js": "9159ffa899d77032ff0f3137357c814dd63e947207be51e6df57e42e1e44019d",
+        "lib/files/jest.js": "593effcf28fda7ec31763c898d739f665436e659b7976864ce78885282136401",
         "lib/files/wallaby.js": "2656c547b42344e044e4a04d211059882aa4ab616f46051bbf994a018be2b9ec",
         "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
@@ -1507,7 +1507,7 @@ Object {
   "packageJson": Array [
     Object {
       "scripts": Object {
-        "test.update": "jest --updateSnapshot",
+        "test.update": "jest --update-snapshot",
         "test.watch": "jest --watch",
       },
     },
@@ -1520,10 +1520,10 @@ Object {
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
-    "jest --passWithNoTests",
+    "jest --pass-with-no-tests",
   ],
   "test.ci": Array [
-    "jest --passWithNoTests --ci --no-cache --coverage --maxWorkers 2",
+    "jest --pass-with-no-tests --ci --no-cache --coverage --max-workers 2",
     Object {
       "name": "codecov",
       "task": "codecov",
@@ -1591,7 +1591,7 @@ Object {
       "hash": Object {
         "lib/files/appveyor-6+.yml": "251406424b8cb49b1a8858ef7eb521ae57856964625daed85b591692e8f98e15",
         "lib/files/circleci-6+.yml": "f8afa0de22d1ce5ee659b86993cf898e85b383599dab0f06ef052d1f4510ef37",
-        "lib/files/jest.js": "9159ffa899d77032ff0f3137357c814dd63e947207be51e6df57e42e1e44019d",
+        "lib/files/jest.js": "593effcf28fda7ec31763c898d739f665436e659b7976864ce78885282136401",
         "lib/files/wallaby.js": "2656c547b42344e044e4a04d211059882aa4ab616f46051bbf994a018be2b9ec",
         "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
@@ -1607,7 +1607,7 @@ Object {
   "packageJson": Array [
     Object {
       "scripts": Object {
-        "test.update": "jest --updateSnapshot",
+        "test.update": "jest --update-snapshot",
         "test.watch": "jest --watch",
       },
     },
@@ -1620,10 +1620,10 @@ Object {
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
-    "jest --passWithNoTests",
+    "jest --pass-with-no-tests",
   ],
   "test.ci": Array [
-    "jest --passWithNoTests --ci --no-cache --coverage --maxWorkers 2",
+    "jest --pass-with-no-tests --ci --no-cache --coverage --max-workers 2",
     Object {
       "name": "codecov",
       "task": "codecov",
@@ -1691,7 +1691,7 @@ Object {
       "hash": Object {
         "lib/files/appveyor-8.yml": "70c6174a960e80495eca240ba2516a933ff7f67abc1287de0d1a3068156448dc",
         "lib/files/circleci-8.yml": "af4cc99927d13f77b7283335f7671d4943326a1e1e14c5ced4e4c5ab613b21a4",
-        "lib/files/jest.js": "9159ffa899d77032ff0f3137357c814dd63e947207be51e6df57e42e1e44019d",
+        "lib/files/jest.js": "593effcf28fda7ec31763c898d739f665436e659b7976864ce78885282136401",
         "lib/files/wallaby.js": "2656c547b42344e044e4a04d211059882aa4ab616f46051bbf994a018be2b9ec",
         "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
@@ -1707,7 +1707,7 @@ Object {
   "packageJson": Array [
     Object {
       "scripts": Object {
-        "test.update": "jest --updateSnapshot",
+        "test.update": "jest --update-snapshot",
         "test.watch": "jest --watch",
       },
     },
@@ -1720,10 +1720,10 @@ Object {
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
-    "jest --passWithNoTests",
+    "jest --pass-with-no-tests",
   ],
   "test.ci": Array [
-    "jest --passWithNoTests --ci --no-cache --coverage --maxWorkers 2",
+    "jest --pass-with-no-tests --ci --no-cache --coverage --max-workers 2",
     Object {
       "name": "codecov",
       "task": "codecov",
@@ -1791,7 +1791,7 @@ Object {
       "hash": Object {
         "lib/files/appveyor-8+.yml": "9a237c2fcea7a8f3e5e3d89a248a763f6c078803afc547ab18478b2083c82492",
         "lib/files/circleci-8+.yml": "d7fe10832d27fb9e6d7aeb958ac04d8a99175e5fcc9f0885a44cea634d57142f",
-        "lib/files/jest.js": "9159ffa899d77032ff0f3137357c814dd63e947207be51e6df57e42e1e44019d",
+        "lib/files/jest.js": "593effcf28fda7ec31763c898d739f665436e659b7976864ce78885282136401",
         "lib/files/wallaby.js": "2656c547b42344e044e4a04d211059882aa4ab616f46051bbf994a018be2b9ec",
         "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
@@ -1807,7 +1807,7 @@ Object {
   "packageJson": Array [
     Object {
       "scripts": Object {
-        "test.update": "jest --updateSnapshot",
+        "test.update": "jest --update-snapshot",
         "test.watch": "jest --watch",
       },
     },
@@ -1820,10 +1820,10 @@ Object {
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
-    "jest --passWithNoTests",
+    "jest --pass-with-no-tests",
   ],
   "test.ci": Array [
-    "jest --passWithNoTests --ci --no-cache --coverage --maxWorkers 2",
+    "jest --pass-with-no-tests --ci --no-cache --coverage --max-workers 2",
     Object {
       "name": "codecov",
       "task": "codecov",
@@ -1891,7 +1891,7 @@ Object {
       "hash": Object {
         "lib/files/appveyor-10.yml": "f10642c8ced78fa8015fd1b40623e2940a2cc953147d5631ee57ab6144e82cc8",
         "lib/files/circleci-10.yml": "0845f9fe3b3f3b12db57e4dbe68ca66fa0c7464cfe717112682a30a099096285",
-        "lib/files/jest.js": "9159ffa899d77032ff0f3137357c814dd63e947207be51e6df57e42e1e44019d",
+        "lib/files/jest.js": "593effcf28fda7ec31763c898d739f665436e659b7976864ce78885282136401",
         "lib/files/wallaby.js": "2656c547b42344e044e4a04d211059882aa4ab616f46051bbf994a018be2b9ec",
         "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
@@ -1907,7 +1907,7 @@ Object {
   "packageJson": Array [
     Object {
       "scripts": Object {
-        "test.update": "jest --updateSnapshot",
+        "test.update": "jest --update-snapshot",
         "test.watch": "jest --watch",
       },
     },
@@ -1920,10 +1920,10 @@ Object {
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
-    "jest --passWithNoTests",
+    "jest --pass-with-no-tests",
   ],
   "test.ci": Array [
-    "jest --passWithNoTests --ci --no-cache --coverage --maxWorkers 2",
+    "jest --pass-with-no-tests --ci --no-cache --coverage --max-workers 2",
     Object {
       "name": "codecov",
       "task": "codecov",
@@ -1984,7 +1984,7 @@ Object {
       ],
       "hash": Object {
         "lib/files/circleci-6.yml": "4fd9d1887710e02871486fa21d6cc5d35d7dce9e55a0e4ee39bc5145c136d23c",
-        "lib/files/jest.js": "9159ffa899d77032ff0f3137357c814dd63e947207be51e6df57e42e1e44019d",
+        "lib/files/jest.js": "593effcf28fda7ec31763c898d739f665436e659b7976864ce78885282136401",
         "lib/files/wallaby.js": "2656c547b42344e044e4a04d211059882aa4ab616f46051bbf994a018be2b9ec",
         "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
@@ -2000,7 +2000,7 @@ Object {
   "packageJson": Array [
     Object {
       "scripts": Object {
-        "test.update": "jest --updateSnapshot",
+        "test.update": "jest --update-snapshot",
         "test.watch": "jest --watch",
       },
     },
@@ -2013,10 +2013,10 @@ Object {
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
-    "jest --passWithNoTests",
+    "jest --pass-with-no-tests",
   ],
   "test.ci": Array [
-    "jest --passWithNoTests --ci --no-cache --coverage --maxWorkers 2",
+    "jest --pass-with-no-tests --ci --no-cache --coverage --max-workers 2",
     Object {
       "name": "codecov",
       "task": "codecov",
@@ -2077,7 +2077,7 @@ Object {
       ],
       "hash": Object {
         "lib/files/circleci-6+.yml": "f8afa0de22d1ce5ee659b86993cf898e85b383599dab0f06ef052d1f4510ef37",
-        "lib/files/jest.js": "9159ffa899d77032ff0f3137357c814dd63e947207be51e6df57e42e1e44019d",
+        "lib/files/jest.js": "593effcf28fda7ec31763c898d739f665436e659b7976864ce78885282136401",
         "lib/files/wallaby.js": "2656c547b42344e044e4a04d211059882aa4ab616f46051bbf994a018be2b9ec",
         "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
@@ -2093,7 +2093,7 @@ Object {
   "packageJson": Array [
     Object {
       "scripts": Object {
-        "test.update": "jest --updateSnapshot",
+        "test.update": "jest --update-snapshot",
         "test.watch": "jest --watch",
       },
     },
@@ -2106,10 +2106,10 @@ Object {
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
-    "jest --passWithNoTests",
+    "jest --pass-with-no-tests",
   ],
   "test.ci": Array [
-    "jest --passWithNoTests --ci --no-cache --coverage --maxWorkers 2",
+    "jest --pass-with-no-tests --ci --no-cache --coverage --max-workers 2",
     Object {
       "name": "codecov",
       "task": "codecov",
@@ -2170,7 +2170,7 @@ Object {
       ],
       "hash": Object {
         "lib/files/circleci-8.yml": "af4cc99927d13f77b7283335f7671d4943326a1e1e14c5ced4e4c5ab613b21a4",
-        "lib/files/jest.js": "9159ffa899d77032ff0f3137357c814dd63e947207be51e6df57e42e1e44019d",
+        "lib/files/jest.js": "593effcf28fda7ec31763c898d739f665436e659b7976864ce78885282136401",
         "lib/files/wallaby.js": "2656c547b42344e044e4a04d211059882aa4ab616f46051bbf994a018be2b9ec",
         "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
@@ -2186,7 +2186,7 @@ Object {
   "packageJson": Array [
     Object {
       "scripts": Object {
-        "test.update": "jest --updateSnapshot",
+        "test.update": "jest --update-snapshot",
         "test.watch": "jest --watch",
       },
     },
@@ -2199,10 +2199,10 @@ Object {
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
-    "jest --passWithNoTests",
+    "jest --pass-with-no-tests",
   ],
   "test.ci": Array [
-    "jest --passWithNoTests --ci --no-cache --coverage --maxWorkers 2",
+    "jest --pass-with-no-tests --ci --no-cache --coverage --max-workers 2",
     Object {
       "name": "codecov",
       "task": "codecov",
@@ -2263,7 +2263,7 @@ Object {
       ],
       "hash": Object {
         "lib/files/circleci-8+.yml": "d7fe10832d27fb9e6d7aeb958ac04d8a99175e5fcc9f0885a44cea634d57142f",
-        "lib/files/jest.js": "9159ffa899d77032ff0f3137357c814dd63e947207be51e6df57e42e1e44019d",
+        "lib/files/jest.js": "593effcf28fda7ec31763c898d739f665436e659b7976864ce78885282136401",
         "lib/files/wallaby.js": "2656c547b42344e044e4a04d211059882aa4ab616f46051bbf994a018be2b9ec",
         "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
@@ -2279,7 +2279,7 @@ Object {
   "packageJson": Array [
     Object {
       "scripts": Object {
-        "test.update": "jest --updateSnapshot",
+        "test.update": "jest --update-snapshot",
         "test.watch": "jest --watch",
       },
     },
@@ -2292,10 +2292,10 @@ Object {
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
-    "jest --passWithNoTests",
+    "jest --pass-with-no-tests",
   ],
   "test.ci": Array [
-    "jest --passWithNoTests --ci --no-cache --coverage --maxWorkers 2",
+    "jest --pass-with-no-tests --ci --no-cache --coverage --max-workers 2",
     Object {
       "name": "codecov",
       "task": "codecov",
@@ -2356,7 +2356,7 @@ Object {
       ],
       "hash": Object {
         "lib/files/circleci-10.yml": "0845f9fe3b3f3b12db57e4dbe68ca66fa0c7464cfe717112682a30a099096285",
-        "lib/files/jest.js": "9159ffa899d77032ff0f3137357c814dd63e947207be51e6df57e42e1e44019d",
+        "lib/files/jest.js": "593effcf28fda7ec31763c898d739f665436e659b7976864ce78885282136401",
         "lib/files/wallaby.js": "2656c547b42344e044e4a04d211059882aa4ab616f46051bbf994a018be2b9ec",
         "node_modules/@backtrack/preset-git-hooks/lib/files/husky.js": "f7b6f2abb505e7b45fb028edb1a032b9fb7c997e4d563fdd0567beb582f8da76",
       },
@@ -2372,7 +2372,7 @@ Object {
   "packageJson": Array [
     Object {
       "scripts": Object {
-        "test.update": "jest --updateSnapshot",
+        "test.update": "jest --update-snapshot",
         "test.watch": "jest --watch",
       },
     },
@@ -2385,10 +2385,10 @@ Object {
     "@backtrack/preset-jest": "<PROJECT_ROOT>/lib",
   },
   "test": Array [
-    "jest --passWithNoTests",
+    "jest --pass-with-no-tests",
   ],
   "test.ci": Array [
-    "jest --passWithNoTests --ci --no-cache --coverage --maxWorkers 2",
+    "jest --pass-with-no-tests --ci --no-cache --coverage --max-workers 2",
     Object {
       "name": "codecov",
       "task": "codecov",
