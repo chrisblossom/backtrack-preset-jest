@@ -10,7 +10,6 @@
 'use strict';
 
 const fs = require('fs');
-const path = require('path');
 const Backtrack = require('@backtrack/core');
 
 const { configManager, pkg } = new Backtrack();
@@ -63,15 +62,15 @@ const jest = {
 };
 
 function getFile(file) {
-    const jsFile = path.join(file, '.js');
+    const jsFile = `${file}.js`;
     const jsFileExists = fs.existsSync(jsFile);
 
     if (jsFileExists) {
         return jsFile;
     }
 
-    const tsFile = path.join(file, '.ts');
-    const tsFileExists = fs.existsSync(jsFile);
+    const tsFile = `${file}.ts`;
+    const tsFileExists = fs.existsSync(tsFile);
 
     if (tsFileExists) {
         return tsFile;
