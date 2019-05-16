@@ -14,7 +14,7 @@
   "homepage": "https://github.com/chrisblossom/backtrack-preset-jest",
   "author": "Chris Blossom",
   "engines": {
-    "node": ">=6.9.0"
+    "node": ">=8.9.0"
   },
   "files": [
     "lib/"
@@ -33,17 +33,20 @@
     "test.update": "jest --update-snapshot",
     "test.watch": "jest --watch"
   },
+  "peerDependencies": {
+    "@backtrack/core": ">=0.2.0"
+  },
   "devDependencies": {
     "@backtrack/core": "^0.1.28",
-    "@backtrack/preset-preset": "^0.3.17"
+    "@backtrack/preset-preset": "^0.4.0"
   },
   "dependencies": {
-    "@backtrack/preset-git-hooks": "^0.1.1",
+    "@backtrack/preset-git-hooks": "^0.2.0",
     "codecov": "^3.5.0",
     "jest": "^24.8.0",
     "jest-serializer-path": "^0.1.15",
     "jest-snapshot-serializer-function-name": "^1.1.0",
-    "read-pkg": "^4.0.1",
+    "read-pkg": "^5.1.1",
     "semver": "^6.0.0"
   }
 }
