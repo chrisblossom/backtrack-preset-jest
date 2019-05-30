@@ -50,7 +50,8 @@ module.exports = {
                 /**
                  * Disable testing on Windows
                  *
-                 * default: true
+                 * module default: true
+                 * app default: false
                  */
                 windows: false,
 
@@ -60,6 +61,14 @@ module.exports = {
                  * default: false
                  */
                 isApp: true,
+
+                /**
+                 * prepublishOnly testing hook
+                 *
+                 * module default: true
+                 * app default: false
+                 */
+                prepublishOnly: false,
             },
         ],
     ],
