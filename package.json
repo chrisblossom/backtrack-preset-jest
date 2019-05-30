@@ -10,6 +10,7 @@
     "wallaby"
   ],
   "license": "MIT",
+  "private": false,
   "repository": "chrisblossom/backtrack-preset-jest",
   "homepage": "https://github.com/chrisblossom/backtrack-preset-jest",
   "author": "Chris Blossom",
@@ -27,6 +28,7 @@
     "lint": "backtrack lint",
     "lint.fix": "backtrack lint.fix",
     "prepublishOnly": "backtrack prepublishOnly",
+    "release": "backtrack release",
     "test": "backtrack test",
     "test.ci": "backtrack test.ci",
     "test.ci-pretest": "backtrack test.ci-pretest",
@@ -37,8 +39,8 @@
     "@backtrack/core": ">=0.2.0"
   },
   "devDependencies": {
-    "@backtrack/core": "^0.2.0",
-    "@backtrack/preset-preset": "^0.5.0"
+    "@backtrack/core": "^0.2.1",
+    "@backtrack/preset-preset": "^0.5.1"
   },
   "dependencies": {
     "@backtrack/preset-git-hooks": "^0.2.0",
@@ -47,6 +49,6 @@
     "jest-serializer-path": "^0.1.15",
     "jest-snapshot-serializer-function-name": "^1.1.0",
     "read-pkg": "^5.1.1",
-    "semver": "^6.0.0"
+    "semver": "^6.1.1"
   }
 }
