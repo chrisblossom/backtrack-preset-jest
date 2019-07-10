@@ -22,6 +22,7 @@
   ],
   "main": "lib/preset-jest.js",
   "scripts": {
+    "check.all": "backtrack check.all",
     "format": "backtrack format",
     "git-pre-commit": "backtrack git-pre-commit",
     "git-pre-push": "backtrack git-pre-push",
@@ -40,10 +41,10 @@
   },
   "devDependencies": {
     "@backtrack/core": "^0.2.1",
-    "@backtrack/preset-preset": "^0.5.1"
+    "@backtrack/preset-preset": "^0.6.0"
   },
   "dependencies": {
-    "@backtrack/preset-git-hooks": "^0.2.0",
+    "@backtrack/preset-git-hooks": "^0.2.2",
     "codecov": "^3.5.0",
     "jest": "^24.8.0",
     "jest-serializer-path": "^0.1.15",

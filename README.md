@@ -31,7 +31,7 @@
 'use strict';
 
 module.exports = {
-    presets: ['@backtrack/jest'],
+	presets: ['@backtrack/jest'],
 };
 ```
 
@@ -43,34 +43,34 @@ module.exports = {
 'use strict';
 
 module.exports = {
-    presets: [
-        [
-            '@backtrack/jest',
-            {
-                /**
-                 * Disable testing on Windows
-                 *
-                 * module default: true
-                 * app default: false
-                 */
-                windows: false,
+	presets: [
+		[
+			'@backtrack/jest',
+			{
+				/**
+				 * Disable testing on Windows
+				 *
+				 * module default: true
+				 * app default: false
+				 */
+				windows: false,
 
-                /**
-                 * Disable settings unnecessary in applications
-                 *
-                 * default: false
-                 */
-                isApp: true,
+				/**
+				 * Disable settings unnecessary in applications
+				 *
+				 * default: false
+				 */
+				isApp: true,
 
-                /**
-                 * prepublishOnly testing hook
-                 *
-                 * module default: true
-                 * app default: false
-                 */
-                prepublishOnly: false,
-            },
-        ],
-    ],
+				/**
+				 * prepublishOnly testing hook
+				 *
+				 * module default: true
+				 * app default: false
+				 */
+				prepublishOnly: false,
+			},
+		],
+	],
 };
 ```
