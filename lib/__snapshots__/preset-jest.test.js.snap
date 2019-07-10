@@ -2,6 +2,9 @@
 
 exports[`isApp: true node 8 1`] = `
 Object {
+  "check.all": Array [
+    "backtrack test",
+  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
@@ -92,6 +95,9 @@ Object {
 
 exports[`isApp: true node 8+ 1`] = `
 Object {
+  "check.all": Array [
+    "backtrack test",
+  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
@@ -182,6 +188,9 @@ Object {
 
 exports[`isApp: true node 10 1`] = `
 Object {
+  "check.all": Array [
+    "backtrack test",
+  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
@@ -272,6 +281,9 @@ Object {
 
 exports[`isApp: true node 10+ 1`] = `
 Object {
+  "check.all": Array [
+    "backtrack test",
+  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
@@ -362,6 +374,9 @@ Object {
 
 exports[`isApp: true node 12 1`] = `
 Object {
+  "check.all": Array [
+    "backtrack test",
+  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
@@ -452,6 +467,9 @@ Object {
 
 exports[`isApp: true node 12+ 1`] = `
 Object {
+  "check.all": Array [
+    "backtrack test",
+  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
@@ -542,6 +560,9 @@ Object {
 
 exports[`isApp: true, windows: true node 8 1`] = `
 Object {
+  "check.all": Array [
+    "backtrack test",
+  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
@@ -639,6 +660,9 @@ Object {
 
 exports[`isApp: true, windows: true node 8+ 1`] = `
 Object {
+  "check.all": Array [
+    "backtrack test",
+  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
@@ -736,6 +760,9 @@ Object {
 
 exports[`isApp: true, windows: true node 10 1`] = `
 Object {
+  "check.all": Array [
+    "backtrack test",
+  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
@@ -833,6 +860,9 @@ Object {
 
 exports[`isApp: true, windows: true node 10+ 1`] = `
 Object {
+  "check.all": Array [
+    "backtrack test",
+  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
@@ -930,6 +960,9 @@ Object {
 
 exports[`isApp: true, windows: true node 12 1`] = `
 Object {
+  "check.all": Array [
+    "backtrack test",
+  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
@@ -1027,6 +1060,9 @@ Object {
 
 exports[`isApp: true, windows: true node 12+ 1`] = `
 Object {
+  "check.all": Array [
+    "backtrack test",
+  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
@@ -1124,6 +1160,9 @@ Object {
 
 exports[`node: true node 8 1`] = `
 Object {
+  "check.all": Array [
+    "backtrack test",
+  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
@@ -1224,6 +1263,9 @@ Object {
 
 exports[`node: true node 8+ 1`] = `
 Object {
+  "check.all": Array [
+    "backtrack test",
+  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
@@ -1324,6 +1366,9 @@ Object {
 
 exports[`node: true node 10 1`] = `
 Object {
+  "check.all": Array [
+    "backtrack test",
+  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
@@ -1424,6 +1469,9 @@ Object {
 
 exports[`node: true node 10+ 1`] = `
 Object {
+  "check.all": Array [
+    "backtrack test",
+  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
@@ -1524,6 +1572,9 @@ Object {
 
 exports[`node: true node 12 1`] = `
 Object {
+  "check.all": Array [
+    "backtrack test",
+  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
@@ -1624,6 +1675,9 @@ Object {
 
 exports[`node: true node 12+ 1`] = `
 Object {
+  "check.all": Array [
+    "backtrack test",
+  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
@@ -1724,6 +1778,9 @@ Object {
 
 exports[`preset returns expected config - defaults node 8 1`] = `
 Object {
+  "check.all": Array [
+    "backtrack test",
+  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
@@ -1824,6 +1881,9 @@ Object {
 
 exports[`preset returns expected config - defaults node 8+ 1`] = `
 Object {
+  "check.all": Array [
+    "backtrack test",
+  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
@@ -1924,6 +1984,9 @@ Object {
 
 exports[`preset returns expected config - defaults node 10 1`] = `
 Object {
+  "check.all": Array [
+    "backtrack test",
+  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
@@ -2024,6 +2087,9 @@ Object {
 
 exports[`preset returns expected config - defaults node 10+ 1`] = `
 Object {
+  "check.all": Array [
+    "backtrack test",
+  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
@@ -2124,6 +2190,9 @@ Object {
 
 exports[`preset returns expected config - defaults node 12 1`] = `
 Object {
+  "check.all": Array [
+    "backtrack test",
+  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
@@ -2224,6 +2293,9 @@ Object {
 
 exports[`preset returns expected config - defaults node 12+ 1`] = `
 Object {
+  "check.all": Array [
+    "backtrack test",
+  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
@@ -2324,6 +2396,9 @@ Object {
 
 exports[`windows: false node 8 1`] = `
 Object {
+  "check.all": Array [
+    "backtrack test",
+  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
@@ -2417,6 +2492,9 @@ Object {
 
 exports[`windows: false node 8+ 1`] = `
 Object {
+  "check.all": Array [
+    "backtrack test",
+  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
@@ -2510,6 +2588,9 @@ Object {
 
 exports[`windows: false node 10 1`] = `
 Object {
+  "check.all": Array [
+    "backtrack test",
+  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
@@ -2603,6 +2684,9 @@ Object {
 
 exports[`windows: false node 10+ 1`] = `
 Object {
+  "check.all": Array [
+    "backtrack test",
+  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
@@ -2696,6 +2780,9 @@ Object {
 
 exports[`windows: false node 12 1`] = `
 Object {
+  "check.all": Array [
+    "backtrack test",
+  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
@@ -2789,6 +2876,9 @@ Object {
 
 exports[`windows: false node 12+ 1`] = `
 Object {
+  "check.all": Array [
+    "backtrack test",
+  ],
   "files": Object {
     "dest": Object {
       "absolute": Object {
