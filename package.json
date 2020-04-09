@@ -41,15 +41,15 @@
   },
   "devDependencies": {
     "@backtrack/core": "^0.2.1",
-    "@backtrack/preset-preset": "^0.6.0"
+    "@backtrack/preset-preset": "^0.6.1"
   },
   "dependencies": {
-    "@backtrack/preset-git-hooks": "^0.2.2",
-    "codecov": "^3.5.0",
+    "@backtrack/preset-git-hooks": "^0.3.0",
+    "codecov": "^3.6.5",
     "jest": "^24.8.0",
     "jest-serializer-path": "^0.1.15",
     "jest-snapshot-serializer-function-name": "^1.1.0",
-    "read-pkg": "^5.1.1",
-    "semver": "^6.1.1"
+    "read-pkg": "^5.2.0",
+    "semver": "^7.2.1"
   }
 }
