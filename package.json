@@ -34,14 +34,14 @@
     "test.ci": "backtrack test.ci",
     "test.ci-pretest": "backtrack test.ci-pretest",
     "test.update": "jest --update-snapshot",
-    "test.watch": "jest --watch"
+    "test.watch": "jest --watch --pass-with-no-tests"
   },
   "peerDependencies": {
     "@backtrack/core": ">=0.2.0"
   },
   "devDependencies": {
     "@backtrack/core": "^0.2.1",
-    "@backtrack/preset-preset": "^0.6.1"
+    "@backtrack/preset-preset": "^0.7.0"
   },
   "dependencies": {
     "@backtrack/preset-git-hooks": "^0.3.0",
