@@ -82,10 +82,6 @@ Object {
   ],
   "test.ci": Array [
     "jest --ci --no-cache --coverage --max-workers 2",
-    Object {
-      "name": "codecov",
-      "task": "codecov",
-    },
   ],
   "test.ci-pretest": Array [
     [Function noop],
@@ -175,10 +171,6 @@ Object {
   ],
   "test.ci": Array [
     "jest --ci --no-cache --coverage --max-workers 2",
-    Object {
-      "name": "codecov",
-      "task": "codecov",
-    },
   ],
   "test.ci-pretest": Array [
     [Function noop],
@@ -268,10 +260,6 @@ Object {
   ],
   "test.ci": Array [
     "jest --ci --no-cache --coverage --max-workers 2",
-    Object {
-      "name": "codecov",
-      "task": "codecov",
-    },
   ],
   "test.ci-pretest": Array [
     [Function noop],
@@ -361,10 +349,6 @@ Object {
   ],
   "test.ci": Array [
     "jest --ci --no-cache --coverage --max-workers 2",
-    Object {
-      "name": "codecov",
-      "task": "codecov",
-    },
   ],
   "test.ci-pretest": Array [
     [Function noop],
@@ -454,10 +438,6 @@ Object {
   ],
   "test.ci": Array [
     "jest --ci --no-cache --coverage --max-workers 2",
-    Object {
-      "name": "codecov",
-      "task": "codecov",
-    },
   ],
   "test.ci-pretest": Array [
     [Function noop],
@@ -554,10 +534,6 @@ Object {
   ],
   "test.ci": Array [
     "jest --ci --no-cache --coverage --max-workers 2",
-    Object {
-      "name": "codecov",
-      "task": "codecov",
-    },
   ],
   "test.ci-pretest": Array [
     [Function noop],
@@ -654,10 +630,6 @@ Object {
   ],
   "test.ci": Array [
     "jest --ci --no-cache --coverage --max-workers 2",
-    Object {
-      "name": "codecov",
-      "task": "codecov",
-    },
   ],
   "test.ci-pretest": Array [
     [Function noop],
@@ -754,10 +726,6 @@ Object {
   ],
   "test.ci": Array [
     "jest --ci --no-cache --coverage --max-workers 2",
-    Object {
-      "name": "codecov",
-      "task": "codecov",
-    },
   ],
   "test.ci-pretest": Array [
     [Function noop],
@@ -854,10 +822,6 @@ Object {
   ],
   "test.ci": Array [
     "jest --ci --no-cache --coverage --max-workers 2",
-    Object {
-      "name": "codecov",
-      "task": "codecov",
-    },
   ],
   "test.ci-pretest": Array [
     [Function noop],
@@ -954,10 +918,6 @@ Object {
   ],
   "test.ci": Array [
     "jest --ci --no-cache --coverage --max-workers 2",
-    Object {
-      "name": "codecov",
-      "task": "codecov",
-    },
   ],
   "test.ci-pretest": Array [
     [Function noop],
@@ -1057,10 +1017,6 @@ Object {
   ],
   "test.ci": Array [
     "jest --ci --no-cache --coverage --max-workers 2",
-    Object {
-      "name": "codecov",
-      "task": "codecov",
-    },
   ],
   "test.ci-pretest": Array [
     [Function noop],
@@ -1160,10 +1116,6 @@ Object {
   ],
   "test.ci": Array [
     "jest --ci --no-cache --coverage --max-workers 2",
-    Object {
-      "name": "codecov",
-      "task": "codecov",
-    },
   ],
   "test.ci-pretest": Array [
     [Function noop],
@@ -1263,10 +1215,6 @@ Object {
   ],
   "test.ci": Array [
     "jest --ci --no-cache --coverage --max-workers 2",
-    Object {
-      "name": "codecov",
-      "task": "codecov",
-    },
   ],
   "test.ci-pretest": Array [
     [Function noop],
@@ -1366,10 +1314,6 @@ Object {
   ],
   "test.ci": Array [
     "jest --ci --no-cache --coverage --max-workers 2",
-    Object {
-      "name": "codecov",
-      "task": "codecov",
-    },
   ],
   "test.ci-pretest": Array [
     [Function noop],
@@ -1469,10 +1413,6 @@ Object {
   ],
   "test.ci": Array [
     "jest --ci --no-cache --coverage --max-workers 2",
-    Object {
-      "name": "codecov",
-      "task": "codecov",
-    },
   ],
   "test.ci-pretest": Array [
     [Function noop],
@@ -1572,10 +1512,6 @@ Object {
   ],
   "test.ci": Array [
     "jest --ci --no-cache --coverage --max-workers 2",
-    Object {
-      "name": "codecov",
-      "task": "codecov",
-    },
   ],
   "test.ci-pretest": Array [
     [Function noop],
@@ -1675,10 +1611,6 @@ Object {
   ],
   "test.ci": Array [
     "jest --ci --no-cache --coverage --max-workers 2",
-    Object {
-      "name": "codecov",
-      "task": "codecov",
-    },
   ],
   "test.ci-pretest": Array [
     [Function noop],
@@ -1778,10 +1710,6 @@ Object {
   ],
   "test.ci": Array [
     "jest --ci --no-cache --coverage --max-workers 2",
-    Object {
-      "name": "codecov",
-      "task": "codecov",
-    },
   ],
   "test.ci-pretest": Array [
     [Function noop],
@@ -1881,10 +1809,6 @@ Object {
   ],
   "test.ci": Array [
     "jest --ci --no-cache --coverage --max-workers 2",
-    Object {
-      "name": "codecov",
-      "task": "codecov",
-    },
   ],
   "test.ci-pretest": Array [
     [Function noop],
@@ -1984,10 +1908,6 @@ Object {
   ],
   "test.ci": Array [
     "jest --ci --no-cache --coverage --max-workers 2",
-    Object {
-      "name": "codecov",
-      "task": "codecov",
-    },
   ],
   "test.ci-pretest": Array [
     [Function noop],
@@ -2080,10 +2000,6 @@ Object {
   ],
   "test.ci": Array [
     "jest --ci --no-cache --coverage --max-workers 2",
-    Object {
-      "name": "codecov",
-      "task": "codecov",
-    },
   ],
   "test.ci-pretest": Array [
     [Function noop],
@@ -2176,10 +2092,6 @@ Object {
   ],
   "test.ci": Array [
     "jest --ci --no-cache --coverage --max-workers 2",
-    Object {
-      "name": "codecov",
-      "task": "codecov",
-    },
   ],
   "test.ci-pretest": Array [
     [Function noop],
@@ -2272,10 +2184,6 @@ Object {
   ],
   "test.ci": Array [
     "jest --ci --no-cache --coverage --max-workers 2",
-    Object {
-      "name": "codecov",
-      "task": "codecov",
-    },
   ],
   "test.ci-pretest": Array [
     [Function noop],
@@ -2368,10 +2276,6 @@ Object {
   ],
   "test.ci": Array [
     "jest --ci --no-cache --coverage --max-workers 2",
-    Object {
-      "name": "codecov",
-      "task": "codecov",
-    },
   ],
   "test.ci-pretest": Array [
     [Function noop],
@@ -2464,10 +2368,6 @@ Object {
   ],
   "test.ci": Array [
     "jest --ci --no-cache --coverage --max-workers 2",
-    Object {
-      "name": "codecov",
-      "task": "codecov",
-    },
   ],
   "test.ci-pretest": Array [
     [Function noop],

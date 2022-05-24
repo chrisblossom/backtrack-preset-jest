@@ -45,7 +45,6 @@
   },
   "dependencies": {
     "@backtrack/preset-git-hooks": "^0.3.0",
-    "codecov": "^3.6.5",
     "jest": "^25.3.0",
     "jest-serializer-path": "^0.1.15",
     "jest-snapshot-serializer-function-name": "^1.1.0",
