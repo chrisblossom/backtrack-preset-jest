@@ -2,6 +2,7 @@
     "fileManager": {
         "directories": [
             ".circleci",
+            ".husky",
             "lib/files"
         ],
         "files": {
@@ -11,8 +12,9 @@
             ".eslintrc.js": "00aed0fb026ab32804ce28d202a5e8ff43d5ef238ab938774c34b19fd6c1047b",
             ".gitattributes": "f511b169e2a0b7529ac2887dffad3b04a16b954209edf18fec7f8911a81ad17d",
             ".gitignore": "8791c419e79de53e5c2eefa59ab16b52b5413bd08da46be94e9e6cc3153a17a0",
-            ".huskyrc.js": "b242a598aa796a3ac2dc5cc64b83ba86ac5260414a591bb09b5ab6b4f7c027fe",
-            ".lintstagedrc.js": "f7164bc680954569d44960627d963bfcc542cd9f7635a239b30ca077a5884abd",
+            ".husky/pre-commit": "e4add719772b9da7940f03a22d607f8c8c86a543b9260739f9a8143b89007597",
+            ".husky/pre-push": "bd2849b7a84e41755e4c74b1a3d0640914f2cf1a1a4373640aa8d6308a3c53ee",
+            ".lintstagedrc.cjs": "f7164bc680954569d44960627d963bfcc542cd9f7635a239b30ca077a5884abd",
             ".np-config.js": "f1e82191dea83526e85a98a48c5b974b59e6e99293e864d0a1d02d5999e6a675",
             ".npmrc": "f535d8452d57a9d969bc54c2eaa831f3e20ccb5c3dbeeabc6f613d27a4b5a28a",
             ".prettierignore": "73a2c88868e2d07e67d56a7678a7cff9b19d375996830bc055e5048a3a995c7f",
