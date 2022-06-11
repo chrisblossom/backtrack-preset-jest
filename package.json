@@ -1,54 +1,54 @@
 {
-  "name": "@backtrack/preset-jest",
-  "version": "0.13.0",
-  "description": "backtrack preset for testing node with Jest",
-  "keywords": [
-    "backtrack",
-    "preset",
-    "testing",
-    "jest",
-    "wallaby"
-  ],
-  "license": "MIT",
-  "private": false,
-  "repository": "chrisblossom/backtrack-preset-jest",
-  "homepage": "https://github.com/chrisblossom/backtrack-preset-jest",
-  "author": "Chris Blossom",
-  "engines": {
-    "node": ">=14.15.0"
-  },
-  "files": [
-    "lib/"
-  ],
-  "main": "lib/preset-jest.js",
-  "scripts": {
-    "check.all": "backtrack check.all",
-    "format": "backtrack format",
-    "git-pre-commit": "backtrack git-pre-commit",
-    "git-pre-push": "backtrack git-pre-push",
-    "lint": "backtrack lint",
-    "lint.fix": "backtrack lint.fix",
-    "prepublishOnly": "backtrack prepublishOnly",
-    "release": "backtrack release",
-    "test": "backtrack test",
-    "test.ci": "backtrack test.ci",
-    "test.ci-pretest": "backtrack test.ci-pretest",
-    "test.update": "jest --update-snapshot",
-    "test.watch": "jest --watch --pass-with-no-tests"
-  },
-  "peerDependencies": {
-    "@backtrack/core": ">=0.2.0"
-  },
-  "devDependencies": {
-    "@backtrack/core": "^0.2.1",
-    "@backtrack/preset-preset": "^0.8.0"
-  },
-  "dependencies": {
-    "@backtrack/preset-git-hooks": "^0.4.0",
-    "jest": "^28.1.1",
-    "jest-serializer-path": "^0.1.15",
-    "jest-snapshot-serializer-function-name": "^1.1.0",
-    "read-pkg": "^5.2.0",
-    "semver": "^7.3.7"
-  }
+	"name": "@backtrack/preset-jest",
+	"version": "0.13.0",
+	"description": "backtrack preset for testing node with Jest",
+	"keywords": [
+		"backtrack",
+		"preset",
+		"testing",
+		"jest",
+		"wallaby"
+	],
+	"license": "MIT",
+	"private": false,
+	"repository": "chrisblossom/backtrack-preset-jest",
+	"homepage": "https://github.com/chrisblossom/backtrack-preset-jest",
+	"author": "Chris Blossom",
+	"engines": {
+		"node": ">=14.15.0"
+	},
+	"files": [
+		"lib/"
+	],
+	"main": "lib/preset-jest.js",
+	"scripts": {
+		"check.all": "backtrack check.all",
+		"format": "backtrack format",
+		"git-pre-commit": "backtrack git-pre-commit",
+		"git-pre-push": "backtrack git-pre-push",
+		"lint": "backtrack lint",
+		"lint.fix": "backtrack lint.fix",
+		"prepublishOnly": "backtrack prepublishOnly",
+		"release": "backtrack release",
+		"test": "backtrack test",
+		"test.ci": "backtrack test.ci",
+		"test.ci-pretest": "backtrack test.ci-pretest",
+		"test.update": "jest --update-snapshot",
+		"test.watch": "jest --watch --pass-with-no-tests"
+	},
+	"peerDependencies": {
+		"@backtrack/core": ">=0.2.0"
+	},
+	"devDependencies": {
+		"@backtrack/core": "^0.2.1",
+		"@backtrack/preset-preset": "^0.8.0"
+	},
+	"dependencies": {
+		"@backtrack/preset-git-hooks": "^0.4.0",
+		"jest": "^28.1.1",
+		"jest-serializer-path": "^0.1.15",
+		"jest-snapshot-serializer-function-name": "^1.1.0",
+		"read-pkg": "^5.2.0",
+		"semver": "^7.3.7"
+	}
 }
