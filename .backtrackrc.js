@@ -1,7 +1,10 @@
 'use strict';
 
 module.exports = {
-	presets: ['@backtrack/preset'],
+	presets: [
+		'@backtrack/preset',
+		'./lib/preset-jest',
+	],
 
 	packageJson: {
 		module: 'commonjs',
@@ -11,8 +14,6 @@ module.exports = {
 	},
 
 	files: [
-		{ src: 'lib/files/jest.cjs', dest: 'jest.config.cjs' },
-		{ src: 'lib/files/wallaby.cjs', dest: 'wallaby.config.cjs' },
 		{
 			skip: [
 				'jest.config.js',
