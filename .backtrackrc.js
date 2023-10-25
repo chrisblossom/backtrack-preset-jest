@@ -3,6 +3,13 @@
 module.exports = {
 	presets: ['@backtrack/preset'],
 
+	packageJson: {
+		module: 'commonjs',
+		engines: {
+			node: '>=18.12.0',
+		},
+	},
+
 	files: [
 		{ src: 'lib/files/jest.cjs', dest: 'jest.config.cjs' },
 		{ src: 'lib/files/wallaby.cjs', dest: 'wallaby.config.cjs' },
