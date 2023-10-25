@@ -2,11 +2,26 @@
 
 module.exports = {
 	presets: ['@backtrack/preset'],
+
+	files: [
+		{ src: 'lib/files/jest.cjs', dest: 'jest.config.cjs' },
+		{ src: 'lib/files/wallaby.cjs', dest: 'wallaby.config.cjs' },
+		{
+			skip: [
+				'jest.config.js',
+				'wallaby.config.js',
+			],
+		},
+	],
+
 	config: {
 		eslint: {
 			overrides: [
 				{
-					files: ['lib/files/wallaby.js'],
+					files: [
+						'lib/files/jest.cjs',
+						'lib/files/wallaby.cjs',
+					],
 					rules: {
 						'import/extensions': 'off',
 					},

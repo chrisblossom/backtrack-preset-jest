@@ -22,10 +22,10 @@
             ".yarnrc": "feed5a1b1413c2d27507ed09e7d1c21fb40e0f8aca947c0620793b7e187e8ba4",
             "README.md": "ignoreUpdates",
             "appveyor.yml": "25e43fbd67f7d31b81155aca953154dc7a03f94adfb66be204ed0787d9ce5eb9",
-            "jest.config.js": "849190b5138d25fa0849678fb4a3c818fb0dccffbe6a86732713a18c4cc06b6d",
+            "jest.config.cjs": "849190b5138d25fa0849678fb4a3c818fb0dccffbe6a86732713a18c4cc06b6d",
             "lib/preset-jest.js": "ignoreUpdates",
             "lib/preset-jest.test.js": "ignoreUpdates",
-            "wallaby.config.js": "1685bb89c5e60c303b9a319b3ee52766bfc0c0b7cf5a2c0e5f8e67a0e8febeba"
+            "wallaby.config.cjs": "1685bb89c5e60c303b9a319b3ee52766bfc0c0b7cf5a2c0e5f8e67a0e8febeba"
         }
     },
     "packageJson": {
