@@ -42,7 +42,7 @@
 	},
 	"devDependencies": {
 		"@backtrack/core": "^0.2.1",
-		"@backtrack/preset-preset": "^0.8.0"
+		"@backtrack/preset-preset": "^0.9.0"
 	},
 	"dependencies": {
 		"@backtrack/preset-git-hooks": "^0.4.0",
